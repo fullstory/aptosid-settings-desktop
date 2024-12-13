@@ -1,0 +1,12 @@
+[Desktop Entry]
+Comment=
+Name=aptosid-nemesis
+X-KDE-PluginInfo-Author=Kel Modderman
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=kelvmod@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 2+
+X-KDE-PluginInfo-Name=com.aptosid.kde.desktop
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/fullstory/aptosid-settings-kde
+X-KDE-ServiceTypes=Plasma/LookAndFeel

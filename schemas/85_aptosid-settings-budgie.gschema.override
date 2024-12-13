@@ -1,0 +1,46 @@
+[com.solus-project.icon-tasklist]
+pinned-launchers=['aptosid-xdg-browser-launcher.desktop']
+
+[org.gnome.desktop.wm.preferences:Budgie]
+titlebar-font='Noto Sans Bold 11'
+titlebar-uses-system-font=false
+
+[org.gnome.desktop.interface:Budgie]
+monospace-font-name='Noto Mono Bold 11'
+font-name='Noto Sans 11'
+document-font-name='Noto Sans 11'
+cursor-theme='Bibata-Modern-Ice'
+gtk-theme='Arc-Dark'
+icon-theme='Mint-Y'
+clock-show-date=false
+color-scheme='prefer-dark'
+
+[org.gnome.desktop.peripherals.touchpad:Budgie]
+tap-to-click = true
+
+[org.gnome.desktop.sound:Budgie]
+event-sounds=false
+
+[org.gnome.desktop.background:Budgie]
+show-desktop-icons=true
+picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+
+[x.dm.slick-greeter]
+background='/usr/share/wallpapers/aptosid-nemesis-wide.png'
+
+[org.gnome.desktop.screensaver:Budgie]
+picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+
+[com.solus-project.budgie-panel]
+builtin-theme=false
+dark-theme=true
+
+[com.solus-project.budgie-wm]
+edge-tiling=true
+
+[org.buddiesofbudgie.budgie-desktop-view]
+show=true
+show-active-mounts=true
+
+[com.solus-project.budgie-menu]
+menu-icon='/usr/share/pixmaps/aptosid-logo-budgie.svg'

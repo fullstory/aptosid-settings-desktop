@@ -1,0 +1,4 @@
+schemas/*_aptosid-settings-budgie.gschema.override usr/share/glib-2.0/schemas
+budgie/*.ini etc/budgie-desktop
+aptosid-logo.svg usr/share/pixmaps/aptosid-logo-budgie.svg
+xdg/budgie-mimeapps.list etc/xdg

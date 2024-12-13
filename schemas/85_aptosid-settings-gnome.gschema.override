@@ -1,0 +1,29 @@
+# Launcher icons
+[org.gnome.shell:GNOME]
+favorite-apps=['aptosid-aptosid-irc.desktop', 'aptosid-xdg-browser-launcher.desktop']
+
+[org.gnome.desktop.wm.preferences:GNOME]
+titlebar-font='Noto Sans Bold 11'
+titlebar-uses-system-font=false
+
+[org.gnome.desktop.interface:GNOME]
+monospace-font-name='Noto Mono Bold 11'
+font-name='Noto Sans 11'
+document-font-name='Noto Sans 11'
+color-scheme='prefer-dark'
+
+[org.gnome.desktop.background:GNOME]
+picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-uri-dark='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-options='scaled'
+
+[org.gnome.desktop.screensaver:GNOME]
+picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-uri-dark='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-options='scaled'
+
+[org.gnome.desktop.sound:GNOME]
+event-sounds=false
+
+[org.gnome.desktop.peripherals.touchpad:GNOME]
+tap-to-click=true

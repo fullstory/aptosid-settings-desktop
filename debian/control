@@ -1,0 +1,82 @@
+Source: aptosid-settings-desktop
+Section: graphics
+Priority: optional
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Uploaders: Kel Modderman <kelvmod@gmail.com>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Vcs-Git: https://github.com/fullstory/aptosid-settings-desktop.git
+Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
+
+Package: aptosid-settings-budgie
+Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ fonts-noto
+Architecture: all
+Description: provide default Budgie settings for aptosid
+ Provides default settings for appearance and applications of the Budgie
+ Desktop Environment in aptosid.
+ .
+ This overrides Budgie's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
+Package: aptosid-settings-cinnamon
+Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ fonts-noto
+Architecture: all
+Description: provide default Cinnamon settings for aptosid
+ Provides default settings for appearance and applications of the Cinnamon
+ Desktop Environment in aptosid.
+ .
+ This overrides Cinnamon's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
+Package: aptosid-settings-gnome
+Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ aptosid-irc,
+ fonts-noto
+Architecture: all
+Description: provide default Gnome settings for aptosid
+ Provides default settings for appearance and applications of the Gnome
+ Desktop Environment in aptosid.
+ .
+ This overrides Gnome's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
+Package: aptosid-settings-kde
+Depends: ${misc:Depends},
+ aptosid-art-kde,
+ aptosid-art-wallpaper,
+ plasma-framework
+Recommends: xdg-browser-launcher,
+ fonts-dejavu
+Architecture: all
+Description: provide default KDE settings for aptosid
+ Provides default settings for appearance and applications of the K Desktop
+ Environment in aptosid.
+ .
+ This overrides KDE's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
+Package: aptosid-settings-xfce
+Depends: ${misc:Depends},
+ aptosid-art-xfce,
+ aptosid-art-wallpaper
+Architecture: all
+Description: provide default Xfce settings for aptosid
+ Provides default settings for appearance and applications of the Xfce
+ desktop in aptosid.
+ .
+ This overrides Xfce's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.

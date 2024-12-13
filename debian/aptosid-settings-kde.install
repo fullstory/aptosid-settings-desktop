@@ -1,0 +1,4 @@
+xdg/kdeglobals etc/xdg
+xdg/k*rc etc/xdg
+sddm.conf.d etc
+plasma usr/share
