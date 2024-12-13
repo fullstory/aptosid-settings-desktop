@@ -70,7 +70,6 @@ Description: provide default KDE settings for aptosid
 
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
- aptosid-art-xfce,
  aptosid-art-wallpaper
 Architecture: all
 Description: provide default Xfce settings for aptosid

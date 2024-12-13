@@ -1,0 +1,2 @@
+schemas/*_aptosid-settings-xfce.gschema.override usr/share/glib-2.0/schemas
+xdg/xfce-mimeapps.list
