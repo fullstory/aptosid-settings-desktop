@@ -43,4 +43,4 @@ show=true
 show-active-mounts=true
 
 [com.solus-project.budgie-menu]
-menu-icon='/usr/share/pixmaps/aptosid-logo-budgie.svg'
+menu-icon='/usr/share/icons/hicolor/scalable/apps/aptosid-logo.svg'

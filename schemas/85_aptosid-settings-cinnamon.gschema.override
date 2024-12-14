@@ -1,6 +1,6 @@
 [org.cinnamon]
 favorite-apps=['aptosid-aptosid-irc.desktop', 'aptosid-xdg-browser-launcher.desktop', 'cinnamon-settings.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop']
-app-menu-icon-name='aptosid-logo-cinnamon'
+app-menu-icon-name='aptosid-logo'
 
 [org.cinnamon.desktop.wm.preferences]
 titlebar-font='Noto Sans Bold 11'

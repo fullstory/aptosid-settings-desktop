@@ -9,8 +9,15 @@ Standards-Version: 4.7.0
 Vcs-Git: https://github.com/fullstory/aptosid-settings-desktop.git
 Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 
+Package: aptosid-icons
+Depends: ${misc:Depends}
+Architecture: all
+Description: aptosid icons
+ Provides the aptosid logo and icons for use in desktop settings.
+
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
+ aptosid-icons,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  fonts-noto
@@ -25,6 +32,7 @@ Description: provide default Budgie settings for aptosid
 
 Package: aptosid-settings-cinnamon
 Depends: ${misc:Depends},
+ aptosid-icons,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  fonts-noto
