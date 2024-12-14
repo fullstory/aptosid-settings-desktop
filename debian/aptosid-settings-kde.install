@@ -1,4 +1,5 @@
 xdg/kdeglobals etc/xdg
 xdg/k*rc etc/xdg
+xdg/kde-mimeapps.list etc/xdg
 sddm.conf.d etc
 plasma usr/share
