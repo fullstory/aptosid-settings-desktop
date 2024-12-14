@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 Package: aptosid-icons
 Depends: ${misc:Depends}
 Architecture: all
-Description: aptosid icons
+Description: aptosid logo and icons
  Provides the aptosid logo and icons for use in desktop settings.
 
 Package: aptosid-settings-budgie
