@@ -1,5 +1,5 @@
-aptosid-settings-desktop (20241214.1) unstable; urgency=medium
+aptosid-settings-desktop (20241215.1) unstable; urgency=medium
 
-  * Initial release.
+  * Initial release. DO NOT RELEASE.
 
- -- Kel Modderman <kelvmod@gmail.com>  Sat, 14 Dec 2024 09:11:24 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 15 Dec 2024 18:32:06 +1000
