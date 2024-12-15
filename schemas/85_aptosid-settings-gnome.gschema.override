@@ -1,6 +1,6 @@
 # Launcher icons
 [org.gnome.shell:GNOME]
-favorite-apps=['aptosid-aptosid-irc.desktop', 'aptosid-xdg-browser-launcher.desktop']
+favorite-apps=['aptosid-aptosid-irc.desktop', 'aptosid-xdg-browser-launcher.desktop', 'nautilus.desktop', 'org.gnome.Terminal.desktop']
 
 [org.gnome.desktop.wm.preferences:GNOME]
 titlebar-font='Noto Sans Bold 11'
