@@ -15,9 +15,21 @@ Architecture: all
 Description: aptosid logo and icons
  Provides the aptosid logo and icons for use in desktop settings.
 
+Package: aptosid-settings-qt-gtk
+Depends: ${misc:Depends},
+ qt5-gtk2-platformtheme,
+ qt6-gtk-platformtheme
+Architecture: all
+Description: aptosid qt-gtk style configuration
+ Sets the QT_QPA_PLATFORMTHEME=gtk2 environment variable to enable
+ GTK styling of QT applications.
+ .
+ Configuration file: /etc/profile.d/aptosid-settings-qt-gtk.sh
+
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
  aptosid-icons,
+ aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  fonts-noto
@@ -33,6 +45,7 @@ Description: provide default Budgie settings for aptosid
 Package: aptosid-settings-cinnamon
 Depends: ${misc:Depends},
  aptosid-icons,
+ aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  fonts-noto
@@ -47,6 +60,8 @@ Description: provide default Cinnamon settings for aptosid
 
 Package: aptosid-settings-gnome
 Depends: ${misc:Depends},
+ aptosid-icons,
+ aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  aptosid-irc,
@@ -62,8 +77,9 @@ Description: provide default Gnome settings for aptosid
 
 Package: aptosid-settings-kde
 Depends: ${misc:Depends},
+ aptosid-icons,
  aptosid-art-kde,
- aptosid-art-wallpaper,
+ aptosid-art-wallpaper-nemesis,
  plasma-framework
 Recommends: xdg-browser-launcher,
  fonts-dejavu
@@ -78,7 +94,8 @@ Description: provide default KDE settings for aptosid
 
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
- aptosid-art-wallpaper
+ aptosid-icons,
+ aptosid-art-wallpaper-nemesis
 Architecture: all
 Description: provide default Xfce settings for aptosid
  Provides default settings for appearance and applications of the Xfce
