@@ -1,13 +1,10 @@
-aptosid-settings-desktop (20241215.2) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20241215.2) unstable; urgency=medium
 
   [ Kel Modderman ]
   * Remove QT_QPA_PLATFORMTHEME=gtk2 from env.d snippet as it is not
     relevant in wayland environments.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 15 Dec 2024 12:50:14 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Dec 2024 00:37:21 +0100
 
 aptosid-settings-desktop (20241215.1) unstable; urgency=medium
 
