@@ -18,13 +18,17 @@ Description: aptosid logo and icons
 Package: aptosid-settings-qt-gtk
 Depends: ${misc:Depends},
  qt5-gtk2-platformtheme,
- qt6-gtk-platformtheme
+ qt6-gtk-platformtheme,
+ libadwaitaqt1,
+ libadwaitaqt6-1
 Architecture: all
 Description: aptosid qt-gtk style configuration
- Sets the QT_QPA_PLATFORMTHEME=gtk2 environment variable to enable
- GTK styling of QT applications.
+ Sets the QT_QPA_PLATFORMTHEME=gtk2 and QT_WAYLAND_DECORATION=adwaita
+ environment variable to enable GTK/Gnome styling of QT applications.
  .
- Configuration file: /etc/profile.d/aptosid-settings-qt-gtk.sh
+ Configuration files:
+    /etc/Xsession.d/99aptosid-settings-qt-gtk
+    /etc/environment.d/aptosid-settings-qt-gtk.conf
 
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
