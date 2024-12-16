@@ -1,0 +1,34 @@
+#!/bin/sh
+
+WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
+WORKSPACE=$(sudo -u "${FLL_LIVE_USER}" dbus-run-session -- \
+	xfconf-query --channel xfce4-desktop --list | \
+	awk '/last-image$/{ print }')
+
+for ws in "${WORKSPACE}"; do
+	sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+		--channel xfce4-desktop --property "${ws}" --set "${WALLPAPER}"
+done
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-power-manager \
+	--property /xfce4-power-manager/show-tray-icon --type bool \
+	--set true
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-power-manager \
+	--property /xfce4-power-manager/presentation-mode --type bool \
+	--set true
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-power-manager \
+	--property /xfce4-power-manager/lock-screen-suspend-hibernate \
+	--type bool --set false
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-session \
+	--property /general/SaveOnExit --type bool --set false
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-session \
+	--property /general/AutoSave --type bool --set false
