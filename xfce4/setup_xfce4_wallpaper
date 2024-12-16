@@ -1,7 +1,5 @@
 #!/bin/sh
 
-[ "${XDG_CURRENT_DESKTOP}" = "XFCE" ] || exit 0
-
 WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
 
 [ -f "${WALLPAPER}" ] || exit 0
