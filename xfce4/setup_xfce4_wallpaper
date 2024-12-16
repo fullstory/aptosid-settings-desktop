@@ -1,0 +1,13 @@
+#!/bin/sh
+
+[ "${XDG_CURRENT_DESKTOP}" = "XFCE" ] || exit 0
+
+WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
+
+[ -f "${WALLPAPER}" ] || exit 0
+
+WORKSPACE=$(xfconf-query --channel xfce4-desktop --list | awk '/last-image$/{ print }')
+for ws in ${WORKSPACE}; do
+	xfconf-query --create --channel xfce4-desktop \
+		--property "${ws}" --type string --set "${WALLPAPER}"
+done

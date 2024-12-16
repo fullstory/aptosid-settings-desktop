@@ -1,18 +1,5 @@
 #!/bin/sh
 
-WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
-WORKSPACE=$(sudo -u "${FLL_LIVE_USER}" dbus-run-session -- \
-	xfconf-query --channel xfce4-desktop --list | \
-	awk '/last-image$/{ print }')
-
-if [ -n "${WORKSPACE}" ]; then
-	for ws in ${WORKSPACE}; do
-		sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
-			--create --channel xfce4-desktop \
-			--property "${ws}" --type string --set "${WALLPAPER}"
-	done
-fi
-
 sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xfce4-screensaver \
 	--property /lock/enabled --type bool \
@@ -45,3 +32,5 @@ sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xfce4-session \
 	--property /general/AutoSave --type bool --set false
+
+cp /usr/share/aptosid-settings-xfce/*.desktop /etc/xdg/autostart/

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=/usr/share/aptosid-settings-xfce/setup_xfce4_wallpaper
+Name=Set aptosid wallpaper
+NoDisplay=true
+StartupNotify=false
+Terminal=false
+Type=Application
