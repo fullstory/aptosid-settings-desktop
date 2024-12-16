@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Dirty rat hack
+sleep 0.5
+
 WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
 
 [ -f "${WALLPAPER}" ] || exit 0
