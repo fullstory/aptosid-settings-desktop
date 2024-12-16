@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241216.4) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Dec 2024 23:31:27 +0100
+
 aptosid-settings-desktop (20241216.3) unstable; urgency=medium
 
   * xfce4: defer wallpaper configuration to /etc/xdg/autostart script.
