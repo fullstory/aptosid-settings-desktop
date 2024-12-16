@@ -33,4 +33,12 @@ sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xfce4-session \
 	--property /general/AutoSave --type bool --set false
 
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xsettings \
+	--property /Net/IconThemeName --type string --set 'Mint-Y-Blue'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xsettings \
+	--property /Net/ThemeName --type string --set 'Arc-Dark'
+
 cp /usr/share/aptosid-settings-xfce/*.desktop /etc/xdg/autostart/
