@@ -25,11 +25,11 @@ event-sounds=false
 
 [org.cinnamon.desktop.background]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
-picture-options='scaled'
+picture-options='zoom'
 
 [org.cinnamon.desktop.screensaver]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
-picture-options='scaled'
+picture-options='zoom'
 
 [x.dm.slick-greeter]
 background='/usr/share/wallpapers/aptosid-nemesis-wide.png'

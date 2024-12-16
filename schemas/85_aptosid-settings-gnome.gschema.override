@@ -18,12 +18,12 @@ accent-color='orange'
 [org.gnome.desktop.background:GNOME]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
 picture-uri-dark='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
-picture-options='scaled'
+picture-options='zoom'
 
 [org.gnome.desktop.screensaver:GNOME]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
 picture-uri-dark='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
-picture-options='scaled'
+picture-options='zoom'
 
 [org.gnome.desktop.sound:GNOME]
 event-sounds=false

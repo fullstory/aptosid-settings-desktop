@@ -24,12 +24,14 @@ event-sounds=false
 [org.gnome.desktop.background:Budgie]
 show-desktop-icons=true
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-options='zoom'
 
 [x.dm.slick-greeter]
 background='/usr/share/wallpapers/aptosid-nemesis-wide.png'
 
 [org.gnome.desktop.screensaver:Budgie]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-options='zoom'
 
 [com.solus-project.budgie-panel]
 builtin-theme=false

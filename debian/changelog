@@ -1,9 +1,10 @@
 aptosid-settings-desktop (20241216.1) unstable; urgency=medium
 
   * gnome.gschema.override: set icon, gtk theme and accent color.
+  * Set picture-options='zoom' universally when setting background.
   * Reinstate QT_QPA_PLATFORMTHEME=gtk2.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 16 Dec 2024 16:54:56 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 16 Dec 2024 17:24:27 +1000
 
 aptosid-settings-desktop (20241215.2) unstable; urgency=medium
 
