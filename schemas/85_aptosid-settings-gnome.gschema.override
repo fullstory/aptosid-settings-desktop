@@ -11,6 +11,8 @@ monospace-font-name='Noto Mono Bold 11'
 font-name='Noto Sans 11'
 document-font-name='Noto Sans 11'
 color-scheme='prefer-dark'
+icon-theme='Mint-Y-Yaru'
+gtk-theme='Yaru-dark'
 
 [org.gnome.desktop.background:GNOME]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'

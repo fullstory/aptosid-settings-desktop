@@ -1,8 +1,8 @@
-aptosid-settings-desktop (20241215.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241216.1) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * gnome.gschema.override: set icon and gtk theme.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Dec 2024 00:37:35 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 16 Dec 2024 16:22:58 +1000
 
 aptosid-settings-desktop (20241215.2) unstable; urgency=medium
 
