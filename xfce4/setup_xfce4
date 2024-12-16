@@ -6,7 +6,7 @@ WORKSPACE=$(sudo -u "${FLL_LIVE_USER}" dbus-run-session -- \
 	awk '/last-image$/{ print }')
 
 if [ -n "${WORKSPACE}" ]; then
-	for ws in "${WORKSPACE}"; do
+	for ws in ${WORKSPACE}; do
 		sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 			--create --channel xfce4-desktop \
 			--property "${ws}" --type string --set "${WALLPAPER}"
