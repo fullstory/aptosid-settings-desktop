@@ -40,5 +40,3 @@ sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xsettings \
 	--property /Net/ThemeName --type string --set 'Arc-Dark'
-
-cp /usr/share/aptosid-settings-xfce/*.desktop /etc/xdg/autostart/
