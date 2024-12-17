@@ -99,6 +99,7 @@ Description: provide default KDE settings for aptosid
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-icons,
+ aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Architecture: all
 Description: provide default Xfce settings for aptosid
