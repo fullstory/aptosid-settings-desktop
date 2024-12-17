@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241217.3) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 17 Dec 2024 22:46:31 +0100
+
 aptosid-settings-desktop (20241217.2) unstable; urgency=medium
 
   * aptosid-settings-xfce: set font and cursor defaults.
