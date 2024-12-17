@@ -1,6 +1,10 @@
 aptosid-settings-desktop (20241216.4) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * setup_xfce4_wallpaper: wait for up to 10 seconds to set wallpaper.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Dec 2024 23:31:27 +0100
 
