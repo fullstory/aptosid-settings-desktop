@@ -40,3 +40,24 @@ sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xsettings \
 	--property /Net/ThemeName --type string --set 'Arc-Dark'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xsettings \
+	--property /Net/FontName --type string --set 'Noto Sans 11'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xsettings \
+	--property /Net/MonospaceFontName --type string --set 'Noto Mono 11'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xsettings \
+	--property /Gtk/CursorThemeName --type string --set 'Bibata-Modern-Ice'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-panel \
+	--property /plugins/plugin-12/digital-layout --type int --set 3
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-panel \
+	--property /plugins/plugin-12/digital-time-font --type string \
+	--set 'Noto Sans 11'
