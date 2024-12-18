@@ -1,20 +1,7 @@
 #!/bin/sh
 
-xfconf-query --create --channel xfce4-screensaver \
-	--property /lock/enabled --type bool --set false
-
-xfconf-query --create --channel xfce4-screensaver \
-	--property /lock/sleep-activation --type bool --set false
-
 xfconf-query --create --channel xfce4-power-manager \
 	--property /xfce4-power-manager/show-tray-icon --type bool --set true
-
-xfconf-query --create --channel xfce4-power-manager \
-	--property /xfce4-power-manager/presentation-mode --type bool --set true
-
-xfconf-query --create --channel xfce4-power-manager \
-	--property /xfce4-power-manager/lock-screen-suspend-hibernate --type bool \
-	--set false
 
 xfconf-query --create --channel xfce4-session \
 	--property /general/SaveOnExit --type bool --set false
