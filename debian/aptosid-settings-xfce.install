@@ -1,6 +1,7 @@
 schemas/*_aptosid-settings-xfce.gschema.override usr/share/glib-2.0/schemas
 xdg/xfce-mimeapps.list etc/xdg
-xfce4/* usr/share/aptosid-settings-xfce
+xfce4/aptosid-settings-xfce.desktop etc/xdg/autostart
+xfce4/aptosid_settings_xfce usr/share/aptosid-settings-xfce
 xfce4-desktop/* etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 
 
