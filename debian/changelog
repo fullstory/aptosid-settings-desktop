@@ -1,8 +1,9 @@
-aptosid-settings-desktop (20241217.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241218.1) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * setup_xfce4: configure xfwm4 theme, xfwm4 title font, and pin
+    xdg-browser-launcher to bottom panel.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 17 Dec 2024 22:46:31 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 18 Dec 2024 15:27:50 +1000
 
 aptosid-settings-desktop (20241217.2) unstable; urgency=medium
 

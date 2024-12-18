@@ -42,6 +42,14 @@ sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--property /Net/ThemeName --type string --set 'Arc-Dark'
 
 sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfwm4 \
+	--property /general/theme --type string --set 'Arc-Dark'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfwm4 \
+	--property /general/title_font --type string --set 'Noto Sans Bold 11'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xsettings \
 	--property /Net/FontName --type string --set 'Noto Sans 11'
 
@@ -61,3 +69,8 @@ sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
 	--create --channel xfce4-panel \
 	--property /plugins/plugin-12/digital-time-font --type string \
 	--set 'Noto Sans 11'
+
+sudo -u "${FLL_LIVE_USER}" dbus-run-session -- xfconf-query \
+	--create --channel xfce4-panel \
+	--property /plugins/plugin-19/items --type string \
+	--set /usr/share/applications/aptosid/xdg-browser-launcher.desktop -a
