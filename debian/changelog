@@ -1,9 +1,8 @@
 aptosid-settings-desktop (20241218.1) unstable; urgency=medium
 
-  * setup_xfce4: configure xfwm4 theme, xfwm4 title font, and pin
-    xfce-settings-manager + xdg-browser-launcher to bottom panel.
+  * setup_xfce4: configure xfwm4 theme and title font.
 
- -- Kel Modderman <kelvmod@gmail.com>  Wed, 18 Dec 2024 15:41:13 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 18 Dec 2024 15:48:24 +1000
 
 aptosid-settings-desktop (20241217.2) unstable; urgency=medium
 
