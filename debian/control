@@ -36,7 +36,10 @@ Depends: ${misc:Depends},
  aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
- fonts-noto
+ arc-theme,
+ bibata-cursor-theme,
+ fonts-noto,
+ mint-y-icons
 Architecture: all
 Description: provide default Budgie settings for aptosid
  Provides default settings for appearance and applications of the Budgie
@@ -52,7 +55,10 @@ Depends: ${misc:Depends},
  aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
- fonts-noto
+ arc-theme,
+ bibata-cursor-theme,
+ fonts-noto,
+ mint-y-icons
 Architecture: all
 Description: provide default Cinnamon settings for aptosid
  Provides default settings for appearance and applications of the Cinnamon
@@ -69,7 +75,10 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  aptosid-irc,
- fonts-noto
+ arc-theme,
+ bibata-cursor-theme,
+ fonts-noto,
+ mint-y-icons
 Architecture: all
 Description: provide default Gnome settings for aptosid
  Provides default settings for appearance and applications of the Gnome
@@ -101,6 +110,11 @@ Depends: ${misc:Depends},
  aptosid-icons,
  aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ arc-theme,
+ bibata-cursor-theme,
+ fonts-noto,
+ mint-y-icons
 Architecture: all
 Description: provide default Xfce settings for aptosid
  Provides default settings for appearance and applications of the Xfce

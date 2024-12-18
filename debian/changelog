@@ -2,6 +2,8 @@ aptosid-settings-desktop (20241218.2) UNRELEASED; urgency=medium
 
   * aptosid-settings-xfce: use /etx/xdg/autostart to trigger
     one-time configuration of XFCE on first login.
+  * Add Recommends on arc-theme, bibata-cursor-theme and fonts-noto
+    to all gtk-based desktops.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 18 Dec 2024 19:51:06 +1000
 
