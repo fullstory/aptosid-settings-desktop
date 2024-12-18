@@ -4,6 +4,7 @@ aptosid-settings-desktop (20241218.2) UNRELEASED; urgency=medium
     one-time configuration of XFCE on first login.
   * Add Recommends on arc-theme, bibata-cursor-theme and fonts-noto
     to all gtk-based desktops.
+  * Demote aptosid-settings-qt-gtk to Recommends.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 18 Dec 2024 19:51:06 +1000
 

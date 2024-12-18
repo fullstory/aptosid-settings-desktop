@@ -33,9 +33,9 @@ Description: aptosid qt-gtk style configuration
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
  aptosid-icons,
- aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
+ aptosid-settings-qt-gtk,
  arc-theme,
  bibata-cursor-theme,
  fonts-noto,
@@ -52,9 +52,9 @@ Description: provide default Budgie settings for aptosid
 Package: aptosid-settings-cinnamon
 Depends: ${misc:Depends},
  aptosid-icons,
- aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
+ aptosid-settings-qt-gtk,
  arc-theme,
  bibata-cursor-theme,
  fonts-noto,
@@ -71,10 +71,10 @@ Description: provide default Cinnamon settings for aptosid
 Package: aptosid-settings-gnome
 Depends: ${misc:Depends},
  aptosid-icons,
- aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  aptosid-irc,
+ aptosid-settings-qt-gtk,
  arc-theme,
  bibata-cursor-theme,
  fonts-noto,
@@ -108,10 +108,10 @@ Description: provide default KDE settings for aptosid
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-icons,
- aptosid-settings-qt-gtk,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  arc-theme,
+ aptosid-settings-qt-gtk,
  bibata-cursor-theme,
  fonts-noto,
  mint-y-icons
