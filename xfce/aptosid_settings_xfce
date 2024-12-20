@@ -48,7 +48,7 @@ if [ -n "${CLOCK}" ]; then
 
 	xfconf-query --create --channel xfce4-panel \
 		--property "${CLOCK}/digital-time-font" --type string \
-		--set 'Noto Sans 11'
+		--set 'Noto Sans Bold 11'
 fi
 
 LAUNCHERS=$(xfconf-query --channel xfce4-panel -lv | awk '$2 == "launcher" { print $1 }')
