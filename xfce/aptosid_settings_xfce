@@ -18,6 +18,9 @@ xfconf-query --create --channel xsettings \
 	--property /Net/ThemeName --type string --set 'Arc-Dark'
 
 xfconf-query --create --channel xfwm4 \
+	--property /Xfce/SyncThemes --type bool --set true
+
+xfconf-query --create --channel xfwm4 \
 	--property /general/theme --type string --set 'Arc-Dark'
 
 xfconf-query --create --channel xfwm4 \
