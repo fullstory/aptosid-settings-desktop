@@ -1,6 +1,14 @@
 aptosid-settings-desktop (20241218.3) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-xfce: 
+    - no longer install xfce4-desktop.xml to etc/skel
+    - lookup plugin id before setting clock and launcher configuration
+    - attempt to script setting of backdrop for 2 workspaces on default
+      screen
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 19 Dec 2024 04:57:35 +0100
 

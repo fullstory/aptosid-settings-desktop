@@ -1,0 +1,84 @@
+#!/bin/sh
+
+[ -x "$(which xfconf-query)" ] || exit 0
+
+xfconf-query --create --channel xfce4-power-manager \
+	--property /xfce4-power-manager/show-tray-icon --type bool --set true
+
+xfconf-query --create --channel xfce4-session \
+	--property /general/SaveOnExit --type bool --set false
+
+xfconf-query --create --channel xfce4-session \
+	--property /general/AutoSave --type bool --set false
+
+xfconf-query --create --channel xsettings \
+	--property /Net/IconThemeName --type string --set 'Mint-Y-Blue'
+
+xfconf-query --create --channel xsettings \
+	--property /Net/ThemeName --type string --set 'Arc-Dark'
+
+xfconf-query --create --channel xfwm4 \
+	--property /general/theme --type string --set 'Arc-Dark'
+
+xfconf-query --create --channel xfwm4 \
+	--property /general/title_font --type string --set 'Noto Sans Bold 11'
+
+xfconf-query --create --channel xsettings \
+	--property /Net/FontName --type string --set 'Noto Sans 11'
+
+xfconf-query --create --channel xsettings \
+	--property /Gtk/FontName --type string --set 'Noto Sans 11'
+
+xfconf-query --create --channel xsettings \
+	--property /Net/MonospaceFontName --type string --set 'Noto Mono 11'
+
+xfconf-query --create --channel xsettings \
+	--property /Gtk/MonospaceFontName --type string --set 'Noto Mono 11'
+
+xfconf-query --create --channel xsettings \
+	--property /Gtk/CursorThemeName --type string --set 'Bibata-Modern-Ice'
+
+CLOCK=$(xfconf-query --channel xfce4-panel -lv | awk '$2 == "clock" { print $1 }')
+if [ -n "${CLOCK}" ]; then
+	xfconf-query --create --channel xfce4-panel \
+		--property "${CLOCK}/digital-layout" --type int --set 3
+
+	xfconf-query --create --channel xfce4-panel \
+		--property "${CLOCK}/digital-time-font" --type string \
+		--set 'Noto Sans 11'
+fi
+
+LAUNCHERS=$(xfconf-query --channel xfce4-panel -lv | awk '$2 == "launcher" { print $1 }')
+LAUNCHER_INDEX=0
+for launcher in ${LAUNCHERS}; do
+	case ${LAUNCHER_INDEX} in
+		0)	;;
+		1)
+			xfconf-query --create --channel xfce4-panel \
+				--property ${launcher}/items --type string \
+				--set /usr/share/applications/xfce-settings-manager.desktop -a
+			;;
+		2)
+			xfconf-query --create --channel xfce4-panel \
+				--property ${launcher}/items --type string \
+				--set /usr/share/applications/aptosid/xdg-browser-launcher.desktop -a
+			;;
+		3)	;;
+	esac
+	LAUNCHER_INDEX=$((${LAUNCHER_INDEX}+1))
+done
+
+xfconf-query --create --channel xfwm4 \
+	--property /general/workspace_count --type int --set 2
+
+WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
+for ws in 0 1; do
+	xfconf-query --create --channel xfce4-desktop \
+		--property "/backdrop/screen0/monitorVirtual-1/workspace${ws}/last_image" \
+		--type string --set "${WALLPAPER}"
+done
+
+# override and disable /etc/xdg/autostart/aptosid-settings-xfce.desktop
+mkdir -p ~/.config/autostart
+cp /etc/xdg/autostart/aptosid-settings-xfce.desktop ~/.config/autostart
+echo 'Hidden=true' >> ~/.config/autostart/aptosid-settings-xfce.desktop
