@@ -51,6 +51,13 @@ if [ -n "${CLOCK}" ]; then
 		--set 'Noto Sans Bold 11'
 fi
 
+ACTIONS=$(xfconf-query --channel xfce4-panel -lv | awk '$2 == "actions" { print $1 }')
+if [ -n "${ACTIONS}" ]; then
+	xfconf-query --create --channel xfce4-panel \
+		--property "${ACTIONS}/items" --type string --set '+logout' \
+		--type string --set '+restart' --type string --set '+shutdown'
+fi
+
 LAUNCHERS=$(xfconf-query --channel xfce4-panel -lv | awk '$2 == "launcher" { print $1 }')
 LAUNCHER_INDEX=0
 for launcher in ${LAUNCHERS}; do
