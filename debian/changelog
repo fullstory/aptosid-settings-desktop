@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241220.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241221.1) unstable; urgency=medium
 
   * aptosid-settings-xfce: limit user actions list to logout dialog,
     restart and shutdown.
 
- -- Kel Modderman <kelvmod@gmail.com>  Sat, 21 Dec 2024 11:37:45 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 21 Dec 2024 11:38:00 +1000
 
 aptosid-settings-desktop (20241220.1) unstable; urgency=medium
 
