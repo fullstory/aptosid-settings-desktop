@@ -105,6 +105,21 @@ Description: provide default KDE settings for aptosid
  configurable by the local user and don't override already existing user
  profiles.
 
+Package: aptosid-settings-lxqt
+Depends: ${misc:Depends},
+ aptosid-icons,
+ aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ mint-y-icons
+Architecture: all
+Description: provide default LXQt settings for aptosid
+ Provides default settings for appearance and applications of the LXQt Desktop
+ Environment in aptosid.
+ .
+ This overrides LXQt's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-icons,
