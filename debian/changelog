@@ -3,8 +3,9 @@ aptosid-settings-desktop (20241223.6) unstable; urgency=medium
   * aptosid-settings-lxqt: return the path to compositor setting and
     workaround the first run dialog by other means in live boot.
   * aptosid-settings-lxqt: no need to set custom screenlock for x11.
+  * aptosid-settings-lxqt: set default theme to kvantum.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 23 Dec 2024 20:39:52 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 23 Dec 2024 21:22:57 +1000
 
 aptosid-settings-desktop (20241223.5) unstable; urgency=medium
 
