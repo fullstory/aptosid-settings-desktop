@@ -1,8 +1,9 @@
-aptosid-settings-desktop (20241223.10) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241223.10) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * lxqt: fix the icon set preconfiguration, s/Mint-Y-Gray/Mint-Y-Grey/.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 23 Dec 2024 21:13:48 +0100
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 24 Dec 2024 00:03:40 +0100
 
 aptosid-settings-desktop (20241223.9) unstable; urgency=medium
 
