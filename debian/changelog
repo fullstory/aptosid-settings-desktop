@@ -1,6 +1,11 @@
 aptosid-settings-desktop (20241223.11) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-lxqt: recommend breeze-cursor-theme and use it per
+    default.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 24 Dec 2024 00:04:53 +0100
 
