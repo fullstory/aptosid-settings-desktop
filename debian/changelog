@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241223.4) unstable; urgency=medium
+
+  * aptosid-settings-lxqt: set default terminal and desktop icons.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 23 Dec 2024 19:11:42 +1000
+
 aptosid-settings-desktop (20241223.3) unstable; urgency=medium
 
   * aptosid-settings-lxqt: set incon theme in lxqt/lxqt.conf.
