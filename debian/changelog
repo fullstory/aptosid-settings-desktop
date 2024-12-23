@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241223.6) unstable; urgency=medium
+
+  * aptosid-settings-lxqt: return the path to compositor setting and
+    workaround the first run dialog by other means in live boot.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 23 Dec 2024 20:19:42 +1000
+
 aptosid-settings-desktop (20241223.5) unstable; urgency=medium
 
   * aptosid-settings-lxqt: do not use path in compositor setting.
