@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241223.2) UNRELEASED; urgency=medium
+
+  * aptosid-settings-lxqt: use full path to compositor and lock_command
+    utilities.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 23 Dec 2024 17:00:17 +1000
+
 aptosid-settings-desktop (20241223.1) unstable; urgency=medium
 
   * Add aptosid-settings-lxqt binary package to provide LXQt defaults.
