@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241223.3) UNRELEASED; urgency=medium
+
+  * aptosid-settings-lxqt: set incon theme in lxqt/lxqt.conf.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 23 Dec 2024 18:09:30 +1000
+
 aptosid-settings-desktop (20241223.2) unstable; urgency=medium
 
   * aptosid-settings-lxqt: use full path to compositor and lock_command
