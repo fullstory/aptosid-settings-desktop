@@ -1,9 +1,12 @@
 aptosid-settings-desktop (20241224.2) UNRELEASED; urgency=medium
 
-  * aptosid-settings-lxqt: add QT_QPA_PLATFORMTHEME=lxqt to session
-    environment.
-  * aptosid-settings-lxqt: set arc-theme defaults for gtk style to match
-    lxqt.
+  * aptosid-settings-lxqt:
+    - set arc-theme defaults for gtk style to match lxqt
+    - set default font settings in session.conf
+    - set TERM=qterminal and SAL_USE_VCLPLUGIN=qt6 in environment for
+      qterminal and libreoffice respectively
+    - add lxqt-mimeapps.list with default associations
+    - add default tap-to-click settings for synaptics touchpads
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 10:29:26 +1000
 
