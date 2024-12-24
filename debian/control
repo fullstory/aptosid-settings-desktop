@@ -17,15 +17,12 @@ Description: aptosid logo and icons
 
 Package: aptosid-settings-qt-gtk
 Depends: ${misc:Depends},
- libadwaitaqt1,
- libadwaitaqt6-1
-Recommends: libreoffice-gtk4
+ qt5-style-kvantum
 Architecture: all
 Description: aptosid qt-gtk style configuration
- Sets the QT_QPA_PLATFORMTHEME=adwaita environment variable to enable
- GTK/Gnome styling of QT applications.
- .
- Also sets SAL_USE_VCLPLUGIN=gtk4 for libreoffice-gtk4.
+ Sets the QT_STYLE_OVERRIDE=kvantum environment variable to enable
+ Kvantum styling of QT applications so they fit into a Gtk-centric
+ desktop environment.
  .
  Configuration files:
     /etc/Xsession.d/99aptosid-settings-qt-gtk

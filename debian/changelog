@@ -1,3 +1,12 @@
+aptosid-settings-desktop (20241224.11) unstable; urgency=medium
+
+  * aptosid-settings-qt-gtk: the adwaita and gtk2 Qt platform themes
+    were lacklustre, use qt5-style-kvantum now and qt6-style-kvantum
+    when it becomes available.
+  * aptosid-settings-qt-gtk: do not activate gtk4 for libreoffice.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 18:43:47 +1000
+
 aptosid-settings-desktop (20241224.10) unstable; urgency=medium
 
   * aptosid-settings-xfce: transition many application defaults to parole
