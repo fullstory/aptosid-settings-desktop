@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241224.4) UNRELEASED; urgency=medium
+
+  * aptosid-settings-lxqt: add pcmanfm-qt to quicklaunch and remove
+    desktop icons.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 12:14:24 +1000
+
 aptosid-settings-desktop (20241224.3) unstable; urgency=medium
 
   * aptosid-settings-lxqt: set QT_QPA_PLATFORMTHEME=lxqt as per lxqt-
