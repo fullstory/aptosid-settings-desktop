@@ -19,8 +19,7 @@ Package: aptosid-settings-qt-gtk
 Depends: ${misc:Depends},
  libadwaitaqt1,
  libadwaitaqt6-1
-Recommends: libreoffice-gtk4,
-
+Recommends: libreoffice-gtk4
 Architecture: all
 Description: aptosid qt-gtk style configuration
  Sets the QT_QPA_PLATFORMTHEME=adwaita environment variable to enable
