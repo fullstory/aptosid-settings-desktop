@@ -1,11 +1,18 @@
-aptosid-settings-desktop (20241224.8) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241224.9) unstable; urgency=medium
+
+  * aptosid-settings-{xfce,cinnamon}: fix typo when migrating to
+    Adwaita-dark theme.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 15:09:07 +1000
+
+aptosid-settings-desktop (20241224.8) unstable; urgency=medium
 
   * aptosid-settings-qt-gtk: set Adawaita-dark theme for qt aplications,
     and SAL_USE_VCLPLUGIN=gtk4 for libreoffice-gtk4.
   * Swap Arc-Dark for Awdwaita-dark globally and depend on gnome-themes-
     extra instead.
 
- -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 14:34:46 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 15:08:22 +1000
 
 aptosid-settings-desktop (20241224.7) unstable; urgency=medium
 
