@@ -2,6 +2,8 @@ aptosid-settings-desktop (20241224.10) UNRELEASED; urgency=medium
 
   * aptosid-settings-xfce: transition many appication defaults to parole
     from rhythmbox.
+  * aptosid-settings-cinnamon: set some gnome default schema values
+    scoped to X-Cinnamon.
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 15:45:55 +1000
 

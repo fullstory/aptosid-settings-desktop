@@ -17,6 +17,15 @@ icon-theme='Mint-Y-Yaru'
 gtk-theme='Adwaita-dark'
 cursor-theme='Bibata-Modern-Ice'
 
+[org.gnome.desktop.interface:X-Cinnamon]
+monospace-font-name='Noto Mono Bold 11'
+font-name='Noto Sans 11'
+document-font-name='Noto Sans 11'
+color-scheme='prefer-dark'
+icon-theme='Mint-Y-Yaru'
+gtk-theme='Yaru-dark'
+accent-color='orange'
+
 [org.cinnamon.desktop.peripherals.touchpad]
 tap-to-click = true
 
