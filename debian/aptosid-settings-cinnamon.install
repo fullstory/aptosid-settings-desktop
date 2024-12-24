@@ -1,2 +1,2 @@
 schemas/*_aptosid-settings-cinnamon.gschema.override usr/share/glib-2.0/schemas
-xdg/cinnamon-mimeapps.list etc/xdg
+xdg/x-cinnamon-mimeapps.list etc/xdg
