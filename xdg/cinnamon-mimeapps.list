@@ -1,7 +1,0 @@
-[Added Associations]
-x-scheme-handler/http=aptosid-xdg-browser-launcher.desktop;
-x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop;
-
-[Default Applications]
-x-scheme-handler/http=aptosid-xdg-browser-launcher.desktop;
-x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop;

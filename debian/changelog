@@ -4,6 +4,7 @@ aptosid-settings-desktop (20241224.10) UNRELEASED; urgency=medium
     from rhythmbox.
   * aptosid-settings-cinnamon: set some gnome default schema values
     scoped to X-Cinnamon.
+  * aptosid-settings-cinnamon: flesh out mimeapps.list.
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 15:45:55 +1000
 
