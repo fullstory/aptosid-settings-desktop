@@ -110,7 +110,6 @@ Depends: ${misc:Depends},
  aptosid-icons,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
- breeze-icon-theme,
  mint-y-icons
 Architecture: all
 Description: provide default LXQt settings for aptosid

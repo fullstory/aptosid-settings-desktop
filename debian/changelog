@@ -1,14 +1,8 @@
-aptosid-settings-desktop (20241223.11) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241224.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
-  * aptosid-settings-lxqt: recommend breeze-cursor-theme and use it per
-    default.
   * aptosid-settings-lxqt: add default panel.conf.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 24 Dec 2024 00:04:53 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 10:04:04 +1000
 
 aptosid-settings-desktop (20241223.10) unstable; urgency=medium
 
