@@ -19,7 +19,8 @@ Package: aptosid-settings-qt-gtk
 Depends: ${misc:Depends},
  libadwaitaqt1,
  libadwaitaqt6-1
-Recommends: libreoffice-gtk4
+Recommends: libreoffice-gtk4,
+
 Architecture: all
 Description: aptosid qt-gtk style configuration
  Sets the QT_QPA_PLATFORMTHEME=adwaita environment variable to enable
@@ -37,7 +38,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  aptosid-settings-qt-gtk,
- arc-theme,
+ gnome-themes-extra,
  bibata-cursor-theme,
  fonts-noto,
  mint-y-icons
@@ -56,7 +57,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  aptosid-settings-qt-gtk,
- arc-theme,
+ gnome-themes-extra,
  bibata-cursor-theme,
  fonts-noto,
  mint-y-icons
@@ -76,7 +77,7 @@ Depends: ${misc:Depends},
 Recommends: xdg-browser-launcher,
  aptosid-irc,
  aptosid-settings-qt-gtk,
- arc-theme,
+ gnome-themes-extra,
  bibata-cursor-theme,
  fonts-noto,
  mint-y-icons
@@ -126,7 +127,7 @@ Depends: ${misc:Depends},
  aptosid-icons,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
- arc-theme,
+ gnome-themes-extra,
  aptosid-settings-qt-gtk,
  bibata-cursor-theme,
  fonts-noto,
