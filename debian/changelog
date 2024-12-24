@@ -1,9 +1,16 @@
-aptosid-settings-desktop (20241224.5) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241224.6) UNRELEASED; urgency=medium
+
+  * aptosid-settings-lxqt: drop arc-theme and attempt to adopt Adwaita-
+    dark.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 12:36:21 +1000
+
+aptosid-settings-desktop (20241224.5) unstable; urgency=medium
 
   * aptosid-settings-lxqt: add lxqt-config-appearance.conf and control
     gtk theme.
 
- -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 12:28:21 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 12:35:46 +1000
 
 aptosid-settings-desktop (20241224.4) unstable; urgency=medium
 
