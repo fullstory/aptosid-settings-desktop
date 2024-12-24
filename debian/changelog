@@ -1,11 +1,18 @@
-aptosid-settings-desktop (20241224.6) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241224.7) unstable; urgency=medium
+
+  * aptosid-settings-lxqt: add gtk2/3 theme override settings managed by
+    lxqt.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 14:19:01 +1000
+
+aptosid-settings-desktop (20241224.6) unstable; urgency=medium
 
   * aptosid-settings-lxqt: drop arc-theme and attempt to adopt Adwaita-
     dark.
   * aptosid-settings-xfce: update xdg/xfce-mimeapps.list with file
     associations.
 
- -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 12:36:21 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 14:17:22 +1000
 
 aptosid-settings-desktop (20241224.5) unstable; urgency=medium
 
