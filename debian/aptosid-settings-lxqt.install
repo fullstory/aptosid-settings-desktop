@@ -1,2 +1,3 @@
 lxqt/*.conf etc/xdg/lxqt
 pcmanfm-qt/* etc/xdg/pcmanfm-qt
+schemas/*_aptosid-settings-lxqt.gschema.override usr/share/glib-2.0/schemas
