@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241224.8) UNRELEASED; urgency=medium
+
+  * aptosid-settings-qt-gtk: set Adawaita-dark theme for qt aplications,
+    and SAL_USE_VCLPLUGIN=gtk4 for libreoffice-gtk4.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 24 Dec 2024 14:34:46 +1000
+
 aptosid-settings-desktop (20241224.7) unstable; urgency=medium
 
   * aptosid-settings-lxqt: add gtk2/3 theme override settings managed by
