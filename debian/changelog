@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241225.3) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 25 Dec 2024 05:00:14 +0100
+
 aptosid-settings-desktop (20241225.2) unstable; urgency=medium
 
   * aptosid-settings-lxqt: add filterClear=true to app menu settings.
