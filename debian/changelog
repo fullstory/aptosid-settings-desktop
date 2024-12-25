@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241225.2) UNRELEASED; urgency=medium
+
+  * aptosid-settings-lxqt: add filterClear=true to app menu settings.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 25 Dec 2024 12:46:13 +1000
+
 aptosid-settings-desktop (20241225.1) unstable; urgency=medium
 
   * aptosid-settings-budgie: remove icon task list from panel and tweak
