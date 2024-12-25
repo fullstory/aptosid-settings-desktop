@@ -1,6 +1,11 @@
-aptosid-settings-desktop (20241224.12) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241225.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-budgie: remove icon task list from panel and tweak
+    applet order.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 24 Dec 2024 19:19:36 +0100
 
