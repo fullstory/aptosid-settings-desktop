@@ -15,6 +15,26 @@ License: GPL-2.0
 Comment: Inspiration taken from getsolus/budgie-desktop-branding
  https://github.com/getsolus/budgie-desktop-branding/blob/master/budgie-mimeapps.list
 
+Files: xdg/xfce-mimeapps.list
+Copyright: 2013-2022, Sean Davis <bluesabre@ubuntu.com>
+           2013-2018, Simon Steinbeiß <simon@xfce.org>
+           2007-2011, Lionel Le Folgoc <mrpouit@ubuntu.com>
+           2007-2009, Cody A.W. Somerville <cody-somerville@ubuntu.com>
+           2006-2008, Gauvain Pocentek <gauvainpocentek@ubuntu.com>
+           2005-2008, Jani Monoses <jani@ubuntu.com>
+           2024, Kel Modderman <kelvmod@gmail.com>
+License: GPL-2+
+Comment: Inspiration taken from Xubuntu/xubuntu-default-settings:
+ https://github.com/Xubuntu/xubuntu-default-settings/blob/master/usr/share/xubuntu/applications/defaults.list
+
+Files: xdg/lxqt-mimeapps.list
+Copyright: Copyright 2009-2014 Julien Lavergne <gilir@ubuntu.com>
+           Copyright 2015-2023 Lubuntu Developers <lubuntu-devel@lists.ubuntu.com>
+           2024, Kel Modderman <kelvmod@gmail.com>
+License: GPL-2+
+Comment: Inspiration taken from lubuntu-team/lubuntu-default-settings:
+ https://github.com/lubuntu-team/lubuntu-default-settings/blob/ubuntu/plucky/src/etc/xdg/xdg-Lubuntu/mimeapps.list
+
 Files: *.svg
 Copyright: 2007-2010, Bernard Gray <bernard.gray@gmail.com>
 License: GPL-2+
