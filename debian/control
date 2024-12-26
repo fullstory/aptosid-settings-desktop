@@ -118,6 +118,25 @@ Description: provide default LXQt settings for aptosid
  configurable by the local user and don't override already existing user
  profiles.
 
+Package: aptosid-settings-mate
+Depends: ${misc:Depends},
+ aptosid-icons,
+ aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ gnome-themes-extra,
+ aptosid-settings-qt-gtk,
+ bibata-cursor-theme,
+ fonts-noto,
+ mint-y-icons
+Architecture: all
+Description: provide default MATE settings for aptosid
+ Provides default settings for appearance and applications of the MATE
+ desktop in aptosid.
+ .
+ This overrides MATE's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-icons,
