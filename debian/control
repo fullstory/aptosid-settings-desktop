@@ -125,7 +125,6 @@ Depends: ${misc:Depends},
 Recommends: xdg-browser-launcher,
  gnome-themes-extra,
  aptosid-settings-qt-gtk,
- bibata-cursor-theme,
  fonts-noto,
  mint-y-icons
 Architecture: all
