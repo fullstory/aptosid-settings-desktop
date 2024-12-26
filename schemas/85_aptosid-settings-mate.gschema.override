@@ -1,5 +1,7 @@
 [org.mate.background]
 picture-filename='/usr/share/wallpapers/aptosid-nemesis-wide.png'
+picture-options='zoom'
+draw-background=true
 
 [org.mate.caja.desktop]
 computer-icon-visible=false
@@ -7,6 +9,14 @@ home-icon-visible=false
 network-icon-visible=false
 trash-icon-visible=false
 volumes-visible=true
+
+[org.mate.interface]
+monospace-font-name='Noto Mono Bold 11'
+font-name='Noto Sans 11'
+document-font-name='Noto Sans 11'
+icon-theme='Mint-Y-Yaru'
+gtk-theme='BlackMATE'
+accent-color='orange'
 
 [org.mate.media-handling]
 automount=false
