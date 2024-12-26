@@ -1,13 +1,10 @@
-aptosid-settings-desktop (20241225.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241225.3) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-xfce: remove defunct lintian-overrides file, we do
     everything with xfconf now.
+  * aptosid-settings-mate: new MATE desktop environment settings.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 25 Dec 2024 05:00:14 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Thu, 26 Dec 2024 21:47:31 +1000
 
 aptosid-settings-desktop (20241225.2) unstable; urgency=medium
 

@@ -1,0 +1,4 @@
+schemas/*_aptosid-settings-mate.gschema.override usr/share/glib-2.0/schemas
+xdg/mate-mimeapps.list etc/xdg
+
+
