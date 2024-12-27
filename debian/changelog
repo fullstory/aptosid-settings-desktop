@@ -1,6 +1,6 @@
 aptosid-settings-desktop (20241226.1) unstable; urgency=medium
 
-  * Update mimeapps.list for all desktops and introduce gnome defualts
+  * Update mimeapps.list for all desktops and introduce gnome defaults
     for the first time.
 
  -- Kel Modderman <kelvmod@gmail.com>  Fri, 27 Dec 2024 15:09:00 +1000
