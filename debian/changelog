@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241226.3) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 27 Dec 2024 21:23:05 +0100
+
 aptosid-settings-desktop (20241226.2) unstable; urgency=medium
 
   * aptosid-settings-cinnamon: org.cinnamon.desktop.screensaver no
