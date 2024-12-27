@@ -1,2 +1,3 @@
 Xsession.d/99aptosid-settings-qt-gtk etc/X11/Xsession.d
 environment.d/aptosid-settings-qt-gtk.conf etc/environment.d
+xdg/Kvantum etc/xdg
