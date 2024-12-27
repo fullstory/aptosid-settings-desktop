@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241225.4) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241226.1) unstable; urgency=medium
 
   * Update mimeapps.list for all desktops and introduce gnome defualts
     for the first time.
 
- -- Kel Modderman <kelvmod@gmail.com>  Fri, 27 Dec 2024 15:06:37 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Fri, 27 Dec 2024 15:09:00 +1000
 
 aptosid-settings-desktop (20241225.3) unstable; urgency=medium
 
