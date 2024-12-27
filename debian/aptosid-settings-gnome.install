@@ -1,1 +1,2 @@
 schemas/*_aptosid-settings-gnome.gschema.override usr/share/glib-2.0/schemas
+xdg/gnome-mimeapps.list etc/xdg

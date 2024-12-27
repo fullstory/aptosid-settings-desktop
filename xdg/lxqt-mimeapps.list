@@ -1,4 +1,5 @@
 [Added Associations]
+x-scheme-handler/ftp=aptosid-xdg-browser-launcher.desktop
 x-scheme-handler/http=aptosid-xdg-browser-launcher.desktop
 x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop
 
@@ -198,6 +199,7 @@ x-content/blank-hddvd=org.kde.k3b.desktop
 x-content/blank-dvd=org.kde.k3b.desktop
 x-scheme-handler/apt=org.kde.discover.apt.urlhandler.desktop
 x-scheme-handler/magnet=transmission-qt.desktop
+x-scheme-handler/ftp=aptosid-xdg-browser-launcher.desktop
 x-scheme-handler/http=aptosid-xdg-browser-launcher.desktop
 x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop
 x-scheme-handler/vnd.libreoffice.cmis=libreoffice-startcenter.desktop

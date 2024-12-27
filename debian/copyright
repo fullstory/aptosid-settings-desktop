@@ -8,12 +8,14 @@ Copyright: 2024, Stefan Lippers-Hollmann <s.l-h@gmx.de>
            2024, Kel Modderman <kelvmod@gmail.com>
 License: GPL-2.0
 
-Files: xdg/budgie-mimeapps.list
+Files: xdg/budgie-mimeapps.list xdg/gnome-mimeapps.list xdg/xfce-mimeapps.list
 Copyright: 2016-2019, Solus Project
            2024, Kel Modderman <kelvmod@gmail.com>
 License: GPL-2.0
-Comment: Inspiration taken from getsolus/budgie-desktop-branding
+Comment: Inspiration taken from:
  https://github.com/getsolus/budgie-desktop-branding/blob/master/budgie-mimeapps.list
+ https://github.com/getsolus/gnome-desktop-branding/blob/master/gnome-mimeapps.list
+ https://github.com/getsolus/xfce4-desktop-branding/blob/master/xfce-mimeapps.list
 
 Files: xdg/xfce-mimeapps.list
 Copyright: 2013-2022, Sean Davis <bluesabre@ubuntu.com>
