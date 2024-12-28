@@ -104,7 +104,7 @@ Description: provide default KDE settings for aptosid
  profiles.
 
 Package: aptosid-settings-labwc
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis
 Architecture: all
 Description: provide default Labwc settings for aptosid
