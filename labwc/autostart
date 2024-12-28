@@ -1,7 +1,6 @@
 kanshi >/dev/null 2>&1 &
 waybar >/dev/null 2>&1 &
 swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
-lxqt-policykit-agent >/dev/null 2>&1 &
 nm-tray >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
 swayidle -w \

@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241228.2) unstable; urgency=medium
+
+  * aptosid-settings-labwc: drop lxqt-policykit-agent from autostart.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 28 Dec 2024 22:11:51 +1000
+
 aptosid-settings-desktop (20241228.1) unstable; urgency=medium
 
   * Add aptosid-settings-labwc to provide defaults for Labwc wayland
