@@ -8,5 +8,8 @@
     <keybind key="W-Tab"><action name="ToggleMaximize" /></keybind>
     <keybind key="W-s"><action name="Execute" command="foot" /></keybind>
     <keybind key="W-a"><action name="Execute" command="fuzzel" /></keybind>
+    <keybind key="W-w"><action name="Execute" command="wofi --show drun" /></keybind>
+    <keybind key="W-t"><action name="Execute" command="tofi-drun" /></keybind>
+    <keybind key="W-m"><action name="Execute" command="wmenu-run" /></keybind>
   </keyboard>
 </labwc_config>

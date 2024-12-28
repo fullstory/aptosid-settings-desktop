@@ -1,8 +1,13 @@
-aptosid-settings-desktop (20241228.4) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241229.1) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * aptosid-settings-labwc:
+    - give sfwbar a try
+    - bind a few drun menu tools to keybindings
+    - install a gtk schema and set default Adwait-dark theme
+  * aptosid-settings-lxqt:
+    - set preference for gtk color scheme
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 28 Dec 2024 22:06:06 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 29 Dec 2024 09:42:48 +1000
 
 aptosid-settings-desktop (20241228.3) unstable; urgency=medium
 
