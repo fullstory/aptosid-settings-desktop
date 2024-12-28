@@ -1,13 +1,9 @@
-aptosid-settings-desktop (20241226.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241228.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * Add aptosid-settings-labwc to provide defaults for Labwc wayland
     sessions.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 27 Dec 2024 21:23:05 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 28 Dec 2024 20:44:16 +1000
 
 aptosid-settings-desktop (20241226.2) unstable; urgency=medium
 
