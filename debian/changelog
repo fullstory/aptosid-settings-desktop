@@ -1,10 +1,10 @@
-aptosid-settings-desktop (20241228.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241228.3) unstable; urgency=medium
 
   * aptosid-settings-labwc:
     - drop waybar, use xfce4-panel
     - drop swaylock, use gtklock
 
- -- Kel Modderman <kelvmod@gmail.com>  Sun, 29 Dec 2024 01:22:24 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 29 Dec 2024 01:24:06 +1000
 
 aptosid-settings-desktop (20241228.2) unstable; urgency=medium
 
