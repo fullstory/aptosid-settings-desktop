@@ -103,6 +103,18 @@ Description: provide default KDE settings for aptosid
  configurable by the local user and don't override already existing user
  profiles.
 
+Package: aptosid-settings-labwc
+Depends: ${misc:Depends}
+ aptosid-art-wallpaper-nemesis
+Architecture: all
+Description: provide default Labwc settings for aptosid
+ Provides default settings for appearance and applications of the Lab Wayland
+ Compositor session in aptosid.
+ .
+ This overrides Labwc's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
 Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
  aptosid-icons,
