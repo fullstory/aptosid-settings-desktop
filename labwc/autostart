@@ -1,10 +1,10 @@
 kanshi >/dev/null 2>&1 &
-waybar >/dev/null 2>&1 &
+xfce4-panel >/dev/null 2>&1 &
 swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
-nm-tray >/dev/null 2>&1 &
+nm-applet >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
 swayidle -w \
-        timeout 300 'swaylock -f -c 000000' \
+        timeout 300 'gtklock' \
         timeout 600 'wlopm --off \*' \
         resume 'wlopm --on \*' \
-        before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+        before-sleep 'gtklock' >/dev/null 2>&1 &
