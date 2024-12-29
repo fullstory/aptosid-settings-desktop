@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241229.6) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.1) unstable; urgency=medium
 
   * aptosid-settings-labwc: drop cursor configuration.
   * aptosid-settings-labwc: provide gtklock config as argument.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 07:57:12 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 09:11:11 +1000
 
 aptosid-settings-desktop (20241229.5) unstable; urgency=medium
 
