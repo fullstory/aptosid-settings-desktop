@@ -115,6 +115,14 @@ Description: provide default Labwc settings for aptosid
  configurable by the local user and don't override already existing user
  profiles.
 
+Package: aptosid-openbox-theme-kaunas
+Depends: ${misc:Depends}
+Architecture: all
+Description: Kaunas theme for openbox
+ Openbox Window Manager theme that seeks for easy and modern window navigation
+ in today's OS design. Initially was designed for LXQT desktop environment to
+ make it more modern and comply with the modern OS design.
+
 Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
  aptosid-icons,

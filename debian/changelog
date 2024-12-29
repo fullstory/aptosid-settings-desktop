@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241229.3) unstable; urgency=medium
+
+  * Provide aptosid-openbox-theme-kaunas for Labwc and LXQt
+    environments.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 29 Dec 2024 14:13:19 +1000
+
 aptosid-settings-desktop (20241229.2) unstable; urgency=medium
 
   * aptosid-settings-labwc: bring in Kaunas openbox/labwc theme and

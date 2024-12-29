@@ -1,3 +1,2 @@
 labwc etc/xdg
 schemas/*_aptosid-settings-labwc.gschema.override usr/share/glib-2.0/schemas
-themes/Kaunas/openbox-3 usr/share/themes/Kaunas
