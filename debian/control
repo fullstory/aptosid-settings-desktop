@@ -105,8 +105,8 @@ Description: provide default KDE settings for aptosid
 
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-openbox-theme-kaunas
- aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
  fonts-font-awesome
 Architecture: all
