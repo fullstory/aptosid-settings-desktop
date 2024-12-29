@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241230.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.3) unstable; urgency=medium
 
   * aptosid-settings-labwc: disable wlr-input-inhibitor with gtklock -i
     option.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 09:52:45 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 09:53:22 +1000
 
 aptosid-settings-desktop (20241230.2) unstable; urgency=medium
 
