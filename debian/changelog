@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241229.6) UNRELEASED; urgency=medium
+
+  * aptosid-settings-labwc: drop cursor configuration.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 07:57:12 +1000
+
 aptosid-settings-desktop (20241229.5) unstable; urgency=medium
 
   * aptosid-settings-labwc: autostart mate-polkit.
