@@ -18,7 +18,7 @@ nm-applet >/dev/null 2>&1 &
 mate-polkit >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
 swayidle -w \
-        timeout 300 'gtklock' \
+        timeout 300 'gtklock -i' \
         timeout 600 'wlopm --off \*' \
         resume 'wlopm --on \*' \
-        before-sleep 'gtklock' >/dev/null 2>&1 &
+        before-sleep 'gtklock -i' >/dev/null 2>&1 &
