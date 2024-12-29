@@ -105,7 +105,10 @@ Description: provide default KDE settings for aptosid
 
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
+ aptosid-openbox-theme-kaunas
  aptosid-art-wallpaper-nemesis
+Recommends: xdg-browser-launcher,
+ fonts-font-awesome
 Architecture: all
 Description: provide default Labwc settings for aptosid
  Provides default settings for appearance and applications of the Lab Wayland
