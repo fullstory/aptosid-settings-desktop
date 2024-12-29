@@ -1,8 +1,8 @@
-aptosid-settings-desktop (20241229.5) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241229.5) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * aptosid-settings-labwc: autostart mate-polkit.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 29 Dec 2024 07:14:11 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 29 Dec 2024 16:59:30 +1000
 
 aptosid-settings-desktop (20241229.4) unstable; urgency=medium
 

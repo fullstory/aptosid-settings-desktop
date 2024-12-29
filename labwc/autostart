@@ -15,6 +15,7 @@ swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1
 }
 sfwbar >/dev/null 2>&1 &
 nm-applet >/dev/null 2>&1 &
+mate-polkit >/dev/null 2>&1 &
 mako >/dev/null 2>&1 &
 swayidle -w \
         timeout 300 'gtklock' \
