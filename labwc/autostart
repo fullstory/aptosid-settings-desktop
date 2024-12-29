@@ -1,3 +1,12 @@
+#!/bin/bash
+case "$XDG_CURRENT_DESKTOP" in
+    labwc:wlroots)
+        ;;
+    *)
+        exit 0
+        ;;
+esac
+
 kanshi >/dev/null 2>&1 &
 swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
 [[ ! -d ~/.config/sfwbar/ ]] && {

@@ -1,3 +1,12 @@
+aptosid-settings-desktop (20241229.4) UNRELEASED; urgency=medium
+
+  * 
+  * aptosid-settings-labwc: depend on openbox theme, only execute
+    autostart in Labwc session (not LXQt), and use x-terminal-emulator
+    instead of foot.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 29 Dec 2024 14:33:37 +1000
+
 aptosid-settings-desktop (20241229.3) unstable; urgency=medium
 
   * Provide aptosid-openbox-theme-kaunas for Labwc and LXQt

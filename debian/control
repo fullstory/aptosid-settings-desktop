@@ -131,7 +131,8 @@ Depends: ${misc:Depends},
  aptosid-icons,
  aptosid-art-wallpaper-nemesis
 Recommends: xdg-browser-launcher,
- mint-y-icons
+ mint-y-icons,
+ aptosid-settings-labwc
 Architecture: all
 Description: provide default LXQt settings for aptosid
  Provides default settings for appearance and applications of the LXQt Desktop
