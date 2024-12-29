@@ -11,5 +11,6 @@
     <keybind key="W-w"><action name="Execute" command="wofi --show drun" /></keybind>
     <keybind key="W-t"><action name="Execute" command="tofi-drun" /></keybind>
     <keybind key="W-m"><action name="Execute" command="wmenu-run" /></keybind>
+    <keybind key="W-l"><action name="Execute" command="wlogout" /></keybind>
   </keyboard>
 </labwc_config>
