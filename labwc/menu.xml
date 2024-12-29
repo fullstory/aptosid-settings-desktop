@@ -65,7 +65,7 @@
     <action name="Execute" command="wofi --show drun" />
   </item>
   <item label="Exit">
-    <action name="Exit" command="wlogout" />
+    <action name="Execute" command="wlogout" />
   </item>
 </menu>
 
