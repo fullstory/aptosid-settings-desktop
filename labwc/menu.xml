@@ -61,11 +61,11 @@
   <item label="Terminal">
     <action name="Execute" command="foot" />
   </item>
-  <item label="Exit">
-    <action name="Exit" />
+  <item label="Applications">
+    <action name="Execute" command="wofi --show drun" />
   </item>
-  <item label="Poweroff">
-    <action name="Execute" command="systemctl -i poweroff" />
+  <item label="Exit">
+    <action name="Exit" command="wlogout" />
   </item>
 </menu>
 

@@ -1,4 +1,7 @@
 <labwc_config>
+  <theme>
+    <name>Kaunas</name>
+  </theme>
   <desktops number="2" />
   <keyboard>
     <keybind key="W-1"><action name="GoToDesktop" to="1" /></keybind>
@@ -6,11 +9,9 @@
     <keybind key="W-q"><action name="Close" /></keybind>
     <keybind key="A-Tab"><action name="NextWindow" /></keybind>
     <keybind key="W-Tab"><action name="ToggleMaximize" /></keybind>
-    <keybind key="W-s"><action name="Execute" command="foot" /></keybind>
-    <keybind key="W-a"><action name="Execute" command="fuzzel" /></keybind>
-    <keybind key="W-w"><action name="Execute" command="wofi --show drun" /></keybind>
-    <keybind key="W-t"><action name="Execute" command="tofi-drun" /></keybind>
-    <keybind key="W-m"><action name="Execute" command="wmenu-run" /></keybind>
+    <keybind key="W-a"><action name="Execute" command="wofi --show drun" /></keybind>
     <keybind key="W-l"><action name="Execute" command="wlogout" /></keybind>
+    <keybind key="W-t"><action name="Execute" command="foot" /></keybind>
+    <keybind key="W-w"><action name="Execute" command="x-www-browwer" /></keybind>
   </keyboard>
 </labwc_config>
