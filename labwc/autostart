@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+# Restrict execution to standalone labwc session
 case "$XDG_CURRENT_DESKTOP" in
     labwc:wlroots)
         ;;
@@ -7,22 +9,38 @@ case "$XDG_CURRENT_DESKTOP" in
         ;;
 esac
 
-kanshi >/dev/null 2>&1 &
-swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
-[[ ! -d ~/.config/sfwbar/ ]] && {
+# Display configuration: https://sr.ht/~emersion/kanshi/
+[ -x /usr/bin/kanshi ] && kanshi >/dev/null 2>&1 &
+
+# Set background: https://sr.ht/~emersion/kanshi/
+[ -x /usr/bin/swaybg ] && swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
+
+# Taskbar: https://github.com/LBCrion/sfwbar
+if [ -x /usr/bin/sfwbar ] && [ ! -d ~/.config/sfwbar/ ]; then
     mkdir -p ~/.config/sfwbar/
     cp /usr/share/sfwbar/w10.config ~/.config/sfwbar/sfwbar.config
-}
-sfwbar >/dev/null 2>&1 &
-mate-polkit >/dev/null 2>&1 &
-mako >/dev/null 2>&1 &
-swayidle -w \
+fi
+[ -x /usr/bin/sfwbar ] && sfwbar >/dev/null 2>&1 &
+
+# Notification daemon: https://github.com/emersion/mako
+[ -x /usr/bin/mako ] && mako >/dev/null 2>&1 &
+
+# Setup screenlock (gtklock) and turn screen off (wlopm)
+[ -x /usr/bin/swayidle ] && swayidle -w \
         timeout 300 'gtklock -i' \
         timeout 600 'wlopm --off \*' \
         resume 'wlopm --on \*' \
         before-sleep 'gtklock -i' >/dev/null 2>&1 &
 
-/usr/libexec/xdg-document-portal --replace &
-/usr/libexec/xdg-desktop-portal --replace &
-/usr/libexec/xdg-desktop-portal-wlr --replace &
-/usr/libexec/xdg-desktop-portal-gtk --replace &
+# Start a PolicyKit agent
+if [ -x /usr/bin/mate-polkit ]; then
+    mate-polkit >/dev/null 2>&1 &
+elif [ -x /usr/bin/lxqt-polkit ]; then
+    lxqt-polkit >/dev/null 2>&1 &
+fi
+
+# Start XDG portals
+[ -x /usr/libexec/xdg-document-portal ]    && /usr/libexec/xdg-document-portal --replace &
+[ -x /usr/libexec/xdg-desktop-portal ]     && /usr/libexec/xdg-desktop-portal --replace &
+[ -x /usr/libexec/xdg-desktop-portal-wlr ] && /usr/libexec/xdg-desktop-portal-wlr --replace &
+[ -x /usr/libexec/xdg-desktop-portal-gtk ] && /usr/libexec/xdg-desktop-portal-gtk --replace &
