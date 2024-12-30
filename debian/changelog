@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241230.19) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Dec 2024 20:46:41 +0100
+
 aptosid-settings-desktop (20241230.18) unstable; urgency=medium
 
   * Remove invalid Added associaten section from mimeapps lists.
