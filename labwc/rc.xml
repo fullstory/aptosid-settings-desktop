@@ -1,8 +1,4 @@
 <labwc_config>
-  <core>
-    <gap>10</gap>
-  </core>
-
   <focus>
     <followMouse>yes</followMouse>
     <raiseOnFocus>no</raiseOnFocus>
@@ -12,7 +8,7 @@
     <name>Kaunas</name>
     <font>
       <name>sans</name>
-      <size>10</size>
+      <size>11</size>
     </font>
     <dropShadows>yes</dropShadows>
   </theme>
