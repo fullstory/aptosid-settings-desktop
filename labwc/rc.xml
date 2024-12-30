@@ -50,6 +50,12 @@
       </action>
     </keybind>
 
+    <keybind key="XF86MonBrightnessUp"><action name="Execute" command="brightnessctl set 5%+" /></keybind>
+    <keybind key="XF86MonBrightnessDown"><action name="Execute" command="brightnessctl set 5%-" /></keybind>
+
+    <keybind key="XF86KbdBrightnessUp"><action name="Execute" command="brightnessctl -d *::kbd_backlight set 33%+" /></keybind>
+    <keybind key="XF86KbdBrightnessDown"><action name="Execute" command="brightnessctl -d *::kbd_backlight set 33%-" /></keybind>
+
     <keybind key="XF86_AudioLowerVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%-" /></keybind>
     <keybind key="XF86_AudioRaiseVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%+" /></keybind>
     <keybind key="XF86_AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle " /></keybind>
