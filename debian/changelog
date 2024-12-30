@@ -1,8 +1,8 @@
-aptosid-settings-desktop (20241230.16) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.16) unstable; urgency=medium
 
   * aptosid-settings-labwc: provide mimeapps.list of labwc sessions.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 20:20:14 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 20:20:44 +1000
 
 aptosid-settings-desktop (20241230.15) unstable; urgency=medium
 
