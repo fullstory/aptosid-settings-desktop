@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20241230.18) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.18) unstable; urgency=medium
 
   * Remove invalid Added associaten section from mimeapps lists.
 
