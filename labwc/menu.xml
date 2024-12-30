@@ -62,7 +62,7 @@
     <action name="Execute" command="x-terminal-emulator" />
   </item>
   <item label="Applications">
-    <action name="Execute" command="wofi --show drun" />
+    <action name="Execute" command="wofi -I --show drun" />
   </item>
   <item label="Exit">
     <action name="Execute" command="wlogout" />
