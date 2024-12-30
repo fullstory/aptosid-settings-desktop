@@ -6,13 +6,32 @@
   <keyboard>
     <keybind key="W-1"><action name="GoToDesktop" to="1" /></keybind>
     <keybind key="W-2"><action name="GoToDesktop" to="2" /></keybind>
+    <keybind key="W-S-1"><action name="SendToDesktop" to="1" /></keybind>
+    <keybind key="W-S-2"><action name="SendToDesktop" to="2" /></keybind>
+
     <keybind key="W-q"><action name="Close" /></keybind>
     <keybind key="A-Tab"><action name="NextWindow" /></keybind>
     <keybind key="W-Tab"><action name="ToggleMaximize" /></keybind>
+
     <keybind key="W-a"><action name="Execute" command="wofi -I --show drun" /></keybind>
     <keybind key="W-l"><action name="Execute" command="wlogout" /></keybind>
     <keybind key="W-n"><action name="Execute" command="nm-connection-editor" /></keybind>
     <keybind key="W-t"><action name="Execute" command="x-terminal-emulator" /></keybind>
     <keybind key="W-w"><action name="Execute" command="x-www-browwer" /></keybind>
+
+    <keybind key="Print">
+      <action name="Execute">
+        <command>sh -c 'mkdir -p ~/screenshots;grim -t jpeg ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg'</command>
+      </action>
+    </keybind>
+    <keybind key="W-Print">
+      <action name="Execute">
+        <command>sh -c 'mkdir -p ~/screenshots;grim -t jpeg -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg'</command>
+      </action>
+    </keybind>
+
+    <keybind key="XF86_AudioLowerVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%-" /></keybind>
+    <keybind key="XF86_AudioRaiseVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%+" /></keybind>
+    <keybind key="XF86_AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle " /></keybind>
   </keyboard>
 </labwc_config>
