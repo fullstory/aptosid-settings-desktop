@@ -1,6 +1,11 @@
 aptosid-settings-desktop (20241230.11) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-labwc: do not set QT_QPA_PLATFORM=wayland in
+    environment.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Dec 2024 06:54:12 +0100
 
