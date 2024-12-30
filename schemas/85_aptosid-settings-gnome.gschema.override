@@ -12,7 +12,7 @@ font-name='Noto Sans 11'
 document-font-name='Noto Sans 11'
 color-scheme='prefer-dark'
 icon-theme='Mint-Y-Yaru'
-gtk-theme='Yaru-dark'
+gtk-theme='Adwaita-dark'
 accent-color='orange'
 
 [org.gnome.desktop.background:GNOME]

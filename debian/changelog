@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241230.4) UNRELEASED; urgency=medium
+
+  * Homogenize org.gnome.desktop.interface settings in schema override
+    files for labwc, lxqt and fix a typo in gnome.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 10:49:10 +1000
+
 aptosid-settings-desktop (20241230.3) unstable; urgency=medium
 
   * aptosid-settings-labwc: disable wlr-input-inhibitor with gtklock -i
