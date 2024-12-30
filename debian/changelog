@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241230.14) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.14) unstable; urgency=medium
 
   * aptosid-settings-labwc: set grim to output png.
   * aptosid-settings-labwc: clean up autostart script.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 18:22:32 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 19:52:08 +1000
 
 aptosid-settings-desktop (20241230.13) unstable; urgency=medium
 
