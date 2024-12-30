@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20241230.10) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.10) unstable; urgency=medium
 
   * aptosid-settings-{labwc,lxqt}: revert: disable Qt6 window
     decorations.
