@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241230.17) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.17) unstable; urgency=medium
 
   * aptosid-settings-labwc: set core gap to 0 and increase default font
     size to 11.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 21:08:09 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 21:49:41 +1000
 
 aptosid-settings-desktop (20241230.16) unstable; urgency=medium
 
