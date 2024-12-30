@@ -11,6 +11,7 @@
     <keybind key="W-Tab"><action name="ToggleMaximize" /></keybind>
     <keybind key="W-a"><action name="Execute" command="wofi -I --show drun" /></keybind>
     <keybind key="W-l"><action name="Execute" command="wlogout" /></keybind>
+    <keybind key="W-n"><action name="Execute" command="nm-connection-editor" /></keybind>
     <keybind key="W-t"><action name="Execute" command="x-terminal-emulator" /></keybind>
     <keybind key="W-w"><action name="Execute" command="x-www-browwer" /></keybind>
   </keyboard>

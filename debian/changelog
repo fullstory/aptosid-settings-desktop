@@ -2,6 +2,8 @@ aptosid-settings-desktop (20241230.6) UNRELEASED; urgency=medium
 
   * aptosid-settings-labwc: touch and own conffile
     /etc/xdg/labwc/keyboard.
+  * aptosid-settings-labwc: do not start nm-applet and provide shortcuts
+    to nm-connection-editor instead.
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 11:13:16 +1000
 
