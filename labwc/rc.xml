@@ -41,12 +41,12 @@
 
     <keybind key="Print">
       <action name="Execute">
-        <command>sh -c 'mkdir -p ~/screenshots;grim -t jpeg ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg'</command>
+        <command>sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'</command>
       </action>
     </keybind>
     <keybind key="W-Print">
       <action name="Execute">
-        <command>sh -c 'mkdir -p ~/screenshots;grim -t jpeg -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).jpg'</command>
+        <command>sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'</command>
       </action>
     </keybind>
 
