@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241230.13) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.13) unstable; urgency=medium
 
   * aptosid-settings-labwc: update labwc config with new features and
     tweaks.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 17:38:50 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 17:39:33 +1000
 
 aptosid-settings-desktop (20241230.12) unstable; urgency=medium
 
