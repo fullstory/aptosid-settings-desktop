@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241230.15) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241230.15) unstable; urgency=medium
 
   * aptosid-settings-labwc: add support for monitor/keyboard brightness
     keyboard shortcuts.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 20:07:16 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 20:07:29 +1000
 
 aptosid-settings-desktop (20241230.14) unstable; urgency=medium
 
