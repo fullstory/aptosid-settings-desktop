@@ -1,8 +1,28 @@
 <labwc_config>
+  <core>
+    <gap>10</gap>
+  </core>
+
+  <focus>
+    <followMouse>yes</followMouse>
+    <raiseOnFocus>no</raiseOnFocus>
+  </focus>
+
   <theme>
     <name>Kaunas</name>
+    <font>
+      <name>sans</name>
+      <size>10</size>
+    </font>
+    <dropShadows>yes</dropShadows>
   </theme>
+
+  <placement>
+    <policy>automatic</policy>
+  </placement>
+
   <desktops number="2" />
+
   <keyboard>
     <keybind key="W-1"><action name="GoToDesktop" to="1" /></keybind>
     <keybind key="W-2"><action name="GoToDesktop" to="2" /></keybind>
