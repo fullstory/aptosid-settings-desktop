@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241230.18) UNRELEASED; urgency=medium
+
+  * Remove invalid Added associaten section from mimeapps lists.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 22:40:34 +1000
+
 aptosid-settings-desktop (20241230.17) unstable; urgency=medium
 
   * aptosid-settings-labwc: set core gap to 0 and increase default font

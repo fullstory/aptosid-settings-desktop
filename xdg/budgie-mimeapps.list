@@ -1,8 +1,3 @@
-[Added Associations]
-x-scheme-handler/ftp=aptosid-xdg-browser-launcher.desktop
-x-scheme-handler/http=aptosid-xdg-browser-launcher.desktop
-x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop
-
 [Default Applications]
 
 # Archive Manager (File Roller | Engrampa)
