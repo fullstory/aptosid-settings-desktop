@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241230.7) unstable; urgency=medium
+
+  * aptosid-settings-labwc: autostart xdg-document-portal and xdg-
+    desktop-portals.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 30 Dec 2024 12:30:40 +1000
+
 aptosid-settings-desktop (20241230.6) unstable; urgency=medium
 
   * aptosid-settings-labwc: touch and own conffile

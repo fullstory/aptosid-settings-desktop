@@ -21,3 +21,8 @@ swayidle -w \
         timeout 600 'wlopm --off \*' \
         resume 'wlopm --on \*' \
         before-sleep 'gtklock -i' >/dev/null 2>&1 &
+
+/usr/libexec/xdg-document-portal --replace &
+/usr/libexec/xdg-desktop-portal --replace &
+/usr/libexec/xdg-desktop-portal-wlr --replace &
+/usr/libexec/xdg-desktop-portal-gtk --replace &
