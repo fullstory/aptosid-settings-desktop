@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241231.10) UNRELEASED; urgency=medium
+
+  * aptosid-settings-hyprland: start blueman-applet and tweak waybar
+    config.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 00:40:18 +1000
+
 aptosid-settings-desktop (20241231.9) unstable; urgency=medium
 
   * aptosid-settings-hyprland: disable floating kitty for now, tweak

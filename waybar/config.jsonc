@@ -12,10 +12,10 @@
     ],
     "modules-center": [
         "keyboard-state",
-        "battery"
+        "battery",
+        "wireplumber"
     ],
     "modules-right": [
-        "wireplumber",
         "tray",
         "clock"
     ],
