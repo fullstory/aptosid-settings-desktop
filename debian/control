@@ -142,6 +142,25 @@ Description: Kaunas theme for openbox
  in today's OS design. Initially was designed for LXQT desktop environment to
  make it more modern and comply with the modern OS design.
 
+Package: aptosid-settings-lxde
+Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
+ aptosid-icons,
+ aptosid-openbox-theme-kaunas,
+ aptosid-settings-common
+Recommends: aptosid-settings-qt-gtk,
+ gnome-themes-extra,
+ mint-y-icons,
+ xdg-browser-launcher
+Architecture: all
+Description: provide default LXDE settings for aptosid
+ Provides default settings for appearance and applications of the LXDE Desktop
+ Environment in aptosid.
+ .
+ This overrides LXDE's defaults used for new users, all settings remain
+ configurable by the local user and don't override already existing user
+ profiles.
+
 Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,

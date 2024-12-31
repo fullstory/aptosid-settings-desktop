@@ -1,0 +1,54 @@
+Global {
+  edge=bottom
+  monitor=0
+  height=26
+  transparent=0
+  background=0
+  tintcolor=#000000
+  alpha=255
+}
+Plugin {
+  type=menu
+  Config {
+    system {
+    }
+    separator {
+    }
+    item {
+      command=run
+      image=window-new
+    }
+    separator {
+    }
+    item {
+      command=logout
+      image=gnome-logout
+    }
+    image=/usr/share/icons/hicolor/scalable/apps/aptosid-logo.svg
+  }
+}
+Plugin {
+  type=taskbar
+  Config {
+  }
+}
+Plugin {
+  type=volume
+  Config {
+  }
+}
+Plugin {
+  type=tray
+  Config {
+  }
+}
+Plugin {
+  type=dclock
+  Config {
+    ClockFmt=%R
+    TooltipFmt=%A %x
+    BoldFont=0
+    IconOnly=0
+    CenterText=0
+  }
+}
