@@ -1,7 +1,4 @@
-aptosid-settings-desktop (20241231.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20241231.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * Provide aptosid-settings-common initially to register additional
@@ -12,7 +9,7 @@ aptosid-settings-desktop (20241231.1) UNRELEASED; urgency=medium
   * aptosid-settings-labwc: only launch swayidle in non live/fll
     environemnts.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Dec 2024 20:46:41 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 31 Dec 2024 02:17:35 +0100
 
 aptosid-settings-desktop (20241230.18) unstable; urgency=medium
 
