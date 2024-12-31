@@ -25,12 +25,15 @@ fi
 # Notification daemon: https://github.com/emersion/mako
 [ -x /usr/bin/mako ] && mako >/dev/null 2>&1 &
 
-# Setup screenlock (gtklock) and turn screen off (wlopm)
-[ -x /usr/bin/swayidle ] && swayidle -w \
-        timeout 300 'gtklock -i' \
-        timeout 600 'wlopm --off \*' \
-        resume 'wlopm --on \*' \
-        before-sleep 'gtklock -i' >/dev/null 2>&1 &
+# Only launch swayidle in non live/fll environemnts
+if [ ! -e /etc/default/distro ]; then
+    # Setup screenlock (gtklock) and turn screen off (wlopm)
+    [ -x /usr/bin/swayidle ] && swayidle -w \
+            timeout 300 'gtklock -i' \
+            timeout 600 'wlopm --off \*' \
+            resume 'wlopm --on \*' \
+            before-sleep 'gtklock -i' >/dev/null 2>&1 &
+fi
 
 # Start a PolicyKit agent
 if [ -x /usr/bin/mate-polkit ]; then
