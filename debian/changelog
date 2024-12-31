@@ -7,6 +7,7 @@ aptosid-settings-desktop (20241231.1) UNRELEASED; urgency=medium
   * Provide aptosid-settings-common initially to register additional
     file associations via /etc/mimeapps.list, and adjust package
     dependencies accordingly.
+  * aptosid-settings-desktop: resturcture conffiles internally.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Dec 2024 20:46:41 +0100
 
