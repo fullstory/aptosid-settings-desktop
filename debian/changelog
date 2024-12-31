@@ -1,6 +1,12 @@
 aptosid-settings-desktop (20241230.19) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * Provide aptosid-settings-common initially to register additional
+    file associations via /etc/mimeapps.list, and adjust package
+    dependencies accordingly.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 30 Dec 2024 20:46:41 +0100
 

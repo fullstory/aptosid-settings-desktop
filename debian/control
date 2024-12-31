@@ -15,6 +15,13 @@ Architecture: all
 Description: aptosid logo and icons
  Provides the aptosid logo and icons for use in desktop settings.
 
+Package: aptosid-settings-common
+Depends: ${misc:Depends}
+Architecture: all
+Description: provide common default desktop settings for aptosid
+ Provides default settings for appearance and applications of all
+ desktop environments in aptosid.
+
 Package: aptosid-settings-qt-gtk
 Depends: ${misc:Depends},
  qt5-style-kvantum
@@ -30,8 +37,9 @@ Description: aptosid qt-gtk style configuration
 
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-icons,
- aptosid-art-wallpaper-nemesis
+ aptosid-settings-common
 Recommends: xdg-browser-launcher,
  aptosid-settings-qt-gtk,
  gnome-themes-extra,
@@ -49,14 +57,15 @@ Description: provide default Budgie settings for aptosid
 
 Package: aptosid-settings-cinnamon
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-icons,
- aptosid-art-wallpaper-nemesis
-Recommends: xdg-browser-launcher,
- aptosid-settings-qt-gtk,
- gnome-themes-extra,
+ aptosid-settings-common
+Recommends: aptosid-settings-qt-gtk,
  bibata-cursor-theme,
  fonts-noto,
- mint-y-icons
+ gnome-themes-extra,
+ mint-y-icons,
+ xdg-browser-launcher
 Architecture: all
 Description: provide default Cinnamon settings for aptosid
  Provides default settings for appearance and applications of the Cinnamon
@@ -68,8 +77,9 @@ Description: provide default Cinnamon settings for aptosid
 
 Package: aptosid-settings-gnome
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-icons,
- aptosid-art-wallpaper-nemesis
+ aptosid-settings-common
 Recommends: xdg-browser-launcher,
  aptosid-irc,
  aptosid-settings-qt-gtk,
@@ -88,12 +98,13 @@ Description: provide default Gnome settings for aptosid
 
 Package: aptosid-settings-kde
 Depends: ${misc:Depends},
- aptosid-icons,
  aptosid-art-kde,
  aptosid-art-wallpaper-nemesis,
+ aptosid-icons,
+ aptosid-settings-common,
  plasma-framework
 Recommends: xdg-browser-launcher,
- fonts-dejavu
+ fonts-noto
 Architecture: all
 Description: provide default KDE settings for aptosid
  Provides default settings for appearance and applications of the K Desktop
@@ -106,9 +117,14 @@ Description: provide default KDE settings for aptosid
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-openbox-theme-kaunas
-Recommends: xdg-browser-launcher,
- fonts-font-awesome
+ aptosid-openbox-theme-kaunas,
+ aptosid-settings-common
+Recommends: aptosid-settings-qt-gtk,
+ fonts-font-awesome,
+ fonts-noto,
+ gnome-themes-extra,
+ mint-y-icons,
+ xdg-browser-launcher
 Architecture: all
 Description: provide default Labwc settings for aptosid
  Provides default settings for appearance and applications of the Lab Wayland
@@ -128,11 +144,12 @@ Description: Kaunas theme for openbox
 
 Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-icons,
- aptosid-art-wallpaper-nemesis
-Recommends: xdg-browser-launcher,
+ aptosid-settings-common
+Recommends: aptosid-settings-qt-gtk,
  mint-y-icons,
- aptosid-settings-labwc
+ xdg-browser-launcher
 Architecture: all
 Description: provide default LXQt settings for aptosid
  Provides default settings for appearance and applications of the LXQt Desktop
@@ -144,13 +161,14 @@ Description: provide default LXQt settings for aptosid
 
 Package: aptosid-settings-mate
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-icons,
- aptosid-art-wallpaper-nemesis
-Recommends: xdg-browser-launcher,
- gnome-themes-extra,
- aptosid-settings-qt-gtk,
+ aptosid-settings-common
+Recommends: aptosid-settings-qt-gtk,
  fonts-noto,
- mint-y-icons
+ gnome-themes-extra,
+ mint-y-icons,
+ xdg-browser-launcher
 Architecture: all
 Description: provide default MATE settings for aptosid
  Provides default settings for appearance and applications of the MATE
@@ -162,14 +180,15 @@ Description: provide default MATE settings for aptosid
 
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
+ aptosid-art-wallpaper-nemesis,
  aptosid-icons,
- aptosid-art-wallpaper-nemesis
-Recommends: xdg-browser-launcher,
- gnome-themes-extra,
- aptosid-settings-qt-gtk,
+ aptosid-settings-common
+Recommends: aptosid-settings-qt-gtk,
  bibata-cursor-theme,
  fonts-noto,
- mint-y-icons
+ gnome-themes-extra,
+ mint-y-icons,
+ xdg-browser-launcher
 Architecture: all
 Description: provide default Xfce settings for aptosid
  Provides default settings for appearance and applications of the Xfce
