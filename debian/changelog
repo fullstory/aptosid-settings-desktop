@@ -2,6 +2,7 @@ aptosid-settings-desktop (20241231.9) unstable; urgency=medium
 
   * aptosid-settings-hyprland: disable floating kitty for now, tweak
     waybar layout.
+  * aptosid-settings-hyprland: remove ampersands from exec-once lines.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 00:22:34 +1000
 
