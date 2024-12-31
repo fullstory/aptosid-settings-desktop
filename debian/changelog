@@ -1,10 +1,10 @@
-aptosid-settings-desktop (20241231.5) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241231.5) unstable; urgency=medium
 
   * aptosid-settings-lxde: Debian lxde-common and openbox-lxde-session
     have already provided defaults to /etc/xdg, so do not install our
     defaults there we will patch them at build time.
 
- -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 16:56:52 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 16:57:07 +1000
 
 aptosid-settings-desktop (20241231.4) unstable; urgency=medium
 
