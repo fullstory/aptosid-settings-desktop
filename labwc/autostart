@@ -21,6 +21,8 @@ if [ -x /usr/bin/sfwbar ] && [ ! -d ~/.config/sfwbar/ ]; then
     cp /usr/share/sfwbar/w10.config ~/.config/sfwbar/sfwbar.config
     # Set agnostic terminal default
     sed -i 's#alacritty#x-terminal-emulator#' ~/.config/sfwbar/sfwbar.config
+    # Bump font size
+    sed -i 's#font: 12px sans;#font: 14px sans;#' ~/.config/sfwbar/sfwbar.config
 fi
 [ -x /usr/bin/sfwbar ] && sfwbar >/dev/null 2>&1 &
 
