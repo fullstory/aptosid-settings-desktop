@@ -19,6 +19,8 @@ esac
 if [ -x /usr/bin/sfwbar ] && [ ! -d ~/.config/sfwbar/ ]; then
     mkdir -p ~/.config/sfwbar/
     cp /usr/share/sfwbar/w10.config ~/.config/sfwbar/sfwbar.config
+    # Set agnostic terminal default
+    sed -i 's#alacritty#x-terminal-emulator#' ~/.config/sfwbar/sfwbar.config
 fi
 [ -x /usr/bin/sfwbar ] && sfwbar >/dev/null 2>&1 &
 
