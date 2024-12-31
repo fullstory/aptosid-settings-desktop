@@ -1,9 +1,9 @@
-aptosid-settings-desktop (20241231.8) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241231.8) unstable; urgency=medium
 
   * aptosid-settings-hyprland: set kitty window rules and provide waybar
     config.
 
- -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 23:58:52 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 23:59:11 +1000
 
 aptosid-settings-desktop (20241231.7) unstable; urgency=medium
 
