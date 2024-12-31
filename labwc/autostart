@@ -12,7 +12,7 @@ esac
 # Display configuration: https://sr.ht/~emersion/kanshi/
 [ -x /usr/bin/kanshi ] && kanshi >/dev/null 2>&1 &
 
-# Set background: https://sr.ht/~emersion/kanshi/
+# Set background: https://github.com/swaywm/swaybg
 [ -x /usr/bin/swaybg ] && swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
 
 # Taskbar: https://github.com/LBCrion/sfwbar
@@ -39,9 +39,5 @@ if [ ! -e /etc/default/distro ]; then
             before-sleep 'gtklock -i' >/dev/null 2>&1 &
 fi
 
-# Start a PolicyKit agent
-if [ -x /usr/bin/mate-polkit ]; then
-    mate-polkit >/dev/null 2>&1 &
-elif [ -x /usr/bin/lxqt-polkit ]; then
-    lxqt-polkit >/dev/null 2>&1 &
-fi
+# start policykit agent
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &

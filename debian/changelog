@@ -2,6 +2,7 @@ aptosid-settings-desktop (20241231.6) UNRELEASED; urgency=medium
 
   * aptosid-settings-labwc: do not start the xdg-desktop portals,
     systemd sholuld do this when required.
+  * aptosid-settings-labwc: start gnome polkit agent in autostart.
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 20:25:28 +1000
 
