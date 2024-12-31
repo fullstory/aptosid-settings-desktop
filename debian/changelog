@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241231.7) UNRELEASED; urgency=medium
+
+  * aptosid-settings-hyprland: drop kb.conf (it failed to import) and
+    preload wallpaper.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 22:51:20 +1000
+
 aptosid-settings-desktop (20241231.6) unstable; urgency=medium
 
   * aptosid-settings-labwc: do not start the xdg-desktop portals,
