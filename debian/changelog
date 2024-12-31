@@ -3,6 +3,8 @@ aptosid-settings-desktop (20241231.3) UNRELEASED; urgency=medium
   * aptosid-settings-labwc: silence noise when starting xdg-desktop-
     portals.
   * Add aptosid-settings-lxde.
+  * Cleanups in mimeapps.lists: remove added associations from desktop
+    specific lists and update comments.
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 11:55:21 +1000
 

@@ -50,7 +50,7 @@ x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop
 # Email (Thunderbird)
 x-scheme-handler/mailto=thunderbird.desktop
 
-# File Manager (Thunar)
+# File Manager (PCManFM)
 application/x-gnome-saved-search=pcmanfm.desktop
 inode/directory=pcmanfm.desktop
 x-scheme-handler/trash=pcmanfm.desktop
@@ -276,39 +276,39 @@ x-scheme-handler/rtmp=io.github.celluloid_player.Celluloid.desktop;org.xfce.Paro
 x-scheme-handler/rtp=io.github.celluloid_player.Celluloid.desktop;org.xfce.Parole.desktop;
 x-scheme-handler/rtsp=io.github.celluloid_player.Celluloid.desktop;org.xfce.Parole.desktop;
 
-# PDF Viewer (zathura | Atril)
-application/illustrator=zathura.desktop
-application/oxps=zathura.desktop
-application/pdf=zathura.desktop
-application/postscript=zathura.desktop
-application/vnd.comicbook+zip=zathura.desktop
-application/vnd.comicbook-rar=zathura.desktop
-application/vnd.ms-xpsdocument=zathura.desktop
-application/x-bzpdf=zathura.desktop
-application/x-bzpostscript=zathura.desktop
-application/x-cb7=zathura.desktop
-application/x-cbr=zathura.desktop
-application/x-cbt=zathura.desktop
-application/x-cbz=zathura.desktop
-application/x-ext-cb7=zathura.desktop
-application/x-ext-cbr=zathura.desktop
-application/x-ext-cbt=zathura.desktop
-application/x-ext-cbz=zathura.desktop
-application/x-ext-djv=zathura.desktop
-application/x-ext-djvu=zathura.desktop
-application/x-ext-eps=zathura.desktop
-application/x-ext-pdf=zathura.desktop
-application/x-ext-ps=zathura.desktop
-application/x-gzpdf=zathura.desktop
-application/x-gzpostscript=zathura.desktop
-application/x-xzpdf=zathura.desktop
-image/tiff=zathura.desktop
-image/vnd.djvu=zathura.desktop
-image/x-bzeps=zathura.desktop
-image/x-eps=zathura.desktop
-image/x-gzeps=zathura.desktop
+# PDF Viewer (zathura)
+application/illustrator=org.pwmt.zathura.desktop
+application/oxps=org.pwmt.zathura.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/postscript=org.pwmt.zathura.desktop
+application/vnd.comicbook+zip=org.pwmt.zathura.desktop
+application/vnd.comicbook-rar=org.pwmt.zathura.desktop
+application/vnd.ms-xpsdocument=org.pwmt.zathura.desktop
+application/x-bzpdf=org.pwmt.zathura.desktop
+application/x-bzpostscript=org.pwmt.zathura.desktop
+application/x-cb7=org.pwmt.zathura.desktop
+application/x-cbr=org.pwmt.zathura.desktop
+application/x-cbt=org.pwmt.zathura.desktop
+application/x-cbz=org.pwmt.zathura.desktop
+application/x-ext-cb7=org.pwmt.zathura.desktop
+application/x-ext-cbr=org.pwmt.zathura.desktop
+application/x-ext-cbt=org.pwmt.zathura.desktop
+application/x-ext-cbz=org.pwmt.zathura.desktop
+application/x-ext-djv=org.pwmt.zathura.desktop
+application/x-ext-djvu=org.pwmt.zathura.desktop
+application/x-ext-eps=org.pwmt.zathura.desktop
+application/x-ext-pdf=org.pwmt.zathura.desktop
+application/x-ext-ps=org.pwmt.zathura.desktop
+application/x-gzpdf=org.pwmt.zathura.desktop
+application/x-gzpostscript=org.pwmt.zathura.desktop
+application/x-xzpdf=org.pwmt.zathura.desktop
+image/tiff=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
+image/x-bzeps=org.pwmt.zathura.desktop
+image/x-eps=org.pwmt.zathura.desktop
+image/x-gzeps=org.pwmt.zathura.desktop
 
-# Text Editor (Mousepad)
+# Text Editor (Pluma)
 application/javascript=pluma.desktop
 application/x-cgi=pluma.desktop
 application/x-javascript=pluma.desktop
