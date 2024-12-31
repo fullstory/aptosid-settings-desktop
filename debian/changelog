@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241231.9) unstable; urgency=medium
+
+  * aptosid-settings-hyprland: disable floating kitty for now, tweak
+    waybar layout.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 00:22:34 +1000
+
 aptosid-settings-desktop (20241231.8) unstable; urgency=medium
 
   * aptosid-settings-hyprland: set kitty window rules and provide waybar

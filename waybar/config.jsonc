@@ -7,18 +7,17 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "idle_inhibitor"
+        "idle_inhibitor",
+        "power-profiles-daemon"
     ],
     "modules-center": [
-        "power-profiles-daemon",
-        "backlight",
         "keyboard-state",
         "battery"
     ],
     "modules-right": [
         "wireplumber",
         "tray",
-        "clock",
+        "clock"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -44,11 +43,6 @@
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
         "states": {
