@@ -47,7 +47,7 @@ elif [ -x /usr/bin/lxqt-polkit ]; then
 fi
 
 # Start XDG portals
-[ -x /usr/libexec/xdg-document-portal ]    && /usr/libexec/xdg-document-portal --replace &
-[ -x /usr/libexec/xdg-desktop-portal ]     && /usr/libexec/xdg-desktop-portal --replace &
-[ -x /usr/libexec/xdg-desktop-portal-wlr ] && /usr/libexec/xdg-desktop-portal-wlr --replace &
-[ -x /usr/libexec/xdg-desktop-portal-gtk ] && /usr/libexec/xdg-desktop-portal-gtk --replace &
+[ -x /usr/libexec/xdg-document-portal ]    && /usr/libexec/xdg-document-portal --replace 2>&1 &
+[ -x /usr/libexec/xdg-desktop-portal ]     && /usr/libexec/xdg-desktop-portal --replace 2>&1 &
+[ -x /usr/libexec/xdg-desktop-portal-wlr ] && /usr/libexec/xdg-desktop-portal-wlr --replace 2>&1 &
+[ -x /usr/libexec/xdg-desktop-portal-gtk ] && /usr/libexec/xdg-desktop-portal-gtk --replace 2>&1 &

@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241231.3) UNRELEASED; urgency=medium
+
+  * aptosid-settings-labwc: silence noise when starting xdg-desktop-
+    portals.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 11:55:21 +1000
+
 aptosid-settings-desktop (20241231.2) unstable; urgency=medium
 
   * aptosid-settings-labwc: set sane default terminal default.
