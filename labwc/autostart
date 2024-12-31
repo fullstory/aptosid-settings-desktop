@@ -45,9 +45,3 @@ if [ -x /usr/bin/mate-polkit ]; then
 elif [ -x /usr/bin/lxqt-polkit ]; then
     lxqt-polkit >/dev/null 2>&1 &
 fi
-
-# Start XDG portals
-[ -x /usr/libexec/xdg-document-portal ]    && /usr/libexec/xdg-document-portal --replace 2>&1 &
-[ -x /usr/libexec/xdg-desktop-portal ]     && /usr/libexec/xdg-desktop-portal --replace 2>&1 &
-[ -x /usr/libexec/xdg-desktop-portal-wlr ] && /usr/libexec/xdg-desktop-portal-wlr --replace 2>&1 &
-[ -x /usr/libexec/xdg-desktop-portal-gtk ] && /usr/libexec/xdg-desktop-portal-gtk --replace 2>&1 &

@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20241231.6) UNRELEASED; urgency=medium
+
+  * aptosid-settings-labwc: do not start the xdg-desktop portals,
+    systemd sholuld do this when required.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 31 Dec 2024 20:25:28 +1000
+
 aptosid-settings-desktop (20241231.5) unstable; urgency=medium
 
   * aptosid-settings-lxde: Debian lxde-common and openbox-lxde-session
