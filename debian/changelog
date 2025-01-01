@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20250101.3) unstable; urgency=medium
+
+  * aptosid-settings-hyprland: add printscreen key bind to grim/slurp.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 16:21:46 +1000
+
 aptosid-settings-desktop (20250101.2) unstable; urgency=medium
 
   * aptosid-settings-hyprland: fix colors for RGBA, disable swidle and
