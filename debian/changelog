@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20241231.11) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 01 Jan 2025 01:19:20 +0100
+
 aptosid-settings-desktop (20241231.10) unstable; urgency=medium
 
   * aptosid-settings-hyprland: start blueman-applet and tweak waybar
