@@ -1,9 +1,12 @@
-aptosid-settings-desktop (20250101.4) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250101.4) unstable; urgency=medium
 
-  * aptosid-settings-hyprland: fix printscreen key binds, run xdg-user-
-    dirs-update so that blueman-applet can function.
+  * aptosid-settings-hyprland: fix printscreen key binds
+  * aptosid-settings-{labwc,hyprland}:
+    - run xdg-user-dirs-update so that blueman-applet can function
+    - run dbus-update-activation-environment to ensure xdg portals
+      have correct operating environment
 
- -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 17:42:34 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 18:20:54 +1000
 
 aptosid-settings-desktop (20250101.3) unstable; urgency=medium
 

@@ -40,7 +40,10 @@ if [ ! -e /etc/default/distro ]; then
 fi
 
 # start policykit agent
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+mate-polkit &
 
-# update user dirs (blueman-applet)
+# update XDG user dirs (blueman-applet)
 xdg-user-dirs-update
+
+# update environment for xdg-desktop-portals
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
