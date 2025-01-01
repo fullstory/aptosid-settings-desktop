@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20250101.2) unstable; urgency=medium
+
+  * aptosid-settings-hyprland: fix colors for RGBA, disable swidle and
+    screenlock, execute xdg-user-dirs-update before blueman-applet.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 16:10:48 +1000
+
 aptosid-settings-desktop (20250101.1) unstable; urgency=medium
 
   * Add playerctl support to hyprland and labwc.
