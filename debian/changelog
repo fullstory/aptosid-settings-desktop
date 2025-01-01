@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20250101.4) UNRELEASED; urgency=medium
+
+  * aptosid-settings-hyprland: fix printscreen key binds, run xdg-user-
+    dirs-update so that blueman-applet can function.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 17:42:34 +1000
+
 aptosid-settings-desktop (20250101.3) unstable; urgency=medium
 
   * aptosid-settings-hyprland: add printscreen key bind to grim/slurp.
