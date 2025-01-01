@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20250101.5) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 01 Jan 2025 22:23:30 +0100
+
 aptosid-settings-desktop (20250101.4) unstable; urgency=medium
 
   * aptosid-settings-hyprland: fix printscreen key binds
