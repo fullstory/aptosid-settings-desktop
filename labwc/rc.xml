@@ -55,5 +55,10 @@
     <keybind key="XF86_AudioLowerVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%-" /></keybind>
     <keybind key="XF86_AudioRaiseVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%+" /></keybind>
     <keybind key="XF86_AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle " /></keybind>
+
+    <keybind key="XF86AudioPlay"><action name="Execute" command="playerctl play-pause" /></keybind>
+    <keybind key="XF86AudioNext"><action name="Execute" command="playerctl next" /></keybind>
+    <keybind key="XF86AudioPrev"><action name="Execute" command="playerctl previous" /></keybind>
+    <keybind key="XF86audiostop"><action name="Execute" command="playerctl stop" /></keybind>
   </keyboard>
 </labwc_config>

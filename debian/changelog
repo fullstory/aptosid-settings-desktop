@@ -1,8 +1,12 @@
-aptosid-settings-desktop (20241231.11) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250101.1) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * Add playerctl support to hyprland and labwc.
+  * aptosid-settings-hyprland:
+    - tweak default colours to compliment tuigreet theme
+    - add several window rules
+    - add GDK/QT env variables
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 01 Jan 2025 01:19:20 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jan 2025 15:42:51 +1000
 
 aptosid-settings-desktop (20241231.10) unstable; urgency=medium
 
