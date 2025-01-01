@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20241231.10) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20241231.10) unstable; urgency=medium
 
   * aptosid-settings-hyprland: start blueman-applet and tweak waybar
     config.
