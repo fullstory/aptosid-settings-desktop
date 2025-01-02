@@ -221,6 +221,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
+ bibata-cursor-theme,
  fonts-font-awesome,
  fonts-noto,
  gnome-themes-extra,

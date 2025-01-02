@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20250102.4) UNRELEASED; urgency=medium
+
+  * aptosid-settings-sway: set cursor to bibata-cursor-theme.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jan 2025 19:13:23 +1000
+
 aptosid-settings-desktop (20250102.3) unstable; urgency=medium
 
   * aptosid-settings-sway: add file manager keybind.

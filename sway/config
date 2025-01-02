@@ -26,6 +26,8 @@ set $term kitty
 set $menu wofi -I --show drun
 # Your preferred file manager
 set $fm thunar
+# Cursor theme
+seat seat0 xcursor_theme Bibata-Modern-Ice 24
 
 include /etc/sway/config-vars.d/*
 
