@@ -1,8 +1,9 @@
-aptosid-settings-desktop (20250102.4) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250102.4) unstable; urgency=medium
 
   * aptosid-settings-sway: set cursor to bibata-cursor-theme.
+  * aptosid-settings-sway: add automatic floating window configuration.
 
- -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jan 2025 19:13:23 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jan 2025 19:16:36 +1000
 
 aptosid-settings-desktop (20250102.3) unstable; urgency=medium
 
