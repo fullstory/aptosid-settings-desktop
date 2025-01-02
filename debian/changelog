@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20250102.7) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250102.7) unstable; urgency=medium
 
   * aptosid-settings-sway: do away with custom key binds and return to
     stock settings.
