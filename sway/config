@@ -79,21 +79,15 @@ input * {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-    bindsym $mod+t exec $term
+
+    # Start file manager
+    bindsym $mod+Shift+Return exec $fm
 
     # Kill focused window
     bindsym $mod+c kill
 
     # Start your launcher
-    bindsym $mod+a exec $menu
-
-    # Start your file manager
-    bindsym $mod+f exec $fm
-
-    # x-www-browser, nm-connection-editor, wlogout
-    bindsym $mod+w exec x-www-browser
-    bindsym $mod+n exec nm-connection-editor
-    bindsym $mod+q wlogout
+    bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -106,11 +100,22 @@ input * {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec wlogout
 #
 # Moving around:
 #
     # Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    # Or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+
+    # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
@@ -153,16 +158,16 @@ input * {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+Shift+b splith
-    bindsym $mod+Shift+v splitv
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+Shift+s layout stacking
-    bindsym $mod+Shift+w layout tabbed
-    bindsym $mod+Shift+e layout toggle split
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+Shift+f fullscreen
+    bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
@@ -171,7 +176,7 @@ input * {
     bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+p focus parent
+    bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
@@ -224,7 +229,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioNext exec playerctl next
     bindsym --locked XF86AudioPrev exec playerctl previous
     bindsym --locked XF86audiostop exec playerctl stop
-    # Special key to take a screenshot with grim + slurp
+    # Special keys to take a screenshot with grim + slurp
     bindsym Print exec sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'
     bindsym $mod+Print exec sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'
 
@@ -249,5 +254,6 @@ for_window [app_id = "floating"] floating enable
 for_window [app_id = "floating_update"] floating enable, resize set width 1000px height 600px
 for_window [class = "(?i)pinentry"] floating enable
 for_window [title = "Administrator privileges required"] floating enable
+for_window [title = "Network Connections"] floating enable
 
 include /etc/sway/config.d/*
