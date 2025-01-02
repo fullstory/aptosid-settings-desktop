@@ -1,0 +1,4 @@
+sway/* usr/share/aptosid-settings-sway
+schemas/*_aptosid-settings-sway.gschema.override usr/share/glib-2.0/schemas
+xdg/sway-mimeapps.list etc/xdg
+waybar/sway/* usr/share/aptosid-settings-sway/waybar

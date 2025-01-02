@@ -1,8 +1,9 @@
-aptosid-settings-desktop (20250101.5) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250101.5) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * Add aptosid-settings-sway.
+  * Split waybar into subdirectories for Hyprland/Sway specific configs.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 01 Jan 2025 22:23:30 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jan 2025 18:20:40 +1000
 
 aptosid-settings-desktop (20250101.4) unstable; urgency=medium
 
