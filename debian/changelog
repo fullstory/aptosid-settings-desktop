@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20250102.6) unstable; urgency=medium
+
+  * aptosid-settings-sway: resolve keybind conflicts by requiring shift
+    key modifier for layout stuff.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jan 2025 20:16:14 +1000
+
 aptosid-settings-desktop (20250102.5) unstable; urgency=medium
 
   * aptosid-settings-sway: fix wallpaper setting and keybind conflicts.

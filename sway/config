@@ -8,7 +8,6 @@ exec thunar --daemon
 exec mako
 exec nm-applet
 exec mate-polkit
-exec xdg-user-dirs-update
 
 ### Variables
 #
@@ -79,6 +78,7 @@ input * {
 # Basics:
 #
     # Start a terminal
+    bindsym $mod+Return exec $term
     bindsym $mod+t exec $term
 
     # Kill focused window
@@ -93,7 +93,7 @@ input * {
     # x-www-browser, nm-connection-editor, wlogout
     bindsym $mod+w exec x-www-browser
     bindsym $mod+n exec nm-connection-editor
-    bindsym $mod+l wlogout
+    bindsym $mod+q wlogout
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -111,17 +111,6 @@ input * {
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
-    # Or use $mod+[up|down|left|right]
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
-
-    # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
     bindsym $mod+Shift+$up move up
@@ -164,16 +153,16 @@ input * {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+Shift+b splith
+    bindsym $mod+Shift+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+Shift+s layout stacking
+    bindsym $mod+Shift+w layout tabbed
+    bindsym $mod+Shift+e layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+Enter fullscreen
+    bindsym $mod+Shift+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
     bindsym $mod+Shift+space floating toggle
