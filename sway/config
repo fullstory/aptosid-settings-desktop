@@ -9,6 +9,7 @@ exec thunar --daemon
 exec mako
 exec nm-applet
 exec mate-polkit
+exec xdg-user-dirs-update
 
 ### Variables
 #
