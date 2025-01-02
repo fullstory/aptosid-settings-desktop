@@ -24,6 +24,8 @@ set $right l
 set $term kitty
 # Your preferred application launcher
 set $menu wofi -I --show drun
+# Your preferred file manager
+set $fm thunar
 
 include /etc/sway/config-vars.d/*
 
@@ -83,6 +85,9 @@ input * {
 
     # Start your launcher
     bindsym $mod+a exec $menu
+
+    # Start your file manager
+    bindsym $mod+f exec $fm
 
     # x-www-browser, nm-connection-editor, wlogout
     bindsym $mod+w exec x-www-browser
