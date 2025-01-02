@@ -1,4 +1,4 @@
-hypr etc/xdg
+hypr usr/share/aptosid-settings-hyprland
 schemas/*_aptosid-settings-hyprland.gschema.override usr/share/glib-2.0/schemas
 xdg/hyprland-mimeapps.list etc/xdg
 waybar/hyprland/* usr/share/aptosid-settings-hyprland/waybar

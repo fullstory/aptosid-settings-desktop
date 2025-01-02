@@ -1,4 +1,11 @@
-aptosid-settings-desktop (20250101.5) unstable; urgency=medium
+aptosid-settings-desktop (20250102.1) unstable; urgency=medium
+
+  * aptosid-settings-hyprland: put default settings in /usr/share rather
+    than /etc/xdg, where they are ignored anyways.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jan 2025 18:38:05 +1000
+
+aptosid-settings-desktop (20250102.1) unstable; urgency=medium
 
   * Add aptosid-settings-sway.
   * Split waybar into subdirectories for Hyprland/Sway specific configs.
