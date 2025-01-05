@@ -1,4 +1,3 @@
 labwc etc/xdg
-gtklock etc/xdg
 schemas/*_aptosid-settings-labwc.gschema.override usr/share/glib-2.0/schemas
 xdg/labwc-mimeapps.list etc/xdg
