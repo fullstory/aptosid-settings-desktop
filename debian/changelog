@@ -7,6 +7,8 @@ aptosid-settings-desktop (20250102.8) UNRELEASED; urgency=medium
   * aptosid-settings-sway: add vice colorscheme.
   * aptosid-settings-common: incporate gtklock.ini that was previously
     in aptosid-settings-labwc so it may apply to sway and hyprland too.
+  * aptosid-settings-sway: configure defaults for touchpads and scope
+    keyboard configuration to type:keyboard.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jan 2025 20:59:42 +0100
 
