@@ -1,6 +1,10 @@
 aptosid-settings-desktop (20250102.8) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-sway: add vice colorscheme.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jan 2025 20:59:42 +0100
 
