@@ -1,7 +1,4 @@
-aptosid-settings-desktop (20250102.8) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250102.8) unstable; urgency=medium
 
   [ Kel Modderman ]
   * aptosid-settings-sway: add vice colorscheme.
@@ -16,7 +13,7 @@ aptosid-settings-desktop (20250102.8) UNRELEASED; urgency=medium
   * aptosid-settings-sway: configure gaps.
   * aptosid-settings-hyprland: enhance waycar configuration.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jan 2025 20:59:42 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 Jan 2025 21:42:21 +0100
 
 aptosid-settings-desktop (20250102.7) unstable; urgency=medium
 
