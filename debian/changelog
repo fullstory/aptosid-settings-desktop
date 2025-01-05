@@ -13,6 +13,7 @@ aptosid-settings-desktop (20250102.8) UNRELEASED; urgency=medium
     scheme.
   * aptosid-settings-hyprland: remove env var disabling Qt windows
     decorations.
+  * aptosid-settings-sway: configure gaps.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jan 2025 20:59:42 +0100
 
