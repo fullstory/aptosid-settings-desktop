@@ -11,6 +11,8 @@ aptosid-settings-desktop (20250102.8) UNRELEASED; urgency=medium
     keyboard configuration to type:keyboard.
   * aptosid-settings-common: add default kitty configuration and color
     scheme.
+  * aptosid-settings-hyprland: remove env var disabling Qt windows
+    decorations.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jan 2025 20:59:42 +0100
 
