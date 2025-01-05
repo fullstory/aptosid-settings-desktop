@@ -38,7 +38,7 @@ Files: themes/Kaunas/*
 Copyright: Copyright (c) 2021 Dovidas
 License: MIT
 
-Files: sway/colorscheme
+Files: sway/colorscheme kitty/colors.conf
 Copyright: 2021-2024, Thomas Leon Highbaugh <thighbaugh@zoho.com
 License: MIT
 
