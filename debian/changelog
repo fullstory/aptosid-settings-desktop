@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20250111.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250111.2) unstable; urgency=medium
 
   * Only adjust desktop icons in live mode.
 
