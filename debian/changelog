@@ -8,6 +8,7 @@ aptosid-settings-desktop (20250111.1) UNRELEASED; urgency=medium
     calamares-settings-aptosid.
   * Add debian/aptosid-settings-labwc.lintian-overrides to silence
     warnings about a script which does not need to be executable.
+  * Fold aptosid-icons into aptosid-settings-common.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 Jan 2025 21:42:36 +0100
 

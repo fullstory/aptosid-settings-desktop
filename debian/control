@@ -9,18 +9,14 @@ Standards-Version: 4.7.0
 Vcs-Git: https://github.com/fullstory/aptosid-settings-desktop.git
 Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 
-Package: aptosid-icons
-Depends: ${misc:Depends}
-Architecture: all
-Description: aptosid logo and icons
- Provides the aptosid logo and icons for use in desktop settings.
-
 Package: aptosid-settings-common
 Depends: ${misc:Depends}
 Architecture: all
 Description: provide common default desktop settings for aptosid
  Provides default settings for appearance and applications of all
  desktop environments in aptosid.
+ .
+ Provides the aptosid logo and icons for use in desktop settings.
 
 Package: aptosid-settings-qt-gtk
 Depends: ${misc:Depends},
@@ -38,7 +34,6 @@ Description: aptosid qt-gtk style configuration
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common
 Recommends: xdg-browser-launcher,
  aptosid-settings-qt-gtk,
@@ -58,7 +53,6 @@ Description: provide default Budgie settings for aptosid
 Package: aptosid-settings-cinnamon
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
  bibata-cursor-theme,
@@ -78,7 +72,6 @@ Description: provide default Cinnamon settings for aptosid
 Package: aptosid-settings-gnome
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common
 Recommends: xdg-browser-launcher,
  aptosid-irc,
@@ -119,7 +112,6 @@ Package: aptosid-settings-kde
 Depends: ${misc:Depends},
  aptosid-art-kde,
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common,
  plasma-framework
 Recommends: xdg-browser-launcher,
@@ -164,7 +156,6 @@ Description: Kaunas theme for openbox
 Package: aptosid-settings-lxde
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-openbox-theme-kaunas,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
@@ -183,7 +174,6 @@ Description: provide default LXDE settings for aptosid
 Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
  mint-y-icons,
@@ -200,7 +190,6 @@ Description: provide default LXQt settings for aptosid
 Package: aptosid-settings-mate
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
  fonts-noto,
@@ -239,7 +228,6 @@ Description: provide default Sway settings for aptosid
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-icons,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
  bibata-cursor-theme,

@@ -45,4 +45,4 @@ show=true
 show-active-mounts=true
 
 [com.solus-project.budgie-menu]
-menu-icon='/usr/share/icons/hicolor/scalable/apps/aptosid-logo.svg'
+menu-icon='/usr/share/icons/hicolor/scalable/aptosid/aptosid-logo.svg'
