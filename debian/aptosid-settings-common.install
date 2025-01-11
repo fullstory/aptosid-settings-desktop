@@ -1,3 +1,5 @@
+add-aptosid-desktop-icons.desktop etc/xdg/autostart
+add-aptosid-desktop-icons usr/bin
 xdg/mimeapps.list etc/xdg
 gtklock etc/xdg
 kitty etc/xdg

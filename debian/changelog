@@ -1,6 +1,11 @@
-aptosid-settings-desktop (20250102.9) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250111.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-common: import add-aptosid-desktop-icon from
+    calamares-settings-aptosid.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 Jan 2025 21:42:36 +0100
 
