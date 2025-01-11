@@ -1,16 +1,18 @@
-aptosid-settings-desktop (20250111.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250111.2) UNRELEASED; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+  * Only adjust desktop icons in live mode.
 
-  [ Kel Modderman ]
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 11 Jan 2025 14:00:17 +1000
+
+aptosid-settings-desktop (20250111.1) unstable; urgency=medium
+
   * aptosid-settings-common: import add-aptosid-desktop-icon from
     calamares-settings-aptosid.
   * Add debian/aptosid-settings-labwc.lintian-overrides to silence
     warnings about a script which does not need to be executable.
   * Fold aptosid-icons into aptosid-settings-common.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 Jan 2025 21:42:36 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 11 Jan 2025 13:59:33 +1000
 
 aptosid-settings-desktop (20250102.8) unstable; urgency=medium
 
