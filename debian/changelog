@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20250111.3) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Jan 2025 08:11:25 +0100
+
 aptosid-settings-desktop (20250111.2) unstable; urgency=medium
 
   * Only adjust desktop icons in live mode.
