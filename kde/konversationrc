@@ -1,0 +1,38 @@
+[Appearance]
+AllowColorCodes=false
+ChannelSplitterSizes=1220,173
+CloseButtons=true
+NickColor0=28,220,154
+NickColor1=28,220,154
+NickColor2=28,220,154
+NickColor3=28,220,154
+NickColor4=28,220,154
+NickColor5=28,220,154
+NickColor6=28,220,154
+NickColor7=28,220,154
+NickColor8=28,220,154
+TopicSplitterSizes=28,764
+TreeSplitterSizes=155,860
+UseBoldNicks=true
+
+[Highlight List]
+HighlightNickColor=246,116,0
+
+[Message Text Colors]
+ActionMessage=239,240,241
+AlternateBackground=35,38,41
+BacklogMessage=127,140,141
+ChannelMessage=220,230,231
+CommandMessage=239,240,241
+Hyperlink=61,174,233
+QueryMessage=239,240,241
+ServerMessage=239,240,241
+TextViewBackground=35,38,41
+Time=127,140,141
+
+[Tab Notifications]
+TabNotificationsHighlightsColor=246,116,0
+TabNotificationsMsgsColor=28,220,154
+TabNotificationsNickColor=246,116,0
+TabNotificationsPrivateColor=246,116,0
+TabNotificationsSystemColor=246,116,0

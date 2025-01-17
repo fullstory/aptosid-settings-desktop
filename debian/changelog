@@ -1,8 +1,12 @@
-aptosid-settings-desktop (20250111.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250117.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Jan 2025 08:11:25 +0100
+  [ Kel Modderman ]
+  * kde: add konversationrc for dark mode.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Fri, 17 Jan 2025 14:52:35 +1000
 
 aptosid-settings-desktop (20250111.2) unstable; urgency=medium
 
