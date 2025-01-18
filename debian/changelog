@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20250117.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250117.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * kde: add konversationrc for dark mode.
   * kde: add konsolerc to set default scrollback location to ~/.cache.
 
