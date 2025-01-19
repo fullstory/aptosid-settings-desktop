@@ -12,13 +12,13 @@
     "modules-center": [
     ],
     "modules-right": [
+        "hyprland/language",
         "keyboard-state",
         "battery",
         "idle_inhibitor",
         "power-profiles-daemon",
         "wireplumber",
         "tray",
-        "hyprland/language",
         "clock"
     ],
     "hyprland/workspaces": {
@@ -32,6 +32,9 @@
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-middle": "close"
+    },
+    "hyprland/language": {
+        "format": "{long}"
     },
     "keyboard-state": {
         "numlock": true,
@@ -81,9 +84,6 @@
         "format-muted": "",
         "on-click": "pavucontrol",
         "format-icons": ["", "", ""]
-    },
-    "hyprland/language": {
-        "format": "{long}"
     },
     "clock": {
         // "timezone": "America/New_York",
