@@ -4,7 +4,8 @@ aptosid-settings-desktop (20250119.1) UNRELEASED; urgency=medium
   * NOT RELEASED YET
 
   [ Kel Modderman ]
-  * waybar/hyprland: add style.css and language icon.
+  * waybar/hyprland: add style.css, hyprland/language config, tweak icon
+    sizes and spacing.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 19 Jan 2025 11:57:14 +1000
 

@@ -1,11 +1,10 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    // "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "spacing": 6,
+
     "modules-left": [
         "hyprland/workspaces",
         "wlr/taskbar"
@@ -29,10 +28,10 @@
     },
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 14,
+        "icon-size": 16,
         "tooltip-format": "{title}",
         "on-click": "activate",
-        "on-click-middle": "close",
+        "on-click-middle": "close"
     },
     "keyboard-state": {
         "numlock": true,
@@ -51,13 +50,8 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
-    "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "icon-size": 16,
+        "spacing": 16
     },
     "battery": {
         "states": {
@@ -89,6 +83,12 @@
         "format-icons": ["", "", ""]
     },
     "hyprland/language": {
-        "format": "{short}"
+        "format": "{long}"
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}",
+        "format": "{:%d.%m.%Y | %H:%M}"
     },
 }
