@@ -2,7 +2,7 @@ markup=1
 actions=1
 
 # Format
-font=Noto Sans 11
+font=NotoSans 11
 border-color=#002028
 border-size=2
 background-color=#002b36AA
