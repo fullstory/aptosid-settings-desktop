@@ -6,6 +6,7 @@ aptosid-settings-desktop (20250119.1) UNRELEASED; urgency=medium
   [ Kel Modderman ]
   * waybar/hyprland: add style.css, hyprland/language config, tweak icon
     sizes and spacing.
+  * common: install mako notification daemon theme.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 19 Jan 2025 11:57:14 +1000
 

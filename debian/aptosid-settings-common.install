@@ -4,3 +4,4 @@ add-aptosid-desktop-icons usr/bin
 xdg/mimeapps.list etc/xdg
 gtklock etc/xdg
 kitty etc/xdg
+mako etc/xdg
