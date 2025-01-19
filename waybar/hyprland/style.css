@@ -30,20 +30,9 @@
 }
 
 #wireplumber,
-#bat,
-#tray,
-#usage,
-#net {
-    background-color: @background-alt;
-    border-radius: 3px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-left: 0.3em;
-}
-
 #battery,
-#memory,
 #language,
-#network {
-    margin-right: 0.8em;
+#tray,
+#clock {
+    padding-right: 6px;
 }
