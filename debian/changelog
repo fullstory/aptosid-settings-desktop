@@ -11,6 +11,7 @@ aptosid-settings-desktop (20250119.1) UNRELEASED; urgency=medium
   * hyprland: set path to make config.
   * hyprland: update keybindings.
   * sway: set cursor theme to Bibata-Modern-Ice.
+  * cinnamon: remove app-menu-icon-name from schema.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 19 Jan 2025 11:57:14 +1000
 
