@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20250119.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250119.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * waybar/hyprland: add style.css, hyprland/language config, tweak icon
     sizes and spacing.
   * waybar/sway: add style.css.
