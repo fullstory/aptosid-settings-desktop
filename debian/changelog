@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20250119.2) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Jan 2025 03:56:38 +0100
+
 aptosid-settings-desktop (20250119.1) unstable; urgency=medium
 
   * waybar/hyprland: add style.css, hyprland/language config, tweak icon
