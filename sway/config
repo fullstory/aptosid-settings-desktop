@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 exec thunar --daemon
-exec mako
+exec mako --config /etc/xdg/mako/config
 exec nm-applet
 exec mate-polkit
 
