@@ -6,6 +6,7 @@ aptosid-settings-desktop (20250126.1) UNRELEASED; urgency=medium
   [ Kel Modderman ]
   * sway: use mako config file for styling.
   * hyprland: reduce border gap to 5.
+  * hyprland: set GTK_THEME=Adwaita:dark env var.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Jan 2025 03:56:38 +0100
 
