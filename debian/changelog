@@ -1,7 +1,4 @@
-aptosid-settings-desktop (20250126.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250126.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * sway: use mako config file for styling.
@@ -9,7 +6,7 @@ aptosid-settings-desktop (20250126.1) UNRELEASED; urgency=medium
   * hyprland: set GTK_THEME=Adwaita:dark env var.
   * aptosid-settings-qt-gtk: set GTK_THEME=Adwaita:dark.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Jan 2025 03:56:38 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 26 Jan 2025 09:38:16 +0100
 
 aptosid-settings-desktop (20250119.1) unstable; urgency=medium
 
