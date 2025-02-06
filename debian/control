@@ -94,6 +94,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
+ bibata-cursor-theme,
  fonts-font-awesome,
  fonts-noto,
  gnome-themes-extra,
@@ -131,6 +132,7 @@ Depends: ${misc:Depends},
  aptosid-openbox-theme-kaunas,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
+ bibata-cursor-theme,
  fonts-font-awesome,
  fonts-noto,
  gnome-themes-extra,
@@ -176,6 +178,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
+ bibata-cursor-theme,
  mint-y-icons,
  xdg-browser-launcher
 Architecture: all
@@ -192,6 +195,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-gtk,
+ bibata-cursor-theme,
  fonts-noto,
  gnome-themes-extra,
  mint-y-icons,
