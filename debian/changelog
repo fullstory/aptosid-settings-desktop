@@ -1,6 +1,7 @@
-aptosid-settings-desktop (20250206.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250218.1) UNRELEASED; urgency=medium
 
-  * NOT RELEASED YET
+  [ Kel Modderman ]
+  * plasma: configure custom panel on all screens (requires plasma >= 6.3).
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 06 Feb 2025 08:10:14 +0100
 
