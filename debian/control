@@ -181,6 +181,9 @@ Recommends: aptosid-settings-qt-gtk,
  bibata-cursor-theme,
  mint-y-icons,
  xdg-browser-launcher
+Provides: lxqt-branding-debian
+Conflicts: lxqt-branding-debian
+Replaces: lxqt-branding-debian
 Architecture: all
 Description: provide default LXQt settings for aptosid
  Provides default settings for appearance and applications of the LXQt Desktop
