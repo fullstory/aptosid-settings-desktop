@@ -5,6 +5,8 @@ aptosid-settings-desktop (20250224.1) UNRELEASED; urgency=medium
 
   [ Kel Modderman ]
   * lxqt: conflict/provide/replace lxqt-branding-debian to avoid file conflict.
+  * kde: add ksmserverrc to set session preferences: login with empty
+    session and disable logout confirmation.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 18 Feb 2025 21:21:48 +0100
 
