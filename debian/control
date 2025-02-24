@@ -113,8 +113,7 @@ Package: aptosid-settings-kde
 Depends: ${misc:Depends},
  aptosid-art-kde,
  aptosid-art-wallpaper-nemesis,
- aptosid-settings-common,
- plasma-framework
+ aptosid-settings-common
 Recommends: xdg-browser-launcher,
  fonts-noto
 Architecture: all
