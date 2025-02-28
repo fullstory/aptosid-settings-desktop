@@ -1,7 +1,4 @@
-aptosid-settings-desktop (20250224.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250224.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * lxqt: conflict/provide/replace lxqt-branding-debian to avoid file conflict.
@@ -10,7 +7,7 @@ aptosid-settings-desktop (20250224.1) UNRELEASED; urgency=medium
   * kde: drop depends on plasma-framework which is dragging in KF5 and
     Qt 5.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 18 Feb 2025 21:21:48 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 28 Feb 2025 08:12:06 +0100
 
 aptosid-settings-desktop (20250218.1) unstable; urgency=medium
 
