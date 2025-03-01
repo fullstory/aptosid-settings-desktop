@@ -18,7 +18,9 @@ Description: provide common default desktop settings for aptosid
  .
  Provides the aptosid logo and icons for use in desktop settings.
 
-Package: aptosid-settings-qt-gtk
+Package: aptosid-settings-qt-style
+Breaks: aptosid-settings-qt-gtk (<< 20250301.2)
+Replaces: aptosid-settings-qt-gtk (<< 20250301.2)
 Depends: ${misc:Depends},
  qt5-style-kvantum
 Architecture: all
@@ -31,12 +33,27 @@ Description: aptosid qt-gtk style configuration
     /etc/Xsession.d/99aptosid-settings-qt-gtk
     /etc/environment.d/aptosid-settings-qt-gtk.conf
 
+Package: aptosid-settings-gtk-theme
+Breaks: aptosid-settings-qt-gtk (<< 20250301.2)
+Replaces: aptosid-settings-qt-gtk (<< 20250301.2)
+Depends: ${misc:Depends}
+Recommends: gnome-themes-extra
+Architecture: all
+Description: aptosid gtk theme default settings
+ Sets the GTK_THEME=Adwaita:dark environment variable to enable
+ dark styling of GTK applications so they fit into a Qt-centric
+ desktop environment.
+ .
+ Configuration files:
+    /etc/Xsession.d/99aptosid-settings-gtk-theme
+    /etc/environment.d/aptosid-settings-gtk-theme.conf
+
 Package: aptosid-settings-budgie
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: xdg-browser-launcher,
- aptosid-settings-qt-gtk,
+ aptosid-settings-qt-style,
  gnome-themes-extra,
  bibata-cursor-theme,
  fonts-noto,
@@ -54,7 +71,7 @@ Package: aptosid-settings-cinnamon
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-noto,
  gnome-themes-extra,
@@ -75,7 +92,7 @@ Depends: ${misc:Depends},
  aptosid-settings-common
 Recommends: xdg-browser-launcher,
  aptosid-irc,
- aptosid-settings-qt-gtk,
+ aptosid-settings-qt-style,
  gnome-themes-extra,
  bibata-cursor-theme,
  fonts-noto,
@@ -93,7 +110,7 @@ Package: aptosid-settings-hyprland
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-font-awesome,
  fonts-noto,
@@ -130,7 +147,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-openbox-theme-kaunas,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-font-awesome,
  fonts-noto,
@@ -159,7 +176,7 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-openbox-theme-kaunas,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  gnome-themes-extra,
  mint-y-icons,
  xdg-browser-launcher
@@ -176,7 +193,7 @@ Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  mint-y-icons,
  xdg-browser-launcher
@@ -196,7 +213,7 @@ Package: aptosid-settings-mate
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-noto,
  gnome-themes-extra,
@@ -215,7 +232,7 @@ Package: aptosid-settings-sway
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-font-awesome,
  fonts-noto,
@@ -235,7 +252,7 @@ Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: aptosid-settings-qt-gtk,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-noto,
  gnome-themes-extra,

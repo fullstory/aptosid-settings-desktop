@@ -1,0 +1,3 @@
+Xsession.d/99aptosid-settings-gtk-theme etc/X11/Xsession.d
+environment.d/aptosid-settings-gtk-theme.conf etc/environment.d
+gtk-* etc/xdg

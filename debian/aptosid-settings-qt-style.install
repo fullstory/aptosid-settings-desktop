@@ -1,0 +1,3 @@
+Xsession.d/99aptosid-settings-qt-style etc/X11/Xsession.d
+environment.d/aptosid-settings-qt-style.conf etc/environment.d
+Kvantum etc/xdg
