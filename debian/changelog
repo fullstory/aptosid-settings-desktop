@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20250301.4) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 01 Mar 2025 08:16:09 +0100
+
 aptosid-settings-desktop (20250301.3) unstable; urgency=medium
 
   * Add aptosid-settings-gtk-theme, rename aptosid-settings-qt-gtk to
