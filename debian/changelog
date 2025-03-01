@@ -1,3 +1,10 @@
+aptosid-settings-desktop (20250301.2) unstable; urgency=medium
+
+  * plasma: move plasma shell update script for launcher icon to correct
+    location as per https://develop.kde.org/docs/plasma/scripting/.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 01 Mar 2025 10:32:52 +1000
+
 aptosid-settings-desktop (20250301.1) unstable; urgency=medium
 
   * plasma: add updates/aptosid_launcher_icon.js to look-and-feel to
