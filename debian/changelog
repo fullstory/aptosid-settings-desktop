@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20250301.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250301.3) unstable; urgency=medium
 
   * Add aptosid-settings-gtk-theme, rename aptosid-settings-qt-gtk to
     aptosid-settings-qt-style.
