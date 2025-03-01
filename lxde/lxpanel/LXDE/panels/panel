@@ -24,7 +24,7 @@ Plugin {
       command=logout
       image=gnome-logout
     }
-    image=/usr/share/icons/hicolor/scalable/aptosid/aptosid-logo.svg
+    image=/usr/share/icons/hicolor/scalable/emblems/emblem-aptosid.svg
   }
 }
 Plugin {

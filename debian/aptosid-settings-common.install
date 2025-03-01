@@ -1,4 +1,4 @@
-*.svg usr/share/icons/hicolor/scalable/aptosid
+*.svg usr/share/icons/hicolor/scalable/emblems
 add-aptosid-desktop-icons.desktop etc/xdg/autostart
 add-aptosid-desktop-icons usr/bin
 xdg/mimeapps.list etc/xdg
