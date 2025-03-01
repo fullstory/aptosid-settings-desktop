@@ -90,13 +90,12 @@ Package: aptosid-settings-gnome
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
-Recommends: xdg-browser-launcher,
- aptosid-irc,
- aptosid-settings-qt-style,
- gnome-themes-extra,
+Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-noto,
- mint-y-icons
+ gnome-themes-extra,
+ mint-y-icons,
+ xdg-browser-launcher
 Architecture: all
 Description: provide default Gnome settings for aptosid
  Provides default settings for appearance and applications of the Gnome

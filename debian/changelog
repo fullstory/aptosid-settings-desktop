@@ -1,6 +1,11 @@
 aptosid-settings-desktop (20250301.4) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * gnome: activate Bibata-Modern-Ice cursor theme and cleanup
+    dependencies in debian/control.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 01 Mar 2025 08:16:09 +0100
 

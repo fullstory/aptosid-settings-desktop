@@ -14,6 +14,7 @@ color-scheme='prefer-dark'
 icon-theme='Mint-Y-Yaru'
 gtk-theme='Adwaita-dark'
 accent-color='orange'
+cursor-theme='Bibata-Modern-Ice'
 
 [org.gnome.desktop.background:GNOME]
 picture-uri='file:///usr/share/wallpapers/aptosid-nemesis-wide.png'
