@@ -1,0 +1,5 @@
+[General]
+ShowCopyMoveMenu=true
+
+[DetailsMode]
+ExpandableFolders=true

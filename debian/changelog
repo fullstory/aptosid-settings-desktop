@@ -6,6 +6,7 @@ aptosid-settings-desktop (20250301.4) UNRELEASED; urgency=medium
   [ Kel Modderman ]
   * gnome: activate Bibata-Modern-Ice cursor theme and cleanup
     dependencies in debian/control.
+  * kde: set dolphin defaults and provide custom kcm about info.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 01 Mar 2025 08:16:09 +0100
 
