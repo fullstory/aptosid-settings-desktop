@@ -1,0 +1,2 @@
+rm_conffile /etc/Xsession.d/99aptosid-settings-qt-gtk
+rm_conffile /etc/environment.d/aptosid-settings-qt-gtk.conf
