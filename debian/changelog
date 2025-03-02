@@ -1,6 +1,10 @@
 aptosid-settings-desktop (20250301.5) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * xfce: set touchpad defaults and enhance wallpaper setting logic.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 02 Mar 2025 02:47:28 +0100
 

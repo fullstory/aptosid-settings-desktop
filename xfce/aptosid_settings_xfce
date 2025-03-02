@@ -41,6 +41,14 @@ xfconf-query --create --channel xsettings \
 xfconf-query --create --channel xsettings \
 	--property /Gtk/CursorThemeName --type string --set 'Bibata-Modern-Ice'
 
+xfconf-query --create --channel pointers \
+	--property /SynPS2_Synaptics_TouchPad/Properties/libinput_Tapping_Enabled \
+	--type int --set 1
+
+xfconf-query --create --channel  pointers \
+	--property /SynPS2_Synaptics_TouchPad/ReverseScrolling \
+	--type bool --set true
+
 CLOCK=$(xfconf-query --channel xfce4-panel -lv | awk '$2 == "clock" { print $1 }')
 if [ -n "${CLOCK}" ]; then
 	xfconf-query --create --channel xfce4-panel \
@@ -83,9 +91,11 @@ xfconf-query --create --channel xfwm4 \
 
 WALLPAPER='/usr/share/wallpapers/aptosid-nemesis-wide.png'
 for ws in 0 1; do
-	xfconf-query --create --channel xfce4-desktop \
-		--property "/backdrop/screen0/monitorVirtual-1/workspace${ws}/last-image" \
-		--type string --set "${WALLPAPER}"
+	for mon in $(xrandr | awk '$2 ~ /connected/{ print $1 }'); do
+		xfconf-query --create --channel xfce4-desktop \
+			--property "/backdrop/screen0/monitor${mon}/workspace${ws}/last-image" \
+			--type string --set "${WALLPAPER}"
+	done
 done
 
 # override and disable /etc/xdg/autostart/aptosid-settings-xfce.desktop
