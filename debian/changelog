@@ -23,6 +23,8 @@ aptosid-settings-desktop (20250301.3) unstable; urgency=medium
     aptosid-settings-qt-style.
   * hypr: bugfix theme env variables.
   * labwc: leave theme environment variables to sddm and environment.d.
+  * xfce: set desktop icon label background and use fred for apps menu
+    icon.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sat, 01 Mar 2025 13:37:11 +1000
 

@@ -98,6 +98,13 @@ for ws in 0 1; do
 	done
 done
 
+xfconf-query --create --channel xfce4-panel \
+	--property /plugins/plugin-1/button-icon --type string --set emblem-aptosid
+
+xfconf-query --create --channel xfce4-desktop \
+	--property /desktop-icons/use-custom-label-background-color \
+	--type bool --set true
+
 # override and disable /etc/xdg/autostart/aptosid-settings-xfce.desktop
 mkdir -p ~/.config/autostart
 cp /etc/xdg/autostart/aptosid-settings-xfce.desktop ~/.config/autostart
