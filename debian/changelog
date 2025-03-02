@@ -1,14 +1,11 @@
-aptosid-settings-desktop (20250301.4) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250301.4) unstable; urgency=medium
 
   [ Kel Modderman ]
   * gnome: activate Bibata-Modern-Ice cursor theme and cleanup
     dependencies in debian/control.
   * kde: set dolphin defaults and provide custom kcm about info.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 01 Mar 2025 08:16:09 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 02 Mar 2025 02:47:12 +0100
 
 aptosid-settings-desktop (20250301.3) unstable; urgency=medium
 
