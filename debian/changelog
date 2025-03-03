@@ -1,6 +1,10 @@
 aptosid-settings-desktop (20250302.2) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * kde: add distro name override to kcm-about-distrorc.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 02 Mar 2025 13:25:29 +0100
 
