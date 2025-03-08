@@ -11,7 +11,7 @@ var widgets = [
 ];
 
 var desktopsArray = desktopsForActivity(currentActivity());
-for( var j = 0; j < desktopsArray.length; j++) {
+for (var j = 0; j < desktopsArray.length; j++) {
     var newPanel = new Panel;
     newPanel.location = "bottom";
     newPanel.height = 48;
