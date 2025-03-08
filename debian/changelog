@@ -1,14 +1,11 @@
-aptosid-settings-desktop (20250302.3) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250302.3) unstable; urgency=medium
 
   [ Kel Modderman ]
   * gtk: use same default font setings in gtk-4.0/settings.ini as for
     2.0 & 3.0.
   * plasma: whitespace cleanup in layout.js.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Mar 2025 21:55:16 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 08 Mar 2025 17:25:52 +0100
 
 aptosid-settings-desktop (20250302.2) unstable; urgency=medium
 
