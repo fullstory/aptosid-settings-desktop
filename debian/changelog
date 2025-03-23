@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20250323.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250323.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * lxqt: activate mouse cursor theme.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 23 Mar 2025 17:03:01 +1000
