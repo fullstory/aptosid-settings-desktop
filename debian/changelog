@@ -1,6 +1,10 @@
 aptosid-settings-desktop (20250302.4) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * lxqt: activate mouse cursor theme.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 08 Mar 2025 17:26:08 +0100
 
