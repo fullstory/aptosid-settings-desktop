@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20250326.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250326.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * lxqt: harmonise schema with lxqt appearance settings, add touchpad
     tap to click settings.
 
