@@ -132,6 +132,7 @@ Depends: ${misc:Depends},
  aptosid-settings-common
 Recommends: xdg-browser-launcher,
  fonts-noto
+Conflicts: desktop-base
 Architecture: all
 Description: provide default KDE settings for aptosid
  Provides default settings for appearance and applications of the K Desktop

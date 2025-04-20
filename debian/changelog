@@ -1,8 +1,12 @@
-aptosid-settings-desktop (20250326.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250420.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Mar 2025 21:38:58 +0100
+  [ Kel Modderman ]
+  * kde: add a conflicts with desktop-base.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 20 Apr 2025 21:45:56 +1000
 
 aptosid-settings-desktop (20250326.1) unstable; urgency=medium
 
