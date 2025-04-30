@@ -22,7 +22,7 @@ Package: aptosid-settings-qt-style
 Breaks: aptosid-settings-qt-gtk (<< 20250301.2)
 Replaces: aptosid-settings-qt-gtk (<< 20250301.2)
 Depends: ${misc:Depends},
- qt5-style-kvantum
+ qt6-style-kvantum
 Architecture: all
 Description: aptosid qt-gtk style configuration
  Sets the QT_STYLE_OVERRIDE=kvantum environment variable to enable
