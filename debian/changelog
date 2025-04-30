@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20250501.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250501.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * Sub qt5 for qt6 variant of kvantum style.
 
  -- Kel Modderman <kelvmod@gmail.com>  Thu, 01 May 2025 06:58:25 +1000
