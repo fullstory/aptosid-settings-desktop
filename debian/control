@@ -30,8 +30,8 @@ Description: aptosid qt-gtk style configuration
  desktop environment.
  .
  Configuration files:
-    /etc/Xsession.d/99aptosid-settings-qt-gtk
-    /etc/environment.d/aptosid-settings-qt-gtk.conf
+    /etc/Xsession.d/99aptosid-settings-qt-style
+    /etc/environment.d/aptosid-settings-qt-style.conf
 
 Package: aptosid-settings-gtk-theme
 Breaks: aptosid-settings-qt-gtk (<< 20250301.2)
