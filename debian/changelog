@@ -1,7 +1,4 @@
-aptosid-settings-desktop (20250501.2) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250501.2) unstable; urgency=medium
 
   [ Kel Modderman ]
   * aptosid-settings-qt-style: update debian/control description.
