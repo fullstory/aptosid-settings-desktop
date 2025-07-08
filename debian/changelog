@@ -1,12 +1,9 @@
-aptosid-settings-desktop (20250706.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250706.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * lxqt: default to Alsa audio controls.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 05 May 2025 21:48:34 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 08 Jul 2025 06:51:49 +0200
 
 aptosid-settings-desktop (20250501.2) unstable; urgency=medium
 
