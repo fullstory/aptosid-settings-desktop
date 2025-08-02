@@ -1,8 +1,13 @@
-aptosid-settings-desktop (20250706.3) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20250802.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Jul 2025 05:20:49 +0200
+  [ Kel Modderman ]
+  * Drop Conflicts with desktop-base, remove /etc/xdg/kcm-about-distrorc
+    and do in in fll.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 02 Aug 2025 21:51:11 +1000
 
 aptosid-settings-desktop (20250706.2) unstable; urgency=medium
 
