@@ -1,12 +1,9 @@
-aptosid-settings-desktop (20250804.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20250804.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * lxqt: add window_manager=openbox to session.conf.
 
- -- Kel Modderman <kelvmod@gmail.com>  Mon, 04 Aug 2025 19:59:30 +1000
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Aug 2025 13:10:59 +0200
 
 aptosid-settings-desktop (20250802.1) unstable; urgency=medium
 
