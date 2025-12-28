@@ -6,7 +6,7 @@
 
 exec thunar --daemon
 exec mako --config /etc/xdg/mako/config
-exec nm-applet
+exec nm-tray
 exec mate-polkit
 
 ### Variables

@@ -1,10 +1,11 @@
-aptosid-settings-desktop (20251228.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20251229.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
   [ Kel Modderman ]
   * hyprland: remove deprecated shadow and gesture options.
+  * sway, hyprland: prefer nm-tray to nm-applet.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 28 Dec 2025 13:25:56 +1000
 
