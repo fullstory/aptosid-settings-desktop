@@ -6,7 +6,6 @@ aptosid-settings-desktop (20251229.1) UNRELEASED; urgency=medium
   [ Kel Modderman ]
   * hyprland: remove deprecated shadow and gesture options.
   * sway, hyprland: prefer nm-tray to nm-applet.
-  * hyprland: switch to Qt/KDE centric package profile.
   * hyprland: switch to kde polkit agent.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 28 Dec 2025 13:25:56 +1000
