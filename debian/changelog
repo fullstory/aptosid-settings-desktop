@@ -1,14 +1,11 @@
-aptosid-settings-desktop (20251229.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20251229.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * hyprland: remove deprecated shadow and gesture options.
   * sway, hyprland: prefer nm-tray to nm-applet.
   * hyprland: switch to kde polkit agent.
 
- -- Kel Modderman <kelvmod@gmail.com>  Sun, 28 Dec 2025 13:25:56 +1000
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 29 Dec 2025 05:08:58 +0100
 
 aptosid-settings-desktop (20250804.1) unstable; urgency=medium
 
