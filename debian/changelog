@@ -1,13 +1,10 @@
-aptosid-settings-desktop (20260110.3) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20260110.3) unstable; urgency=medium
 
   [ Kel Modderman ]
   * aptosid-settings-lxqt: restore pcmanfm-qt/lxqt/settings.conf and
     adjust text and background colours.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 01:35:56 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 02:13:34 +0100
 
 aptosid-settings-desktop (20260110.2) unstable; urgency=medium
 
