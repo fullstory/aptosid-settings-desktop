@@ -1,4 +1,4 @@
-lxqt/lxqt/panel.conf usr/share/aptosid-settings-lxqt/lxqt/panel.conf
+lxqt/lxqt/panel.conf usr/share/aptosid-settings-lxqt/lxqt
 lxqt/lxqt/lxqt*.conf etc/xdg/lxqt
 lxqt/lxqt/session.conf etc/xdg/lxqt
 schemas/*_aptosid-settings-lxqt.gschema.override usr/share/glib-2.0/schemas
