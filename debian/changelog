@@ -1,10 +1,10 @@
-aptosid-settings-desktop (20260110.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260110.1) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  [ Kel Modderman ]
   * aptosid-settings-lxqt: install lxqt conffiles to usr/share rather
     than /etc/xdg to avoid conflict with lxqt-panel >= 2.3.2-1.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 09:44:19 +1000
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 01:02:50 +0100
 
 aptosid-settings-desktop (20251229.1) unstable; urgency=medium
 
