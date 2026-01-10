@@ -1,6 +1,11 @@
 aptosid-settings-desktop (20260110.3) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-lxqt: restore pcmanfm-qt/lxqt/settings.conf and
+    adjust text and background colours.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 01:35:56 +0100
 
