@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Kodi flatpak
+Comment=Kodi flatpak
+Exec=flatpak run tv.kodi.Kodi --standalone --windowing=gbm
+Type=Application
