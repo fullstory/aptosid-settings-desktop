@@ -5,7 +5,7 @@ aptosid-settings-desktop (20260208.1) UNRELEASED; urgency=medium
 
   [ Kel Modderman ]
   * Provides a desktop session for launching Kodi via flatpak in standalone GBM
-    window managment mode via a desktop display manager.
+    window management mode via a desktop display manager.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 02:13:48 +0100
 

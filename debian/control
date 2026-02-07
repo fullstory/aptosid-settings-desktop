@@ -147,7 +147,7 @@ Recommends: sddm
 Architecture: all
 Description: provide desktop session for Kodi
  Provides a desktop session for launching Kodi via flatpak in standalone GBM
- window managment mode via a desktop display manager.
+ window management mode via a desktop display manager.
 
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
