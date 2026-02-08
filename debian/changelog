@@ -1,13 +1,10 @@
-aptosid-settings-desktop (20260208.1) UNRELEASED; urgency=medium
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
+aptosid-settings-desktop (20260208.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * Provides a desktop session for launching Kodi via flatpak in standalone GBM
     window management mode via a desktop display manager.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Jan 2026 02:13:48 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Feb 2026 02:21:19 +0100
 
 aptosid-settings-desktop (20260110.3) unstable; urgency=medium
 
