@@ -11,24 +11,25 @@ if [ -s /etc/default/distro ]; then
 
     # Create ~/Desktop just in case this runs before the xdg folder
     # creation script.
-    mkdir -p $DESKTOP
+    mkdir -p ${DESKTOP}
 
-    if [ ! -f "$DESKTOP/calamares.desktop" ] && \
+    if [ ! -f "${DESKTOP}/calamares.desktop" ] && \
         [ -f /usr/share/applications/calamares.desktop ]; then
-        install -m 0755 /usr/share/applications/calamares.desktop "$DESKTOP/"
+        install -m 0755 /usr/share/applications/calamares.desktop "${DESKTOP}/"
+        sed -i -e 's/pkexec/sudo \-E/' "${DESKTOP}/calamares.desktop"
     fi
 
 
-    if [ ! -f "$DESKTOP/aptosid-manual.desktop" ] && \
+    if [ ! -f "${DESKTOP}/aptosid-manual.desktop" ] && \
     [ -f /usr/share/applications/aptosid/aptosid-manual.desktop ]; then
         install -m 0755 /usr/share/applications/aptosid/aptosid-manual.desktop \
-            "$DESKTOP/"
+            "${DESKTOP}/"
     fi
 
-    if [ ! -f "$DESKTOP/aptosid-irc.desktop" ] && \
+    if [ ! -f "${DESKTOP}/aptosid-irc.desktop" ] && \
     [ -f /usr/share/applications/aptosid/aptosid-irc.desktop ]; then
         install -m 0755 /usr/share/applications/aptosid/aptosid-irc.desktop \
-            "$DESKTOP/"
+            "${DESKTOP}/"
     fi
 
     # scan for index.html in fll specific live mountpoint directories
@@ -49,8 +50,8 @@ if [ -s /etc/default/distro ]; then
     # create desktop shortcut to index.html
     ###
     if [ -f "${INDEXFILE}" ] && \
-        [ ! -f "$DESKTOP/${FLL_DISTRO_NAME}.desktop" ]; then
-        cat > "$DESKTOP/${FLL_DISTRO_NAME}.desktop" \
+        [ ! -f "${DESKTOP}/${FLL_DISTRO_NAME}.desktop" ]; then
+        cat > "${DESKTOP}/${FLL_DISTRO_NAME}.desktop" \
     <<EOF
 #!/usr/bin/env xdg-open
 [Desktop Entry]
@@ -63,11 +64,11 @@ Terminal=false
 Name=${FLL_CDROM_INDEX}
 GenericName=${FLL_CDROM_INDEX}
 EOF
-        chmod u+x "$DESKTOP/${FLL_DISTRO_NAME}.desktop"
+        chmod u+x "${DESKTOP}/${FLL_DISTRO_NAME}.desktop"
     fi
 
     # Set desktop launchers as trusted (See: #1037299)
-    for launcher in "$DESKTOP"/*.desktop; do
+    for launcher in "${DESKTOP}"/*.desktop; do
         [ -e "$launcher" ] || conitnue
         case "$XDG_CURRENT_DESKTOP" in
             XFCE*)

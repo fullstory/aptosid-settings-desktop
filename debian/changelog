@@ -1,8 +1,10 @@
-aptosid-settings-desktop (20260208.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260301.1) UNRELEASED; urgency=medium
 
-  * NOT RELEASED YET
+  [ Kel Modderman ]
+  * Substitute pkexec for sudo -E in calamares desktop launcher to preserve
+    user styling.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Feb 2026 02:21:36 +0100
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 01 Mar 2026 13:22:12 +1000
 
 aptosid-settings-desktop (20260208.1) unstable; urgency=medium
 
