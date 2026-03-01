@@ -99,7 +99,7 @@ for ws in 0 1; do
 done
 
 xfconf-query --create --channel xfce4-panel \
-	--property /plugins/plugin-1/button-icon --type string --set emblem-aptosid
+	--property /plugins/plugin-1/button-icon --type string --set emblem-aptosid-fred
 
 xfconf-query --create --channel xfce4-desktop \
 	--property /desktop-icons/use-custom-label-background-color \

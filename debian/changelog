@@ -3,6 +3,7 @@ aptosid-settings-desktop (20260301.1) UNRELEASED; urgency=medium
   [ Kel Modderman ]
   * Substitute pkexec for sudo -E in calamares desktop launcher to preserve
     user styling.
+  * Use emblem-aptosid-fred for menu icons.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 01 Mar 2026 13:22:12 +1000
 

@@ -31,5 +31,5 @@ forEachWidget(function(widget, containment) {
     print("Icon for " + widget.type + ": " + widget.readConfig("icon"));
     // If using the builtin hardcoded default, switch to the branding icon
     if (widget.readConfig("icon") == "")
-        widget.writeConfig("icon", "emblem-aptosid")
+        widget.writeConfig("icon", "emblem-aptosid-fred")
 });
