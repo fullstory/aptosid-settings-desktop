@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260301.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260301.1) unstable; urgency=medium
 
   [ Kel Modderman ]
   * Substitute pkexec for sudo -E in calamares desktop launcher to preserve
@@ -6,7 +6,7 @@ aptosid-settings-desktop (20260301.1) UNRELEASED; urgency=medium
   * Use emblem-aptosid for calamares desktop launcher icon.
   * Use emblem-aptosid-fred for menu icons.
 
- -- Kel Modderman <kelvmod@gmail.com>  Sun, 01 Mar 2026 13:22:12 +1000
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 02 Mar 2026 02:11:05 +0100
 
 aptosid-settings-desktop (20260208.1) unstable; urgency=medium
 
