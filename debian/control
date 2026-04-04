@@ -129,7 +129,8 @@ Package: aptosid-settings-kde
 Depends: ${misc:Depends},
  aptosid-art-kde,
  aptosid-art-wallpaper-nemesis,
- aptosid-settings-common
+ aptosid-settings-common,
+ kwin-wayland
 Recommends: xdg-browser-launcher,
  fonts-noto
 Architecture: all
