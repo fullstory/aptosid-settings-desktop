@@ -1,9 +1,6 @@
 #!/bin/sh
-# /usr/libexec/kodi-plasma-toggle
 # Alternate between Kodi (GBM) and Plasma (Wayland) on an appliance.
 # Boot lands on Kodi; Exit Kodi -> Plasma; Log out of Plasma -> Kodi; repeat.
-# Autologin session under SDDM, configured by fll_desktop.
-# Shipped by aptosid-settings-kodi-flatpak.
 
 set -u
 
@@ -24,7 +21,7 @@ run_guarded() {  # $1=label  $2..=command
     run=$((end - start))
     log "session '$label' exited rc=$rc after ${run}s"
     if [ "$run" -lt "$MIN_RUNTIME" ]; then
-        log "'$label' exited quickly; throttling ${CRASH_THROTTLE}s (investigate via ssh)"
+        log "'$label' exited quickly; throttling ${CRASH_THROTTLE}s"
         sleep "$CRASH_THROTTLE"
     fi
 }
