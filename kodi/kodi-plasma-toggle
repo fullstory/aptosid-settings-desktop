@@ -1,0 +1,52 @@
+#!/bin/sh
+# /usr/libexec/kodi-plasma-toggle
+# Alternate between Kodi (GBM) and Plasma (Wayland) on an appliance.
+# Boot lands on Kodi; Exit Kodi -> Plasma; Log out of Plasma -> Kodi; repeat.
+# Autologin session under SDDM, configured by fll_desktop.
+# Shipped by aptosid-settings-kodi-flatpak.
+
+set -u
+
+MIN_RUNTIME=10      # a session exiting faster than this is treated as a crash
+CRASH_THROTTLE=5    # seconds to wait after a fast exit, so a broken session can't tight-loop
+
+log() { logger -t kodi-plasma-toggle "$*"; }
+
+# Run a session. fll_desktop sets SDDM Relogin=true, so exiting only re-logs-in the
+# session -- there is no greeter fallback. The toggle therefore never exits: a session
+# that dies faster than MIN_RUNTIME is logged and throttled, then the loop proceeds.
+run_guarded() {  # $1=label  $2..=command
+    label=$1; shift
+    start=$(date +%s)
+    "$@"
+    rc=$?
+    end=$(date +%s)
+    run=$((end - start))
+    log "session '$label' exited rc=$rc after ${run}s"
+    if [ "$run" -lt "$MIN_RUNTIME" ]; then
+        log "'$label' exited quickly; throttling ${CRASH_THROTTLE}s (investigate via ssh)"
+        sleep "$CRASH_THROTTLE"
+    fi
+}
+
+# Resolve KDE's "start a D-Bus session bus only if one isn't present" wrapper once.
+# Globbed so it works on any Debian multiarch (x86_64, aarch64, ...) without
+# hardcoding the triplet. This is exactly what the Plasma session entry invokes.
+PLASMA_BUS=
+for w in /usr/lib/*/libexec/plasma-dbus-run-session-if-needed; do
+    [ -x "$w" ] && { PLASMA_BUS=$w; break; }
+done
+[ -n "$PLASMA_BUS" ] || log "plasma-dbus-run-session-if-needed not found; launching plasma directly"
+
+while :; do
+    unset WAYLAND_DISPLAY DISPLAY XDG_SESSION_TYPE XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP
+
+    run_guarded kodi \
+        flatpak run tv.kodi.Kodi --standalone --windowing=gbm
+
+    # $PLASMA_BUS is unquoted on purpose: empty -> drops out, set -> prepends the
+    # wrapper. The path has no spaces, so word-splitting is safe here.
+    run_guarded plasma \
+        env XDG_SESSION_TYPE=wayland XDG_SESSION_DESKTOP=plasma XDG_CURRENT_DESKTOP=KDE \
+            $PLASMA_BUS startplasma-wayland
+done

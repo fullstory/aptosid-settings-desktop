@@ -144,11 +144,14 @@ Description: provide default KDE settings for aptosid
 
 Package: aptosid-settings-kodi-flatpak
 Depends: ${misc:Depends}
-Recommends: sddm
+Recommends: sddm, plasma-workspace
 Architecture: all
 Description: provide desktop session for Kodi
  Provides a desktop session for launching Kodi via flatpak in standalone GBM
  window management mode via a desktop display manager.
+ .
+ Also provides a "Kodi/Plasma Appliance" session that boots into Kodi and,
+ on exit, alternates with a Plasma (Wayland) session and back again.
 
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
