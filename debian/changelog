@@ -1,6 +1,5 @@
-aptosid-settings-desktop (20260629.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260629.1) unstable; urgency=medium
 
-  [ Kel Modderman ]
   * aptosid-settings-kodi-flatpak: add "Kodi/Plasma Appliance" toggle
     session that alternates between Kodi (GBM) and Plasma (Wayland) on
     session exit.
