@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20260701.2) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Jul 2026 00:56:06 +0200
+
 aptosid-settings-desktop (20260701.1) unstable; urgency=medium
 
   * aptosid-settings-kodi-flatpak: move the Kodi flatpak launch command
