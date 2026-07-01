@@ -1,0 +1,12 @@
+#!/bin/sh
+# Launches Kodi for the kodi-flatpak.desktop session entry.
+# Overrides: /etc/default/aptosid-settings-kodi-flatpak
+#
+# Shipped by aptosid-settings-kodi-flatpak.
+
+set -eu
+
+DEFAULTS=/etc/default/aptosid-settings-kodi-flatpak
+[ -s "$DEFAULTS" ] && . "$DEFAULTS"
+
+exec ${KODI_GBM_EXEC:-flatpak run tv.kodi.Kodi --standalone --windowing=gbm}

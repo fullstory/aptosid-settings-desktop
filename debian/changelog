@@ -1,8 +1,15 @@
-aptosid-settings-desktop (20260629.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260701.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 30 Jun 2026 23:54:27 +0200
+  [ Kel Modderman ]
+  * aptosid-settings-kodi-flatpak: move the Kodi flatpak launch command
+    into a package-owned wrapper, /usr/libexec/kodi-flatpak-session,
+    which sources the new /etc/default/aptosid-settings-kodi-flatpak
+    conffile if present and execs the resulting command.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 01 Jul 2026 11:42:26 +1000
 
 aptosid-settings-desktop (20260629.1) unstable; urgency=medium
 

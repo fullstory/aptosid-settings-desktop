@@ -1,3 +1,4 @@
 kodi/kodi-flatpak.desktop usr/share/wayland-sessions
 kodi/kodi-plasma-toggle.desktop usr/share/wayland-sessions
 kodi/kodi-plasma-toggle usr/libexec
+kodi/kodi-flatpak-session usr/libexec
