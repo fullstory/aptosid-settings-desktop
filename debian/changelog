@@ -2,7 +2,9 @@ aptosid-settings-desktop (20260702.1) UNRELEASED; urgency=medium
 
   * Rename aptosid-settings-kodi-flatpak to kodi-session-aptosid; the
     wrapper/conffile mechanism is not flatpak-specific. Add
-    Replaces/Breaks and a maintscript rm_conffile for the transition.
+    Replaces/Breaks so the new package takes over the old one's files.
+    The obsolete /etc/default/aptosid-settings-kodi-flatpak conffile is
+    dropped when the superseded package is purged.
 
  -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jul 2026 11:47:16 +1000
 

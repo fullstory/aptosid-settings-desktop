@@ -143,7 +143,6 @@ Description: provide default KDE settings for aptosid
  profiles.
 
 Package: kodi-session-aptosid
-Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Recommends: sddm, plasma-workspace
 Replaces: aptosid-settings-kodi-flatpak (<< 20260702.1~)
