@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260702.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260702.1) unstable; urgency=medium
 
   * Rename aptosid-settings-kodi-flatpak to kodi-session-aptosid; the
     wrapper/conffile mechanism is not flatpak-specific. Add
