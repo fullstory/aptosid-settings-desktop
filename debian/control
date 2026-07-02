@@ -142,9 +142,12 @@ Description: provide default KDE settings for aptosid
  configurable by the local user and don't override already existing user
  profiles.
 
-Package: aptosid-settings-kodi-flatpak
+Package: kodi-session-aptosid
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}
 Recommends: sddm, plasma-workspace
+Replaces: aptosid-settings-kodi-flatpak (<< 20260702.1~)
+Breaks: aptosid-settings-kodi-flatpak (<< 20260702.1~)
 Architecture: all
 Description: provide desktop session for Kodi
  Provides a desktop session for launching Kodi via flatpak in standalone GBM

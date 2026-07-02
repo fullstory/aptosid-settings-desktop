@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=Kodi flatpak
 Comment=Kodi flatpak
-Exec=/usr/libexec/kodi-flatpak-session
+Exec=/usr/libexec/kodi-session-aptosid
 Type=Application

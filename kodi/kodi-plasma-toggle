@@ -39,9 +39,9 @@ while :; do
     unset WAYLAND_DISPLAY DISPLAY XDG_SESSION_TYPE XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP
 
     # Kodi GBM needs no display vars; --windowing=gbm is explicit. The wrapper
-    # reads /etc/default/aptosid-settings-kodi-flatpak, then execs into the real Kodi
+    # reads /etc/default/kodi-session-aptosid, then execs into the real Kodi
     # invocation -- one exec hop, so run_guarded still waits on the real process.
-    run_guarded kodi /usr/libexec/kodi-flatpak-session
+    run_guarded kodi /usr/libexec/kodi-session-aptosid
 
     # $PLASMA_BUS is unquoted on purpose: empty -> drops out, set -> prepends the
     # wrapper. The path has no spaces, so word-splitting is safe here.

@@ -1,0 +1,6 @@
+# /etc/default/kodi-session-aptosid
+#
+# Override for the Kodi standalone GBM session launch command, read by
+# /usr/libexec/kodi-session-aptosid. This file is a conffile: local edits
+# survive package upgrades.
+#KODI_GBM_EXEC="flatpak run tv.kodi.Kodi --standalone --windowing=gbm"
