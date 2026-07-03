@@ -1,12 +1,18 @@
-aptosid-settings-desktop (20260702.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260703.1) UNRELEASED; urgency=medium
 
   * Rename aptosid-settings-kodi-flatpak to kodi-session-aptosid; the
     wrapper/conffile mechanism is not flatpak-specific. Add
     Replaces/Breaks so the new package takes over the old one's files.
     The obsolete /etc/default/aptosid-settings-kodi-flatpak conffile is
     dropped when the superseded package is purged.
+  * aptosid-settings-hyprland: migrate the default Hyprland config from the
+    deprecated hyprlang hyprland.conf to the Lua hyprland.lua required since
+    Hyprland 0.55. Translates all settings and drops the obsolete dwindle
+    pseudotile option (now handled by the SUPER+P bind). Multimedia keys now
+    use the locked/repeating bind flags, and SUPER+M stops the session via
+    "uwsm stop" instead of the raw exit dispatcher.
 
- -- Kel Modderman <kelvmod@gmail.com>  Thu, 02 Jul 2026 11:47:16 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Fri, 03 Jul 2026 20:43:50 +1000
 
 aptosid-settings-desktop (20260701.1) unstable; urgency=medium
 
