@@ -1,4 +1,10 @@
-aptosid-settings-desktop (20260703.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260703.3) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 03 Jul 2026 22:29:19 +0200
+
+aptosid-settings-desktop (20260703.2) unstable; urgency=medium
 
   [ Kel Modderman ]
   * aptosid-settings-hyprland: move the session environment out of hyprland.lua
@@ -13,9 +19,6 @@ aptosid-settings-desktop (20260703.2) UNRELEASED; urgency=medium
     hyprpaper (hyprpaper.conf) search /etc/xdg via hyprutils, so the shipped
     files act as the system default and no longer need to be copied into
     /etc/skel by fll-live-boot.
-
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 03 Jul 2026 22:26:10 +0200
 
