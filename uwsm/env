@@ -1,0 +1,21 @@
+# uwsm environment for graphical (Wayland) sessions, installed to
+# /etc/xdg/uwsm/env. uwsm sources this (POSIX sh) before starting the
+# compositor and exports the variables to the whole systemd/D-Bus graphical
+# session. See the uwsm README and `man 5 environment.d`.
+#
+# Note: GTK_THEME and QT_STYLE_OVERRIDE are NOT set here; they ship in
+# /etc/environment.d/ (aptosid-settings-gtk-theme, aptosid-settings-qt-style)
+# and are already picked up by the systemd user session. XDG_* variables are
+# set by uwsm automatically.
+
+# Cursor theme. xcursor is used by GTK/Qt/XWayland clients and as Hyprland's
+# hyprcursor fallback (see also env-hyprland for the HYPRCURSOR_* variables).
+export XCURSOR_THEME=Bibata-Modern-Ice
+export XCURSOR_SIZE=24
+
+# Toolkit backends / scaling
+export GDK_BACKEND=wayland,x11
+export GDK_SCALE=1
+export QT_SCALE_FACTOR=1
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_QPA_PLATFORM="wayland;xcb"

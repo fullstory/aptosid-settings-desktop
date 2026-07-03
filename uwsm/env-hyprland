@@ -1,0 +1,7 @@
+# uwsm environment for the Hyprland session only, installed to
+# /etc/xdg/uwsm/env-hyprland. Sourced after uwsm/env when the session's
+# XDG_CURRENT_DESKTOP (lowercased) is "hyprland". Use this for HYPR* / AQ_*
+# and hyprcursor variables.
+
+export HYPRCURSOR_THEME=Bibata-Modern-Ice
+export HYPRCURSOR_SIZE=24
