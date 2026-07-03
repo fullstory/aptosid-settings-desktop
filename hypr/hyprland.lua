@@ -38,22 +38,10 @@ local menu        = "wofi -I --show drun"
 -------------------
 
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
--- Autostart necessary processes (like notification daemons, status bars, etc.)
+-- Autostart processes that are NOT already managed by the uwsm-managed systemd
+-- session. Under uwsm, graphical-session.target starts the daemons that ship
+-- their own units or XDG autostart entries
 hl.on("hyprland.start", function()
-    -- update environment for xdg-desktop-portals
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    -- update XDG user dirs (blueman-applet)
-    hl.exec_cmd("xdg-user-dirs-update")
-    -- Set cursor theme
-    hl.exec_cmd("hyprctl setcursor Bibata-Modern-Ice 24")
-    hl.exec_cmd("thunar --daemon")
-    hl.exec_cmd("mako --config /etc/xdg/mako/config")
-    hl.exec_cmd("waybar")
-    hl.exec_cmd("hyprpaper")
-    hl.exec_cmd("nm-tray")
-    -- Enable screenlock
-    -- hl.exec_cmd([[swayidle -w timeout 300 'gtklock -i' timeout 600 'wlopm --off *' resume 'wlopm --on *' before-sleep 'gtklock -i']])
-    hl.exec_cmd("systemctl --user start plasma-polkit-agent.service")
     hl.exec_cmd(terminal)
 end)
 
@@ -63,19 +51,12 @@ end)
 -------------------------------
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
-
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
-
-hl.env("GDK_BACKEND", "wayland,x11")
-hl.env("GDK_SCALE", "1")
-hl.env("QT_SCALE_FACTOR", "1")
-hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
-hl.env("QT_QPA_PLATFORM", "wayland;xcb")
-
--- Dark theme
-hl.env("QT_STYLE_OVERRIDE", "kvantum")
-hl.env("GTK_THEME", "Adwaita:dark")
+-- Under uwsm, environment variables must NOT be set here (they would not reach
+-- the systemd-managed session). They are provided instead by:
+--   /etc/xdg/uwsm/env          - xcursor + GDK/Qt toolkit vars (uwsm sessions)
+--   /etc/xdg/uwsm/env-hyprland - HYPR* / hyprcursor vars (Hyprland session)
+--   /etc/environment.d/*.conf  - GTK_THEME, QT_STYLE_OVERRIDE (whole session)
+-- uwsm also sets the XDG_* variables automatically.
 
 
 -----------------------
@@ -169,9 +150,11 @@ hl.config({
 ---------------
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#input
--- NOTE: the empty kb_* strings are placeholders. fll-live-boot's fll_desktop
--- seds the live keyboard layout into them (see the sway config for the same
--- pattern); leave them as bare `key = ""` so those substitutions keep matching.
+-- kb_* are intentionally left empty. This file ships read-only at
+-- /etc/xdg/hypr/hyprland.lua, so the live keyboard layout is not written in
+-- here; fll-live-boot provides it via XKB_DEFAULT_* (a uwsm env-hyprland.d
+-- drop-in), which libxkbcommon honours when the layout is empty. Leave these
+-- as bare `key = ""` (an omitted kb_layout would default to "us" and mask it).
 hl.config({
     input = {
         kb_layout  = "",

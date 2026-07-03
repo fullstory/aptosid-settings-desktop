@@ -11,6 +11,31 @@ aptosid-settings-desktop (20260703.1) UNRELEASED; urgency=medium
     pseudotile option (now handled by the SUPER+P bind). Multimedia keys now
     use the locked/repeating bind flags, and SUPER+M stops the session via
     "uwsm stop" instead of the raw exit dispatcher.
+  * aptosid-settings-hyprland: stop launching waybar, hyprpaper, mako and
+    nm-tray from the hyprland.lua autostart. Under the uwsm-managed session
+    these are already started by systemd (waybar/hyprpaper/mako .service) and
+    XDG autostart (nm-tray); launching them again spawned duplicate waybars
+    and made hyprpaper race itself, leaving no wallpaper set. Also drop the
+    dbus-update-activation-environment and xdg-user-dirs-update calls: uwsm's
+    finalize step already populates the systemd and D-Bus activation
+    environments, and xdg-user-dirs runs from its own XDG autostart entry.
+    Thunar is no longer started with --daemon; it is launched on demand.
+  * aptosid-settings-hyprland: use hyprpolkitagent as the polkit authentication
+    agent instead of the KDE agent. It is started by the systemd user session
+    (hyprpolkitagent.service, WantedBy graphical-session.target), so nothing is
+    launched from the config.
+  * aptosid-settings-hyprland: move the session environment out of hyprland.lua
+    (uwsm cannot see env set there) into uwsm env files shipped at
+    /etc/xdg/uwsm/env (xcursor and GDK/Qt toolkit vars) and
+    /etc/xdg/uwsm/env-hyprland (HYPRCURSOR_*). The cursor theme is now set
+    declaratively via XCURSOR_THEME/HYPRCURSOR_THEME instead of a "hyprctl
+    setcursor" autostart call, and the GTK_THEME/QT_STYLE_OVERRIDE duplicates
+    are dropped as they already ship in /etc/environment.d.
+  * aptosid-settings-hyprland: install the hypr config to /etc/xdg/hypr instead
+    of /usr/share. Since Hyprland 0.55 both hyprland (hyprland.lua) and
+    hyprpaper (hyprpaper.conf) search /etc/xdg via hyprutils, so the shipped
+    files act as the system default and no longer need to be copied into
+    /etc/skel by fll-live-boot.
 
  -- Kel Modderman <kelvmod@gmail.com>  Fri, 03 Jul 2026 20:43:50 +1000
 
