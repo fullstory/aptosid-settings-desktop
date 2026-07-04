@@ -235,10 +235,10 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioPlay exec playerctl play-pause
     bindsym --locked XF86AudioNext exec playerctl next
     bindsym --locked XF86AudioPrev exec playerctl previous
-    bindsym --locked XF86audiostop exec playerctl stop
+    bindsym --locked XF86AudioStop exec playerctl stop
     # Special keys to take a screenshot with grim + slurp
-    bindsym Print exec sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'
-    bindsym $mod+Print exec sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'
+    bindsym Print exec sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'
+    bindsym $mod+Print exec sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'
 
 #
 # Status Bar:

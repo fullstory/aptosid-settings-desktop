@@ -5,6 +5,22 @@ aptosid-settings-desktop (20260704.3) UNRELEASED; urgency=medium
 
   [ Kel Modderman ]
   * aptosid-settings-hyprland: configure float rule for calamares.
+  * hyprland, sway, labwc: fix screenshot filename date format
+    (%H-%m-%s -> %H-%M-%S; was writing hour-month-epoch).
+  * labwc: fix Super+W web browser bind (x-www-browwer -> x-www-browser).
+  * sway, labwc: fix media-stop keysym (XF86audiostop -> XF86AudioStop).
+  * labwc: fix volume/mute keysyms (XF86_Audio* -> XF86Audio*).
+  * lxqt: fix mimeapps associations (csv -> calc, draw -> draw,
+    libreoffice-math.desktops typo).
+  * debian/copyright: fix malformed email address.
+  * gtk-theme: align GTK 2/3/4 fallbacks to Mint-Y-Yaru icons and
+    Noto Sans 11 font (per-flavour icon accents unchanged).
+  * mako: point icon-path at the session themes (Mint-Y-Purple/Blue),
+    fix font family (NotoSans -> Noto Sans).
+  * lxqt: set cursor size to 24 to match the rest of the session.
+  * waybar: add missing #power-profiles-daemon padding (hyprland),
+    drop dead #language selector (sway).
+  * aptosid-settings-sway, aptosid-settings-hyprland: recommend waybar.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 04 Jul 2026 04:51:02 +0200
 

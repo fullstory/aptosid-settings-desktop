@@ -115,6 +115,7 @@ Recommends: aptosid-settings-qt-style,
  fonts-noto,
  gnome-themes-extra,
  mint-y-icons,
+ waybar,
  xdg-browser-launcher
 Architecture: all
 Description: provide default Hyprland settings for aptosid
@@ -251,6 +252,7 @@ Recommends: aptosid-settings-qt-style,
  fonts-noto,
  gnome-themes-extra,
  mint-y-icons,
+ waybar,
  xdg-browser-launcher
 Architecture: all
 Description: provide default Sway settings for aptosid

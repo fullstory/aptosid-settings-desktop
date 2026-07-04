@@ -33,16 +33,16 @@
     <keybind key="W-l"><action name="Execute" command="wlogout" /></keybind>
     <keybind key="W-n"><action name="Execute" command="nm-connection-editor" /></keybind>
     <keybind key="W-t"><action name="Execute" command="x-terminal-emulator" /></keybind>
-    <keybind key="W-w"><action name="Execute" command="x-www-browwer" /></keybind>
+    <keybind key="W-w"><action name="Execute" command="x-www-browser" /></keybind>
 
     <keybind key="Print">
       <action name="Execute">
-        <command>sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'</command>
+        <command>sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'</command>
       </action>
     </keybind>
     <keybind key="W-Print">
       <action name="Execute">
-        <command>sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%m-%s).png'</command>
+        <command>sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'</command>
       </action>
     </keybind>
 
@@ -52,13 +52,13 @@
     <keybind key="XF86KbdBrightnessUp"><action name="Execute" command="brightnessctl -d *::kbd_backlight set 33%+" /></keybind>
     <keybind key="XF86KbdBrightnessDown"><action name="Execute" command="brightnessctl -d *::kbd_backlight set 33%-" /></keybind>
 
-    <keybind key="XF86_AudioLowerVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%-" /></keybind>
-    <keybind key="XF86_AudioRaiseVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%+" /></keybind>
-    <keybind key="XF86_AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle " /></keybind>
+    <keybind key="XF86AudioLowerVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%-" /></keybind>
+    <keybind key="XF86AudioRaiseVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%+" /></keybind>
+    <keybind key="XF86AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle " /></keybind>
 
     <keybind key="XF86AudioPlay"><action name="Execute" command="playerctl play-pause" /></keybind>
     <keybind key="XF86AudioNext"><action name="Execute" command="playerctl next" /></keybind>
     <keybind key="XF86AudioPrev"><action name="Execute" command="playerctl previous" /></keybind>
-    <keybind key="XF86audiostop"><action name="Execute" command="playerctl stop" /></keybind>
+    <keybind key="XF86AudioStop"><action name="Execute" command="playerctl stop" /></keybind>
   </keyboard>
 </labwc_config>

@@ -1,11 +1,11 @@
 # Format
-font=NotoSans 11
+font=Noto Sans 11
 border-color=#5555ffff
 border-size=2
 background-color=#581d58aa
 
 # icons
-icon-path=/usr/share/icons/Mint-Y-Teal:/usr/share/icons/Mint-Y
+icon-path=/usr/share/icons/Mint-Y-Purple:/usr/share/icons/Mint-Y-Blue:/usr/share/icons/Mint-Y
 
 # Hidden format
 [hidden]

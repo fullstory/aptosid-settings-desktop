@@ -1,5 +1,5 @@
 [Default Applications]
-application/csv=libreoffice-math.desktop
+application/csv=libreoffice-calc.desktop
 application/excel=libreoffice-calc.desktop
 application/msexcel=libreoffice-calc.desktop
 application/msword=libreoffice-writer.desktop
@@ -18,9 +18,9 @@ application/vnd.ms-word=libreoffice-writer.desktop
 application/vnd.rn-realmedia=vlc.desktop
 application/vnd.sun.xml.calc=libreoffice-calc.desktop
 application/vnd.sun.xml.calc.template=libreoffice-calc.desktop
-application/vnd.sun.xml.draw=libreoffice-impress.desktop
-application/vnd.sun.xml.draw.template=libreoffice-impress.desktop
-application/vnd.sun.xml.math=libreoffice-math.desktops
+application/vnd.sun.xml.draw=libreoffice-draw.desktop
+application/vnd.sun.xml.draw.template=libreoffice-draw.desktop
+application/vnd.sun.xml.math=libreoffice-math.desktop
 application/vnd.sun.xml.writer=libreoffice-writer.desktop
 application/vnd.sun.xml.writer.template=libreoffice-writer.desktop
 application/vnd.sun.xml.writer.global=libreoffice-writer.desktop
