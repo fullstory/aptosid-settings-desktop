@@ -21,6 +21,8 @@ aptosid-settings-desktop (20260704.3) UNRELEASED; urgency=medium
   * waybar: add missing #power-profiles-daemon padding (hyprland),
     drop dead #language selector (sway).
   * aptosid-settings-sway, aptosid-settings-hyprland: recommend waybar.
+  * aptosid-settings-kde: set Breeze Light cursor theme in the look-and-feel
+    defaults (cursorTheme=Breeze_Light).
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 04 Jul 2026 04:51:02 +0200
 
