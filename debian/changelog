@@ -1,6 +1,10 @@
 aptosid-settings-desktop (20260704.3) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-hyprland: configure float rule for calamares.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 04 Jul 2026 04:51:02 +0200
 

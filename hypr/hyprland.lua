@@ -267,6 +267,7 @@ hl.window_rule({ match = { class = "^(pavucontrol|pavucontrol-qt|org.pulseaudio.
 hl.window_rule({ match = { class = "^(org.kde.polkit-kde-authentication-agent-1|polkit-gnome-authentication-agent-1)$" }, float = true })
 hl.window_rule({ match = { class = "(xdg-desktop-portal-hyprland|xdg-desktop-portal-gtk|xdg-desktop-portal-kde)" }, float = true })
 
+hl.window_rule({ match = { class = "^([Cc]alamares)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "^(org.gnome.Calculator)$" }, float = true })
 hl.window_rule({ match = { class = "^([Qq]alculate-gtk)$" }, float = true })
 hl.window_rule({ match = { class = "^([Qq]alculate-qt)$" }, float = true })
