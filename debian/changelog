@@ -18,6 +18,7 @@ aptosid-settings-desktop (20260704.3) UNRELEASED; urgency=medium
   * mako: point icon-path at the session themes (Mint-Y-Purple/Blue),
     fix font family (NotoSans -> Noto Sans).
   * lxqt: set cursor size to 24 to match the rest of the session.
+  * lxqt: drop leftover per-device [Touchpad] settings from session.conf.
   * waybar: add missing #power-profiles-daemon padding (hyprland),
     drop dead #language selector (sway).
   * aptosid-settings-sway, aptosid-settings-hyprland: recommend waybar.
