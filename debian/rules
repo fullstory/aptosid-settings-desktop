@@ -2,3 +2,25 @@
 
 %:
 	dh $@
+
+create-watermark:
+	# requires inkscape and imagemagick to be installed
+	@if [ ! -x /usr/bin/inkscape ]; then \
+		echo "ERROR: inkscape not installed!" ; \
+		false ; \
+	fi
+	@if [ ! -x /usr/bin/magick ]; then \
+		echo "ERROR: imagemagick not installed!" ; \
+		false ; \
+	fi
+
+	# plymouth spinner watermark (fred). The emblem is black line art, but the
+	# spinner theme paints on a black background, so it is recoloured white via
+	# -negate to stay legible, and normalised to 8-bit RGBA for plymouth's PNG
+	# loader.
+	[ -r $(CURDIR)/emblem-aptosid-fred.svg ] || false
+	inkscape --export-type="png" --export-width=256 --export-height=256 \
+		--export-filename="$(CURDIR)/plymouth/watermark.png" \
+		$(CURDIR)/emblem-aptosid-fred.svg
+	magick "$(CURDIR)/plymouth/watermark.png" -channel RGB -negate +channel \
+		-define png:color-type=6 PNG32:"$(CURDIR)/plymouth/watermark.png"

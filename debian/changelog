@@ -21,6 +21,8 @@ aptosid-settings-desktop (20260704.3) UNRELEASED; urgency=medium
   * lxqt: drop leftover per-device [Touchpad] settings from session.conf.
   * labwc: add generic touchpad defaults (natural scroll, tap-to-click,
     tap-and-drag, two-finger scroll, disable-while-typing) via libinput.
+  * aptosid-settings-common: ship a fred watermark for the plymouth spinner
+    theme (/usr/share/plymouth/themes/spinner/watermark.png).
   * waybar: add missing #power-profiles-daemon padding (hyprland),
     drop dead #language selector (sway).
   * aptosid-settings-sway, aptosid-settings-hyprland: recommend waybar.
