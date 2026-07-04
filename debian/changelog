@@ -2,6 +2,13 @@ aptosid-settings-desktop (20260704.2) UNRELEASED; urgency=medium
 
   * NOT RELEASED YET
 
+  [ Kel Modderman ]
+  * aptosid-settings-hyprland: add /usr/libexec/aptosid-settings-hyprland/
+    keyboard-env, which writes the uwsm keyboard drop-in (XKB_DEFAULT_*) from
+    /etc/default/keyboard. Used by fll-live-boot on the live media and by
+    calamares post-install so the installed Hyprland session follows the
+    selected keyboard layout.
+
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 04 Jul 2026 03:54:29 +0200
 
 aptosid-settings-desktop (20260704.1) unstable; urgency=medium
