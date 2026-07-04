@@ -19,7 +19,7 @@ create-watermark:
 	# -negate to stay legible, and normalised to 8-bit RGBA for plymouth's PNG
 	# loader.
 	[ -r $(CURDIR)/emblem-aptosid-fred.svg ] || false
-	inkscape --export-type="png" --export-width=256 --export-height=256 \
+	inkscape --export-type="png" --export-width=128 --export-height=128 \
 		--export-filename="$(CURDIR)/plymouth/watermark.png" \
 		$(CURDIR)/emblem-aptosid-fred.svg
 	magick "$(CURDIR)/plymouth/watermark.png" -channel RGB -negate +channel \
