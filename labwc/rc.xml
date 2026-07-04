@@ -61,4 +61,14 @@
     <keybind key="XF86AudioPrev"><action name="Execute" command="playerctl previous" /></keybind>
     <keybind key="XF86AudioStop"><action name="Execute" command="playerctl stop" /></keybind>
   </keyboard>
+
+  <libinput>
+    <device category="touchpad">
+      <naturalScroll>yes</naturalScroll>
+      <tap>yes</tap>
+      <tapAndDrag>yes</tapAndDrag>
+      <scrollMethod>twofinger</scrollMethod>
+      <disableWhileTyping>yes</disableWhileTyping>
+    </device>
+  </libinput>
 </labwc_config>

@@ -19,6 +19,8 @@ aptosid-settings-desktop (20260704.3) UNRELEASED; urgency=medium
     fix font family (NotoSans -> Noto Sans).
   * lxqt: set cursor size to 24 to match the rest of the session.
   * lxqt: drop leftover per-device [Touchpad] settings from session.conf.
+  * labwc: add generic touchpad defaults (natural scroll, tap-to-click,
+    tap-and-drag, two-finger scroll, disable-while-typing) via libinput.
   * waybar: add missing #power-profiles-daemon padding (hyprland),
     drop dead #language selector (sway).
   * aptosid-settings-sway, aptosid-settings-hyprland: recommend waybar.
