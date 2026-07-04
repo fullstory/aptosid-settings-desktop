@@ -1,8 +1,5 @@
-aptosid-settings-desktop (20260704.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260704.1) unstable; urgency=medium
 
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-hyprland: port hyprpaper.conf to the hyprpaper 0.8 syntax.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sat, 04 Jul 2026 07:51:37 +1000
