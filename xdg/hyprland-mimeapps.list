@@ -50,10 +50,10 @@ x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop
 # Email (Thunderbird)
 x-scheme-handler/mailto=thunderbird.desktop
 
-# File Manager (Thunar)
-application/x-gnome-saved-search=thunar.desktop
-inode/directory=thunar.desktop
-x-scheme-handler/trash=thunar.desktop
+# File Manager (PCManFM-Qt)
+application/x-gnome-saved-search=pcmanfm-qt.desktop
+inode/directory=pcmanfm-qt.desktop
+x-scheme-handler/trash=pcmanfm-qt.desktop
 
 # Image Viewer (eom/eog/gthumb)
 image/bmp=eom.desktop;eog.desktop;gthumb.desktop;

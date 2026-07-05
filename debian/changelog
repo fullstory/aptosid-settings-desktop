@@ -40,6 +40,14 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
     uwsm so they join the session, and runs terminal apps in kitty. A
     new hyprtoolkit.conf themes it to the session palette (blue/magenta)
     with matching fonts and icons.
+  * aptosid-settings-hyprland: add more Hypr ecosystem utilities.
+    Clipboard history (cliphist + wl-clipboard) on SUPER+SHIFT+V via
+    hyprlauncher, a colour picker (hyprpicker) on SUPER+SHIFT+C, and
+    annotated screenshots (flameshot) on SUPER+SHIFT+Print alongside the
+    existing grim binds. Switch the default file manager from thunar to
+    pcmanfm-qt. Recommend mako-notifier for notifications.
+  * aptosid-settings-sway: Recommends mako-notifier, the notification
+    daemon the session already starts.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 

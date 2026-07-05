@@ -29,7 +29,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal    = "kitty"
-local fileManager = "thunar"
+local fileManager = "pcmanfm-qt"
 local menu        = "hyprlauncher"
 local locker      = "hyprlock"
 
@@ -44,6 +44,9 @@ local locker      = "hyprlock"
 -- their own units or XDG autostart entries
 hl.on("hyprland.start", function()
     hl.exec_cmd(terminal .. " -e /usr/libexec/aptosid-settings-hyprland/aptosid-hypr-hints --welcome")
+    -- Keep clipboard history (cliphist + wl-clipboard), for text and images.
+    hl.exec_cmd("wl-paste --type text --watch cliphist store")
+    hl.exec_cmd("wl-paste --type image --watch cliphist store")
 end)
 
 
@@ -208,6 +211,7 @@ hl.bind("XF86AudioStop",         hl.dsp.exec_cmd("playerctl stop"),             
 
 hl.bind("Print",            hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]),               { description = "screenshot to ~/screenshots" })
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]), { description = "screenshot a selected region" })
+hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd("flameshot gui"),   { description = "screenshot with annotation (flameshot)" })
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal),                     { description = "terminal" })
@@ -219,6 +223,8 @@ hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown"),               {
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout"),                    { description = "power menu" })
 hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(fileManager),                  { description = "file manager" })
 hl.bind(mainMod .. " + R",      hl.dsp.exec_cmd(menu),                         { description = "application launcher" })
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd([[sh -c 'cliphist list | hyprlauncher --dmenu | cliphist decode | wl-copy']]), { description = "clipboard history" })
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a -f hex -n"), { description = "pick a colour (copied to clipboard)" })
 hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo(),                        { description = "toggle pseudo-tile (dwindle)" })
 hl.bind(mainMod .. " + J",      hl.dsp.layout("togglesplit"),                  { description = "toggle split direction (dwindle)" })
 hl.bind(mainMod .. " + F",      hl.dsp.window.fullscreen(),                    { description = "fullscreen" })
