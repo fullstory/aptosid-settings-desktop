@@ -60,6 +60,9 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
     (grim + slurp) on SUPER+SHIFT+Print instead of flameshot, which is
     orphaned in Debian and unreliable on wlroots. Recommends grim, slurp
     and swappy; drops flameshot.
+  * aptosid-settings-hyprland: default text/* to featherpad (Qt) instead
+    of mousepad in the Hyprland mimeapps, fitting the Qt-leaning
+    session.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 
