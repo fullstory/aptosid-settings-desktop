@@ -109,7 +109,9 @@ Description: provide default Gnome settings for aptosid
 Package: aptosid-settings-hyprland
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-settings-common
+ aptosid-settings-common,
+ gawk,
+ jq
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-font-awesome,

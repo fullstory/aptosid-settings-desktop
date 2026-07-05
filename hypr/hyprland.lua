@@ -43,7 +43,7 @@ local locker      = "hyprlock"
 -- session. Under uwsm, graphical-session.target starts the daemons that ship
 -- their own units or XDG autostart entries
 hl.on("hyprland.start", function()
-    hl.exec_cmd(terminal)
+    hl.exec_cmd(terminal .. " -e aptosid-hypr-hints --welcome")
 end)
 
 
@@ -187,6 +187,11 @@ hl.device({
 
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
+-- The `description` on a bind is the single source of truth for the keybinding
+-- cheatsheet (aptosid-hypr-hints, shown at session start and on SUPER + /).
+-- It round-trips through `hyprctl binds -j`; only binds with a description are
+-- listed. Add one to every bind worth surfacing to a new user.
+
 -- Laptop multimedia keys: locked (work while a lockscreen is active) and,
 -- for volume/brightness, repeating (fire while held).
 hl.bind("XF86AudioRaiseVolume",  hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"),   { locked = true, repeating = true })
@@ -201,49 +206,50 @@ hl.bind("XF86AudioNext",         hl.dsp.exec_cmd("playerctl next"),             
 hl.bind("XF86AudioPrev",         hl.dsp.exec_cmd("playerctl previous"),                          { locked = true })
 hl.bind("XF86AudioStop",         hl.dsp.exec_cmd("playerctl stop"),                              { locked = true })
 
-hl.bind("Print",            hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]))
-hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]))
+hl.bind("Print",            hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]),               { description = "screenshot to ~/screenshots" })
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]), { description = "screenshot a selected region" })
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + T",      hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + L",      hl.dsp.exec_cmd(locker))               -- hyprlock
-hl.bind(mainMod .. " + W",      hl.dsp.exec_cmd("x-www-browser"))
-hl.bind(mainMod .. " + C",      hl.dsp.window.close())
-hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown"))       -- graceful logout
-hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout"))            -- power menu
-hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + R",      hl.dsp.exec_cmd(menu))
-hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo())               -- dwindle
-hl.bind(mainMod .. " + J",      hl.dsp.layout("togglesplit"))         -- dwindle
-hl.bind(mainMod .. " + F",      hl.dsp.window.fullscreen())
-hl.bind(mainMod .. " + V",      hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal),                     { description = "terminal" })
+hl.bind(mainMod .. " + T",      hl.dsp.exec_cmd(terminal),                     { description = "terminal" })
+hl.bind(mainMod .. " + L",      hl.dsp.exec_cmd(locker),                       { description = "lock screen" })
+hl.bind(mainMod .. " + W",      hl.dsp.exec_cmd("x-www-browser"),              { description = "web browser" })
+hl.bind(mainMod .. " + C",      hl.dsp.window.close(),                         { description = "close window" })
+hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown"),               { description = "log out" })
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout"),                    { description = "power menu" })
+hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(fileManager),                  { description = "file manager" })
+hl.bind(mainMod .. " + R",      hl.dsp.exec_cmd(menu),                         { description = "application launcher" })
+hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo(),                        { description = "toggle pseudo-tile (dwindle)" })
+hl.bind(mainMod .. " + J",      hl.dsp.layout("togglesplit"),                  { description = "toggle split direction (dwindle)" })
+hl.bind(mainMod .. " + F",      hl.dsp.window.fullscreen(),                    { description = "fullscreen" })
+hl.bind(mainMod .. " + V",      hl.dsp.window.float({ action = "toggle" }),    { description = "toggle floating" })
+hl.bind(mainMod .. " + slash",  hl.dsp.exec_cmd(terminal .. " -e aptosid-hypr-hints --welcome"), { description = "show this keybinding cheatsheet" })
 
 -- Move focus with mainMod + arrow keys
-hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }),  { description = "focus left" })
+hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }), { description = "focus right" })
+hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }),    { description = "focus up" })
+hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }),  { description = "focus down" })
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
 for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
-    hl.bind(mainMod .. " + " .. key,         hl.dsp.focus({ workspace = i }))
-    hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+    hl.bind(mainMod .. " + " .. key,         hl.dsp.focus({ workspace = i }),        { description = string.format("switch to workspace %d", i) })
+    hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }),  { description = string.format("move window to workspace %d", i) })
 end
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"),              { description = "toggle scratchpad" })
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }),   { description = "move window to scratchpad" })
 
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true, description = "move window (drag)" })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true, description = "resize window (drag)" })
 
 
 --------------------------------

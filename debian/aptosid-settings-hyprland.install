@@ -4,4 +4,5 @@ xdg/hyprland-mimeapps.list etc/xdg
 uwsm/env etc/xdg/uwsm
 uwsm/env-hyprland etc/xdg/uwsm
 libexec/keyboard-env usr/libexec/aptosid-settings-hyprland
+libexec/aptosid-hypr-hints usr/bin
 waybar/hyprland/* usr/share/aptosid-settings-hyprland/waybar

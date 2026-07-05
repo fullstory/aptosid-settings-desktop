@@ -27,6 +27,9 @@ set $fm thunar
 # Cursor theme
 seat seat0 xcursor_theme Bibata-Modern-Ice 24
 
+# Greet with a keybinding cheatsheet in the first terminal ($mod+/ re-opens it)
+exec $term -e aptosid-sway-hints --welcome
+
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
@@ -95,6 +98,9 @@ input "type:touchpad" {
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Show the keybinding cheatsheet
+    bindsym $mod+slash exec $term -e aptosid-sway-hints --welcome
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

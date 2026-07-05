@@ -1,0 +1,65 @@
+#!/bin/sh
+# aptosid-sway-hints - print the default aptosid Sway keybindings as a cheatsheet.
+#
+# Sway binds are static (no programmatic generation, and sway IPC exposes no
+# per-bind descriptions), so this mirrors the shipped
+# /usr/share/aptosid-settings-sway/config. Keep the two in sync.
+#
+#   aptosid-sway-hints            print the cheatsheet and exit
+#   aptosid-sway-hints --welcome  print it, then drop into an interactive shell
+#                                 (used as the terminal's launched command)
+
+# Graceful no-op outside a Sway session.
+[ -n "$SWAYSOCK" ] || exit 0
+
+cat <<'EOF'
+
+  aptosid · Sway keyboard shortcuts
+  ---------------------------------
+
+  Windows
+   Super + Return           terminal
+   Super + Shift + Return   file manager
+   Super + d                launcher
+   Super + c                close window
+   Super + Shift + e        log out (power menu)
+   Super + Shift + c        reload sway config
+
+  Focus
+   Super + h / j / k / l    focus left / down / up / right
+   Super + Arrows           focus left / down / up / right
+   Super + a                focus parent container
+
+  Move
+   Super + Shift + h/j/k/l  move window left / down / up / right
+   Super + Shift + Arrows   move window left / down / up / right
+
+  Workspaces
+   Super + 1 .. 0           switch to workspace 1 .. 10
+   Super + Shift + 1 .. 0   move window to workspace 1 .. 10
+
+  Layout
+   Super + b                split horizontal
+   Super + v                split vertical
+   Super + s                stacking layout
+   Super + w                tabbed layout
+   Super + e                toggle split layout
+   Super + f                fullscreen
+   Super + Shift + Space    toggle floating
+   Super + Space            swap tiling / floating focus
+   Super + r                resize mode (arrows/hjkl; Enter or Esc exits)
+
+  Scratchpad
+   Super + Shift + minus    move window to scratchpad
+   Super + minus            show / cycle scratchpad windows
+
+  Screenshots
+   Print                    screenshot to ~/screenshots
+   Super + Print            screenshot a selected region
+
+  Re-open anytime:  Super + /
+
+EOF
+
+[ "$1" = "--welcome" ] && exec "${SHELL:-/bin/bash}"
+exit 0

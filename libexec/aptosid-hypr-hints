@@ -1,0 +1,54 @@
+#!/bin/sh
+# aptosid-hypr-hints - print the active Hyprland keybindings as a cheatsheet.
+#
+# The bind descriptions in /etc/xdg/hypr/hyprland.lua are the single source of
+# truth: only binds given a `description` show up here. They round-trip through
+# `hyprctl binds -j`, which is queried at runtime so programmatically generated
+# binds (e.g. the workspace 1-10 loop) are reflected accurately.
+#
+#   aptosid-hypr-hints            print the cheatsheet and exit
+#   aptosid-hypr-hints --welcome  print it, then drop into an interactive shell
+#                                 (used as the terminal's launched command)
+
+# Graceful no-op outside a Hyprland session (TTY, other compositor, ...).
+[ -n "$HYPRLAND_INSTANCE_SIGNATURE" ] || exit 0
+command -v hyprctl >/dev/null 2>&1 || exit 0
+
+printf '\n  aptosid \xc2\xb7 Hyprland keyboard shortcuts\n'
+printf '  ----------------------------------------\n\n'
+
+hyprctl binds -j | jq -r '
+    .[]
+    | select(.submap == "")
+    | select(.description != "")
+    | [(.modmask | tostring), .key, .description]
+    | @tsv
+' | gawk -F '\t' '
+    BEGIN { n = 0; w = 0 }
+    {
+        modmask = $1; key = $2; desc = $3
+        mods = ""
+        if (and(modmask, 64)) mods = mods "SUPER + "   # SUPER
+        if (and(modmask, 4))  mods = mods "CTRL + "    # CTRL
+        if (and(modmask, 8))  mods = mods "ALT + "     # ALT
+        if (and(modmask, 1))  mods = mods "SHIFT + "   # SHIFT
+
+        if      (key == "slash")      key = "/"
+        else if (key == "mouse:272")  key = "LMB"
+        else if (key == "mouse:273")  key = "RMB"
+        else if (key == "mouse_down") key = "scroll down"
+        else if (key == "mouse_up")   key = "scroll up"
+
+        combo[n] = mods key; label[n] = desc; n++
+        if (length(mods key) > w) w = length(mods key)
+    }
+    END {
+        for (i = 0; i < n; i++)
+            printf "   %-*s   %s\n", w, combo[i], label[i]
+    }
+'
+
+printf '\n  Re-open anytime:  SUPER + /\n\n'
+
+[ "$1" = "--welcome" ] && exec "${SHELL:-/bin/bash}"
+exit 0
