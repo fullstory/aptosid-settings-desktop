@@ -43,7 +43,7 @@ local locker      = "hyprlock"
 -- session. Under uwsm, graphical-session.target starts the daemons that ship
 -- their own units or XDG autostart entries
 hl.on("hyprland.start", function()
-    hl.exec_cmd(terminal .. " -e aptosid-hypr-hints --welcome")
+    hl.exec_cmd(terminal .. " -e /usr/libexec/aptosid-settings-hyprland/aptosid-hypr-hints --welcome")
 end)
 
 
@@ -223,7 +223,7 @@ hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo(),                        {
 hl.bind(mainMod .. " + J",      hl.dsp.layout("togglesplit"),                  { description = "toggle split direction (dwindle)" })
 hl.bind(mainMod .. " + F",      hl.dsp.window.fullscreen(),                    { description = "fullscreen" })
 hl.bind(mainMod .. " + V",      hl.dsp.window.float({ action = "toggle" }),    { description = "toggle floating" })
-hl.bind(mainMod .. " + slash",  hl.dsp.exec_cmd(terminal .. " -e aptosid-hypr-hints --welcome"), { description = "show this keybinding cheatsheet" })
+hl.bind(mainMod .. " + slash",  hl.dsp.exec_cmd(terminal .. " -e /usr/libexec/aptosid-settings-hyprland/aptosid-hypr-hints --welcome"), { description = "show this keybinding cheatsheet" })
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }),  { description = "focus left" })

@@ -17,7 +17,8 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
       power menu.
     - float rule: hyprpolkitagent (replacing the KDE/gnome agents) and
       hyprlauncher.
-    - Recommends hypridle, hyprlauncher, hyprlock, hyprpolkitagent, hyprshutdown.
+    - Recommends hypridle, hyprlauncher, hyprlock, hyprpolkitagent,
+      hyprshutdown.
   * aptosid-settings-common: route the live "Install System" icon through
     calamares-install-aptosid (calamares-settings-aptosid) instead of the
     "sudo -E" Exec rewrite.
