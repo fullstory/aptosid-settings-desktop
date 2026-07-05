@@ -15,7 +15,7 @@
 command -v hyprctl >/dev/null 2>&1 || exit 0
 
 printf '\n  aptosid - Hyprland keyboard shortcuts\n'
-printf '  ----------------------------------------\n\n'
+printf '  -------------------------------------\n\n'
 
 hyprctl binds -j | jq -r '
     .[]
