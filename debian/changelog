@@ -21,6 +21,10 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
   * aptosid-settings-common: route the live "Install System" icon through
     calamares-install-aptosid (calamares-settings-aptosid) instead of the
     "sudo -E" Exec rewrite.
+  * labwc: gate idle lock (swayidle/gtklock) on the absence of
+    /run/fll/passwordless instead of /etc/default/distro, so homed live users
+    and installed systems get idle locking; only the passwordless live user is
+    skipped.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 

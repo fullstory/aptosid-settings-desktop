@@ -29,8 +29,9 @@ fi
 # Notification daemon: https://github.com/emersion/mako
 [ -x /usr/bin/mako ] && mako >/dev/null 2>&1 &
 
-# Only launch swayidle in non live/fll environemnts
-if [ ! -e /etc/default/distro ]; then
+# Skip idle lock only for the passwordless live user (cannot unlock gtklock);
+# homed and installed users get it.
+if [ ! -e /run/fll/passwordless ]; then
     # Setup screenlock (gtklock) and turn screen off (wlopm)
     [ -x /usr/bin/swayidle ] && swayidle -w \
             timeout 300 'gtklock -i' \
