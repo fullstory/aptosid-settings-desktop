@@ -30,7 +30,8 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "thunar"
-local menu        = "wofi -I --show drun"
+local menu        = "hyprlauncher"
+local locker      = "hyprlock"
 
 
 -------------------
@@ -206,12 +207,11 @@ hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;g
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + T",      hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + L",      hl.dsp.exec_cmd("wlogout"))
+hl.bind(mainMod .. " + L",      hl.dsp.exec_cmd(locker))               -- hyprlock
 hl.bind(mainMod .. " + W",      hl.dsp.exec_cmd("x-www-browser"))
 hl.bind(mainMod .. " + C",      hl.dsp.window.close())
--- Gracefully bring down the graphical session. uwsm tears Hyprland down in
--- order, unlike the raw exit dispatcher. See the systemd/uwsm start docs.
-hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("uwsm stop"))
+hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown"))       -- graceful logout
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout"))            -- power menu
 hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + R",      hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo())               -- dwindle
@@ -264,7 +264,8 @@ hl.window_rule({ match = { class = "([Tt]hunar)", title = "(Confirm to replace f
 
 hl.window_rule({ match = { class = "^(pavucontrol|pavucontrol-qt|org.pulseaudio.pavucontrol|com.saivert.pwvucontrol)$" }, center = true, float = true })
 
-hl.window_rule({ match = { class = "^(org.kde.polkit-kde-authentication-agent-1|polkit-gnome-authentication-agent-1)$" }, float = true })
+hl.window_rule({ match = { class = "^(hyprpolkitagent)$" }, float = true, center = true })
+hl.window_rule({ match = { class = "^(hyprlauncher)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "(xdg-desktop-portal-hyprland|xdg-desktop-portal-gtk|xdg-desktop-portal-kde)" }, float = true })
 
 hl.window_rule({ match = { class = "^([Cc]alamares)$" }, float = true, center = true })

@@ -14,10 +14,10 @@ if [ -s /etc/default/distro ]; then
     mkdir -p ${DESKTOP}
 
     if [ ! -f "${DESKTOP}/calamares.desktop" ] && \
-        [ -f /usr/share/applications/calamares.desktop ]; then
-        install -m 0755 /usr/share/applications/calamares.desktop "${DESKTOP}/"
-        sed -i -e 's/pkexec/sudo \-E/' -e 's/^Icon=.*/Icon=emblem-aptosid/' \
+        [ -f /usr/share/applications/calamares-install-aptosid.desktop ]; then
+        install -m 0755 /usr/share/applications/calamares-install-aptosid.desktop \
             "${DESKTOP}/calamares.desktop"
+        sed -i -e 's|^Icon=.*|Icon=emblem-aptosid|' "${DESKTOP}/calamares.desktop"
     fi
 
 

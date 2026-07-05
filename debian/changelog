@@ -7,6 +7,20 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
     /etc/xdg/pastebin.d, using the new JSON API (POST /api/v1/paste). The
     config shipped by pastebinit broke when paste.debian.net was modernized.
   * aptosid-settings-common: Recommends pastebinit.
+  * aptosid-settings-hyprland: lean further into the Hypr ecosystem.
+    - hyprlauncher (was wofi) as the launcher (SUPER+R).
+    - hyprlock for screen locking (SUPER+L); hyprlock.conf themed to the
+      session palette.
+    - hypridle for idle lock/dpms (hypridle.conf). fll-live-boot masks
+      hypridle.service for a passwordless autologin live user.
+    - hyprshutdown for logout (SUPER+M); wlogout kept on SUPER+Escape for the
+      power menu.
+    - float rule: hyprpolkitagent (replacing the KDE/gnome agents) and
+      hyprlauncher.
+    - Recommends hypridle, hyprlauncher, hyprlock, hyprpolkitagent, hyprshutdown.
+  * aptosid-settings-common: route the live "Install System" icon through
+    calamares-install-aptosid (calamares-settings-aptosid) instead of the
+    "sudo -E" Exec rewrite.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 
