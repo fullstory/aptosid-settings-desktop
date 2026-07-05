@@ -11,7 +11,8 @@ Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 
 Package: aptosid-settings-common
 Depends: ${misc:Depends}
-Recommends: pastebinit
+Recommends: mint-y-icons,
+ pastebinit
 Architecture: all
 Description: provide common default desktop settings for aptosid
  Provides default settings for appearance and applications of all
@@ -115,10 +116,10 @@ Depends: ${misc:Depends},
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  cliphist,
- flameshot,
  fonts-font-awesome,
  fonts-noto,
  gnome-themes-extra,
+ grim,
  hypridle,
  hyprlauncher,
  hyprlock,
@@ -128,6 +129,8 @@ Recommends: aptosid-settings-qt-style,
  mako-notifier,
  mint-y-icons,
  pcmanfm-qt,
+ slurp,
+ swappy,
  waybar,
  wl-clipboard,
  xdg-browser-launcher

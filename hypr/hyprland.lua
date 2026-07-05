@@ -211,7 +211,7 @@ hl.bind("XF86AudioStop",         hl.dsp.exec_cmd("playerctl stop"),             
 
 hl.bind("Print",            hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]),               { description = "screenshot to ~/screenshots" })
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd([[sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png']]), { description = "screenshot a selected region" })
-hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd("flameshot gui"),   { description = "screenshot with annotation (flameshot)" })
+hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd([[sh -c 'grim -g "$(slurp)" - | swappy -f -']]),   { description = "screenshot a region and annotate (swappy)" })
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal),                     { description = "terminal" })

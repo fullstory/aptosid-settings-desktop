@@ -48,6 +48,18 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
     pcmanfm-qt. Recommend mako-notifier for notifications.
   * aptosid-settings-sway: Recommends mako-notifier, the notification
     daemon the session already starts.
+  * aptosid-settings-common: ship a default-profile pcmanfm-qt
+    settings.conf (/etc/xdg/pcmanfm-qt/default) setting
+    FallbackIconThemeName=Mint-Y-Blue, so pcmanfm-qt picks up the
+    session icon theme on Hyprland (and any bare wlroots session) while
+    leaving LXQt's own icon theme untouched. Recommends mint-y-icons.
+  * aptosid-settings-hyprland: use the session icon theme Mint-Y-Blue
+    (was Mint-Y-Purple) for the gsettings and hyprtoolkit defaults,
+    matching the file manager and the blue/magenta palette.
+  * aptosid-settings-hyprland: annotate region screenshots with swappy
+    (grim + slurp) on SUPER+SHIFT+Print instead of flameshot, which is
+    orphaned in Debian and unreliable on wlroots. Recommends grim, slurp
+    and swappy; drops flameshot.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 
