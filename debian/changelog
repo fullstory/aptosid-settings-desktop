@@ -35,6 +35,11 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
   * aptosid-settings-sway: likewise greet with a keybinding cheatsheet
     in the first terminal at login, and on Super + /.
   * aptosid-settings-hyprland: disable splash text in hyprpaper.conf.
+  * aptosid-settings-hyprland: tune hyprlauncher and theme it. It now
+    shows the app list on open (not an empty box), launches apps via
+    uwsm so they join the session, and runs terminal apps in kitty. A
+    new hyprtoolkit.conf themes it to the session palette (blue/magenta)
+    with matching fonts and icons.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 
