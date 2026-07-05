@@ -34,6 +34,7 @@ aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
     conditional binds are shown accurately. Depends on gawk and jq.
   * aptosid-settings-sway: likewise greet with a keybinding cheatsheet
     in the first terminal at login, and on Super + /.
+  * aptosid-settings-hyprland: disable splash text in hyprpaper.conf.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 
