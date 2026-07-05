@@ -5,4 +5,5 @@ xdg/mimeapps.list etc/xdg
 gtklock etc/xdg
 kitty etc/xdg
 mako etc/xdg
+pastebin.d etc/xdg
 plymouth/watermark.png usr/share/plymouth/themes/spinner

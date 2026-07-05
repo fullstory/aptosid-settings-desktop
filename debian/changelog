@@ -1,8 +1,14 @@
-aptosid-settings-desktop (20260704.4) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260705.1) UNRELEASED; urgency=medium
 
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 Jul 2026 01:08:46 +0200
+  [ Kel Modderman ]
+  * aptosid-settings-common: ship a working paste.debian.net config in
+    /etc/xdg/pastebin.d, using the new JSON API (POST /api/v1/paste). The
+    config shipped by pastebinit broke when paste.debian.net was modernized.
+  * aptosid-settings-common: Recommends pastebinit.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 05 Jul 2026 11:48:06 +1000
 
 aptosid-settings-desktop (20260704.3) unstable; urgency=medium
 
