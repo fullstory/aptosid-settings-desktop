@@ -14,7 +14,7 @@
 
 cat <<'EOF'
 
-  aptosid · Sway keyboard shortcuts
+  aptosid - Sway keyboard shortcuts
   ---------------------------------
 
   Windows
