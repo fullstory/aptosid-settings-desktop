@@ -13,17 +13,19 @@
 @define-color critical  #ff29a8;
 
 * {
-    font-family: "Cantarell", "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome", "Noto Sans", sans-serif;
+    font-family: "Cantarell", "Font Awesome 7 Free", "Font Awesome 6 Free", "FontAwesome", "Noto Sans", sans-serif;
     font-size: 14px;
     padding: 0;
     margin: 0;
     min-height: 0;
 }
 
-/* Transparent bar; each module floats as its own rounded island. */
+/* Transparent bar; each module floats as its own rounded island.
+   Horizontal padding keeps the end pills off the screen edges. */
 window#waybar {
     background: transparent;
     color: @fg;
+    padding: 0 6px;
 }
 
 #workspaces,
@@ -36,7 +38,7 @@ window#waybar {
 #wireplumber,
 #tray,
 #clock {
-    background-color: @bg;
+    background-color: alpha(@bg, 0.8);
     border: 1px solid @bg-hi;
     border-radius: 10px;
     margin: 4px 0;

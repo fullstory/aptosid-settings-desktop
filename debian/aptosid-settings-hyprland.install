@@ -6,3 +6,4 @@ uwsm/env-hyprland etc/xdg/uwsm
 libexec/keyboard-env usr/libexec/aptosid-settings-hyprland
 libexec/aptosid-hypr-hints usr/libexec/aptosid-settings-hyprland
 waybar/hyprland/* usr/share/aptosid-settings-hyprland/waybar
+systemd/user/waybar.service.d/aptosid.conf etc/systemd/user/waybar.service.d

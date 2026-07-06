@@ -22,6 +22,7 @@ cat <<'EOF'
    Super + Shift + Return   file manager
    Super + d                launcher
    Super + c                close window
+   Super + Ctrl + l         lock screen
    Super + Shift + e        log out (power menu)
    Super + Shift + c        reload sway config
 
@@ -56,6 +57,11 @@ cat <<'EOF'
   Screenshots
    Print                    screenshot to ~/screenshots
    Super + Print            screenshot a selected region
+   Super + Shift + Print    screenshot a region and annotate (swappy)
+
+  Clipboard & tools
+   Super + Shift + v        clipboard history
+   Super + p                pick a colour (copied to clipboard)
 
   Re-open anytime:  Super + /
 

@@ -23,6 +23,31 @@ aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
   * aptosid-settings-hyprland, aptosid-settings-sway: drop the Waybar
     keyboard-state and language modules, which added little of value in
     the default single-layout setup.
+  * aptosid-settings-sway: the network applet now actually appears --
+    autostart nm-applet (already installed) instead of nm-tray, which
+    was never pulled in.
+  * aptosid-settings-sway: bring the session closer to Hyprland's out-
+    of-the-box features -- lock on idle and before sleep (swayidle +
+    gtklock), a manual lock (Super+Ctrl+l), clipboard history
+    (Super+Shift+v), annotated screenshots (Super+Shift+Print via
+    swappy) and a colour picker (Super+p via hyprpicker).
+  * aptosid-settings-sway: recommend the helpers the config launches
+    (cliphist, gtklock, swappy, hyprpicker, wofi, thunar, mate-polkit-
+    bin, network-manager-applet, grim, slurp, swayidle, wl-clipboard) so
+    a plain install has them.
+  * aptosid-settings-hyprland, aptosid-settings-sway: soften the Waybar
+    module islands with slight transparency, inset from the screen
+    edges.
+  * aptosid-settings-labwc: sfwbar was dropped from Debian, leaving the
+    session with no panel -- switch to Waybar, themed in Catppuccin
+    Mocha (mauve on a soft dark base) with the same floating islands,
+    mpris and wpctl audio controls as the Hyprland and Sway spins.
+  * aptosid-settings-common, aptosid-settings-hyprland, aptosid-
+    settings-sway, aptosid-settings-labwc: stop overwriting waybar's own
+    /etc/xdg/waybar conffiles. A shared aptosid-waybar launcher starts
+    waybar with each session's config from /usr/share (a user's
+    ~/.config/waybar still wins) -- Hyprland via a waybar.service drop-
+    in, Sway via swaybar_command, labwc via its autostart.
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 06 Jul 2026 11:27:20 +1000
 

@@ -184,6 +184,7 @@ Recommends: aptosid-settings-qt-style,
  fonts-noto,
  gnome-themes-extra,
  mint-y-icons,
+ waybar,
  xdg-browser-launcher
 Architecture: all
 Description: provide default Labwc settings for aptosid
@@ -265,12 +266,24 @@ Depends: ${misc:Depends},
  aptosid-settings-common
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
+ cliphist,
  fonts-font-awesome,
  fonts-noto,
  gnome-themes-extra,
+ grim,
+ gtklock,
+ hyprpicker,
  mako-notifier,
+ mate-polkit-bin,
  mint-y-icons,
+ network-manager-applet,
+ slurp,
+ swappy,
+ swayidle,
+ thunar,
  waybar,
+ wl-clipboard,
+ wofi,
  xdg-browser-launcher
 Architecture: all
 Description: provide default Sway settings for aptosid

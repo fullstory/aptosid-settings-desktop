@@ -6,8 +6,12 @@
 
 exec thunar --daemon
 exec mako --config /etc/xdg/mako/config
-exec nm-tray
+exec nm-applet --indicator
 exec mate-polkit
+
+# Keep clipboard history (cliphist + wl-clipboard), for text and images.
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 
 ### Variables
 #
@@ -45,16 +49,13 @@ output * bg /usr/share/wallpapers/aptosid-nemesis-wide.png fill
 
 ### Idle configuration
 #
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'gtklock -i' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'gtklock -i'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
+# Lock after 300s of inactivity, power the displays off after another 300s
+# (back on when resumed), and lock before sleep. Skipped for the passwordless
+# live user, who cannot unlock gtklock (matches labwc autostart / hypridle).
+exec [ -e /run/fll/passwordless ] || swayidle -w \
+         timeout 300 'gtklock -i' \
+         timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+         before-sleep 'gtklock -i'
 
 ### Input configuration
 #
@@ -245,13 +246,21 @@ bindsym $mod+r mode "resize"
     # Special keys to take a screenshot with grim + slurp
     bindsym Print exec sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'
     bindsym $mod+Print exec sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)"  ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'
+    # Screenshot a region and annotate it (swappy)
+    bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | swappy -f -
+    # Lock the screen ($mod+l is focus-right, so lock is Ctrl+l)
+    bindsym $mod+Ctrl+l exec gtklock -i
+    # Clipboard history (cliphist + wofi)
+    bindsym $mod+Shift+v exec cliphist list | wofi --dmenu | cliphist decode | wl-copy
+    # Pick a colour (copied to clipboard)
+    bindsym $mod+p exec hyprpicker -a -f hex -n
 
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    swaybar_command waybar
+    swaybar_command /usr/libexec/aptosid-waybar sway
 }
 
 #

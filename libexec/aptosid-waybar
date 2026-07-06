@@ -1,0 +1,18 @@
+#!/bin/sh
+# aptosid-waybar - launch Waybar with the aptosid default config for a given
+# session, without touching /etc/xdg/waybar (those are the waybar package's own
+# conffiles). Each spin ships its themed config read-only under /usr/share; a
+# user's own ~/.config/waybar still wins, because waybar prefers it on its own.
+#
+#   aptosid-waybar <spin>     e.g. hyprland | sway | labwc
+
+spin="$1"
+dir="/usr/share/aptosid-settings-${spin}/waybar"
+usr="${XDG_CONFIG_HOME:-$HOME/.config}/waybar"
+
+# If the user keeps their own config, let waybar find it the usual way.
+if [ -e "$usr/config" ] || [ -e "$usr/config.jsonc" ]; then
+    exec waybar
+fi
+
+exec waybar -c "$dir/config.jsonc" -s "$dir/style.css"
