@@ -32,12 +32,14 @@ window#waybar {
     color: @fg;
 }
 
+#custom-appmenu,
 #taskbar,
 #mpris,
 #battery,
 #idle_inhibitor,
 #power-profiles-daemon,
 #backlight,
+#network,
 #wireplumber,
 #tray,
 #clock {
@@ -49,10 +51,30 @@ window#waybar {
     transition: background-color 0.2s ease;
 }
 
+/* Application menu launcher (wofi) — the leftmost element, signature mauve. */
+#custom-appmenu {
+    color: @mauve;
+    font-size: 16px;
+    padding: 0 12px;
+}
+
+#custom-appmenu:hover {
+    background-color: @bg-hi;
+}
+
 /* Now-playing sits centred; a soft pink against the muted ground. */
 #mpris {
     color: @pink;
     font-style: italic;
+}
+
+/* Network: click opens nm-connection-editor (no tray applet on labwc). */
+#network {
+    color: @blue;
+}
+
+#network.disconnected {
+    color: @red;
 }
 
 /* Restrained accents — mauve is the signature. */

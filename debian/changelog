@@ -56,6 +56,11 @@ aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
     exposes no usable workspace labels, so the pills rendered empty) and
     inset the bar from the screen edges via waybar margins rather than
     CSS padding.
+  * aptosid-settings-labwc: add a wofi application-menu launcher as the
+    left-most Waybar element, and a network module (click opens nm-
+    connection-editor -- labwc has no tray applet). Flesh out the root
+    menu (applications, terminal, browser, screenshot submenu, lock,
+    reconfigure, exit) and drop its now-redundant network-manager item.
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 06 Jul 2026 11:27:20 +1000
 

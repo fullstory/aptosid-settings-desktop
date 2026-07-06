@@ -55,17 +55,34 @@
   <!--
   <menu id="client-list-combined-menu" label="Running..." />
   -->
-  <item label="Web browser">
-    <action name="Execute" command="x-www-browser" />
-  </item>
-  <item label="Network manager">
-    <action name="Execute" command="nm-connection-editor" />
+  <item label="Applications">
+    <action name="Execute" command="wofi -I --show drun" />
   </item>
   <item label="Terminal">
     <action name="Execute" command="x-terminal-emulator" />
   </item>
-  <item label="Applications">
-    <action name="Execute" command="wofi -I --show drun" />
+  <item label="Web browser">
+    <action name="Execute" command="x-www-browser" />
+  </item>
+  <separator />
+  <menu id="screenshot-menu" label="Screenshot">
+    <item label="Whole screen">
+      <action name="Execute">
+        <command>sh -c 'mkdir -p ~/screenshots;grim ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'</command>
+      </action>
+    </item>
+    <item label="Select a region">
+      <action name="Execute">
+        <command>sh -c 'mkdir -p ~/screenshots;grim -g "$(slurp)" ~/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png'</command>
+      </action>
+    </item>
+  </menu>
+  <separator />
+  <item label="Lock screen">
+    <action name="Execute" command="gtklock -i" />
+  </item>
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
   </item>
   <item label="Exit">
     <action name="Execute" command="wlogout" />
