@@ -47,7 +47,15 @@ aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
     /etc/xdg/waybar conffiles. A shared aptosid-waybar launcher starts
     waybar with each session's config from /usr/share (a user's
     ~/.config/waybar still wins) -- Hyprland via a waybar.service drop-
-    in, Sway via swaybar_command, labwc via its autostart.
+    in, Sway via an autostart exec, labwc via its autostart.
+  * aptosid-settings-sway: launch waybar from autostart via aptosid-
+    waybar (swaybar_command mishandled the wrapper's arguments, so no
+    bar appeared); drop the sway bar block so swaybar is not spawned
+    instead.
+  * aptosid-settings-labwc: drop the wlr/workspaces module (labwc
+    exposes no usable workspace labels, so the pills rendered empty) and
+    inset the bar from the screen edges via waybar margins rather than
+    CSS padding.
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 06 Jul 2026 11:27:20 +1000
 

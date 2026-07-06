@@ -8,6 +8,7 @@ exec thunar --daemon
 exec mako --config /etc/xdg/mako/config
 exec nm-applet --indicator
 exec mate-polkit
+exec /usr/libexec/aptosid-waybar sway
 
 # Keep clipboard history (cliphist + wl-clipboard), for text and images.
 exec wl-paste --type text --watch cliphist store
@@ -258,10 +259,10 @@ bindsym $mod+r mode "resize"
 #
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
-bar {
-    swaybar_command /usr/libexec/aptosid-waybar sway
-}
+# Waybar is launched from the autostart section above
+# (exec /usr/libexec/aptosid-waybar sway). No sway `bar` block, so sway does
+# not also spawn the built-in swaybar. swaybar_command choked on the wrapper's
+# arguments, hence the exec.
 
 #
 # Automatic floating windows

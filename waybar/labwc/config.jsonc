@@ -4,8 +4,9 @@
     "position": "top",
     "height": 32,
     "spacing": 6,
+    "margin-left": 6,
+    "margin-right": 6,
     "modules-left": [
-        "wlr/workspaces",
         "wlr/taskbar"
     ],
     "modules-center": [
@@ -20,11 +21,6 @@
         "tray",
         "clock"
     ],
-    "wlr/workspaces": {
-        "format": "{name}",
-        "on-click": "activate",
-        "sort-by-number": true
-    },
     "wlr/taskbar": {
         "format": "{icon}",
         "icon-size": 14,

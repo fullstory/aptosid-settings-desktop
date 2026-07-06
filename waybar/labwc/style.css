@@ -25,14 +25,13 @@
 }
 
 /* Transparent bar; each module floats as its own rounded island.
-   Horizontal padding keeps the end pills off the screen edges. */
+   The end pills are kept off the screen edges by margin-left/right in
+   config.jsonc (reliable regardless of GTK padding quirks). */
 window#waybar {
     background: transparent;
     color: @fg;
-    padding: 0 6px;
 }
 
-#workspaces,
 #taskbar,
 #mpris,
 #battery,
@@ -48,33 +47,6 @@ window#waybar {
     margin: 4px 0;
     padding: 0 10px;
     transition: background-color 0.2s ease;
-}
-
-/* Workspaces: dim when idle, mauve->blue gradient when active. */
-#workspaces {
-    padding: 0 4px;
-}
-
-#workspaces button {
-    color: @fg-dim;
-    padding: 0 8px;
-    margin: 3px 2px;
-    border: none;
-    border-radius: 7px;
-    box-shadow: none;
-    text-shadow: none;
-}
-
-#workspaces button:hover {
-    background: @bg-hi;
-    color: @fg;
-    box-shadow: none;
-    text-shadow: none;
-}
-
-#workspaces button.active {
-    color: @bg;
-    background: linear-gradient(45deg, @mauve, @blue);
 }
 
 /* Now-playing sits centred; a soft pink against the muted ground. */
