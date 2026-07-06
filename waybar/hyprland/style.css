@@ -1,39 +1,142 @@
-@define-color foreground #eff0f1;
-@define-color foreground-inactive #7f8c8d;
-@define-color background #232629;
-@define-color background-alt #31363b;
+/* aptosid Hyprland waybar — "Nightsky".
+   Palette keyed to the Hyprland session (hyprtoolkit/hyprlock): a deep indigo
+   base carrying the blue -> magenta accent gradient of the window borders. */
+@define-color bg        #1d1d2e;
+@define-color bg-alt    #26263a;
+@define-color bg-hi     #2e2e46;
+@define-color fg        #d8d8d8;
+@define-color fg-dim    #6f6f9c;
+@define-color accent    #5555ff;
+@define-color accent2   #ff55ff;
+@define-color link      #7aa2ff;
+@define-color warning   #f0ffaa;
+@define-color critical  #ff29a8;
 
 * {
-    font-family: Cantarell, Noto Sans, sans-serif;
-    font-size: 16px;
+    font-family: "Cantarell", "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome", "Noto Sans", sans-serif;
+    font-size: 14px;
     padding: 0;
     margin: 0;
+    min-height: 0;
 }
 
-#waybar {
-    color: @foreground;
-    background-color: @background;
+/* Transparent bar; each module floats as its own rounded island. */
+window#waybar {
+    background: transparent;
+    color: @fg;
+}
+
+#workspaces,
+#taskbar,
+#mpris,
+#battery,
+#idle_inhibitor,
+#power-profiles-daemon,
+#backlight,
+#wireplumber,
+#tray,
+#clock {
+    background-color: @bg;
+    border: 1px solid @bg-hi;
+    border-radius: 10px;
+    margin: 4px 0;
+    padding: 0 10px;
+    transition: background-color 0.2s ease;
+}
+
+/* Workspaces: dim when empty, blue->magenta gradient when active. */
+#workspaces {
+    padding: 0 4px;
 }
 
 #workspaces button {
-    padding-left: 1em;
-    padding-right: 1.3em;
+    color: @fg-dim;
+    padding: 0 8px;
+    margin: 3px 2px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 #workspaces button.empty {
-    color: @foreground-inactive;
+    color: @fg-dim;
+}
+
+#workspaces button:hover {
+    background: @bg-hi;
+    color: @fg;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 #workspaces button.active {
-    background-color: @background-alt;
-    border-radius: 3px;
+    color: @bg;
+    background: linear-gradient(45deg, @accent, @accent2);
 }
 
-#power-profiles-daemon,
-#wireplumber,
-#battery,
-#language,
-#tray,
+/* Status modules: neutral by default, cool accents where it reads well. */
 #clock {
-    padding-right: 6px;
+    color: @link;
+    font-weight: bold;
+}
+
+#power-profiles-daemon {
+    color: @link;
+}
+
+/* Now-playing sits centred; a magenta pop against the cool ground. */
+#mpris {
+    color: @accent2;
+    font-style: italic;
+}
+
+#backlight {
+    color: @warning;
+}
+
+#idle_inhibitor.activated {
+    color: @accent2;
+}
+
+#wireplumber.muted {
+    color: @fg-dim;
+}
+
+#battery.charging {
+    color: @accent;
+}
+
+#battery.warning {
+    color: @warning;
+}
+
+#battery.critical {
+    color: @critical;
+}
+
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: @bg;
+        background-color: @critical;
+    }
+}
+
+tooltip {
+    background-color: @bg;
+    border: 1px solid @accent;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @fg;
+    padding: 4px;
 }

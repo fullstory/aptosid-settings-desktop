@@ -1,38 +1,165 @@
-@define-color foreground #eff0f1;
-@define-color foreground-inactive #7f8c8d;
-@define-color background #232629;
-@define-color background-alt #31363b;
+/* aptosid Sway waybar — "Vice".
+   Palette keyed to the Sway session (Base16 Vice Dark, sway/colorscheme):
+   a near-black base lit with neon cyan, pink and purple accents. */
+@define-color bg        #181818;
+@define-color bg-alt    #222222;
+@define-color bg-hi     #323232;
+@define-color fg        #e9e9e9;
+@define-color fg-dim    #666666;
+@define-color cyan      #00eaff;
+@define-color teal      #00f6d9;
+@define-color pink      #ff29a8;
+@define-color purple    #8265ff;
+@define-color yellow    #f0ffaa;
 
 * {
-    font-family: Cantarell, Noto Sans, sans-serif;
-    font-size: 16px;
+    font-family: "Cantarell", "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome", "Noto Sans", sans-serif;
+    font-size: 14px;
     padding: 0;
     margin: 0;
+    min-height: 0;
 }
 
-#waybar {
-    color: @foreground;
-    background-color: @background;
+/* Transparent bar; each module floats as its own rounded island. */
+window#waybar {
+    background: transparent;
+    color: @fg;
+}
+
+#workspaces,
+#mode,
+#scratchpad,
+#taskbar,
+#window,
+#mpris,
+#battery,
+#idle_inhibitor,
+#power-profiles-daemon,
+#backlight,
+#wireplumber,
+#tray,
+#clock {
+    background-color: @bg;
+    border: 1px solid @bg-hi;
+    border-radius: 10px;
+    margin: 4px 0;
+    padding: 0 10px;
+    transition: background-color 0.2s ease;
+}
+
+/* Workspaces: dim when idle, cyan->pink gradient when focused. */
+#workspaces {
+    padding: 0 4px;
 }
 
 #workspaces button {
-    padding-left: 1em;
-    padding-right: 1.3em;
+    color: @fg-dim;
+    padding: 0 8px;
+    margin: 3px 2px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: none;
+    text-shadow: none;
 }
 
-#workspaces button.empty {
-    color: @foreground-inactive;
+#workspaces button:hover {
+    background: @bg-hi;
+    color: @fg;
+    box-shadow: none;
+    text-shadow: none;
 }
 
+#workspaces button.focused,
 #workspaces button.active {
-    background-color: @background-alt;
-    border-radius: 3px;
+    color: @bg;
+    background: linear-gradient(45deg, @cyan, @pink);
 }
 
-#power-profiles-daemon,
-#wireplumber,
-#battery,
-#tray,
+#workspaces button.urgent {
+    color: @bg;
+    background-color: @pink;
+}
+
+/* The centred window title reads as a subtitle, not a hard island. */
+#window {
+    color: @fg-dim;
+    background-color: transparent;
+    border-color: transparent;
+    font-style: italic;
+}
+
+#mode {
+    color: @bg;
+    background-color: @pink;
+}
+
+#scratchpad {
+    color: @purple;
+}
+
+/* Now-playing sits centred, lit in the signature cyan. */
+#mpris {
+    color: @cyan;
+    font-style: italic;
+}
+
+/* A neon status row — each module carries a Vice accent. */
 #clock {
-    padding-right: 6px;
+    color: @cyan;
+    font-weight: bold;
+}
+
+#backlight {
+    color: @yellow;
+}
+
+#wireplumber {
+    color: @teal;
+}
+
+#wireplumber.muted {
+    color: @fg-dim;
+}
+
+#power-profiles-daemon {
+    color: @purple;
+}
+
+#idle_inhibitor.activated {
+    color: @pink;
+}
+
+#battery {
+    color: @yellow;
+}
+
+#battery.charging {
+    color: @cyan;
+}
+
+#battery.critical:not(.charging) {
+    color: @pink;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: @bg;
+        background-color: @pink;
+    }
+}
+
+tooltip {
+    background-color: @bg;
+    border: 1px solid @cyan;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @fg;
+    padding: 4px;
 }

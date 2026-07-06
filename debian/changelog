@@ -12,6 +12,17 @@ aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
   * aptosid-settings-kde: autostart Yakuake when it is installed, via an
     xdg autostart entry; TryExec keeps it inert on builds without
     Yakuake.
+  * aptosid-settings-hyprland, aptosid-settings-sway: refresh the Waybar
+    look. The bar now floats as rounded "islands" and takes its colours
+    from each session -- deep indigo with a blue/magenta gradient on
+    Hyprland, near-black with neon cyan/pink on Sway.
+  * aptosid-settings-hyprland, aptosid-settings-sway: add now-playing
+    (mpris) and screen-brightness (backlight) modules to Waybar, and
+    mute audio on right-click via wpctl; left-click still opens
+    pavucontrol.
+  * aptosid-settings-hyprland, aptosid-settings-sway: drop the Waybar
+    keyboard-state and language modules, which added little of value in
+    the default single-layout setup.
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 06 Jul 2026 11:27:20 +1000
 

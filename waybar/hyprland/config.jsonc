@@ -2,7 +2,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 24,
+    "height": 32,
     "spacing": 6,
 
     "modules-left": [
@@ -10,13 +10,13 @@
         "wlr/taskbar"
     ],
     "modules-center": [
+        "mpris"
     ],
     "modules-right": [
-        "hyprland/language",
-        "keyboard-state",
         "battery",
         "idle_inhibitor",
         "power-profiles-daemon",
+        "backlight",
         "wireplumber",
         "tray",
         "clock"
@@ -33,18 +33,10 @@
         "on-click": "activate",
         "on-click-middle": "close"
     },
-    "hyprland/language": {
-        "format": "{long}"
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
+    // Removed by default: "hyprland/language" is static noise on a single
+    // layout, and "keyboard-state" needs the user in the `input` group
+    // (it reads /dev/input) to work at all. Re-add either to modules-right
+    // and restore its block here if you run multiple layouts / want locks.
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -83,7 +75,21 @@
         "format": "{volume}% {icon}",
         "format-muted": "",
         "on-click": "pavucontrol",
+        "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "format-icons": ["", "", ""]
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": [""],
+        "scroll-step": 5,
+        "tooltip-format": "Backlight: {percent}%"
+    },
+    "mpris": {
+        "format": "{status_icon} {dynamic}",
+        "status-icons": { "playing": "", "paused": "" },
+        "dynamic-order": ["title", "artist"],
+        "dynamic-len": 30,
+        "tooltip-format": "{title}\n{artist}\n{album}"
     },
     "clock": {
         // "timezone": "America/New_York",
