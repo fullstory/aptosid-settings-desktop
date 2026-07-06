@@ -1,4 +1,6 @@
 kde/* etc/xdg
 xdg/kde-mimeapps.list etc/xdg
+konsole/aptosid.profile usr/share/konsole
+konsole/aptosid-yakuake-autostart.desktop etc/xdg/autostart
 sddm.conf.d etc
 plasma usr/share

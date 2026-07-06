@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Yakuake
+Comment=Autostart the Yakuake drop-down terminal
+TryExec=/usr/bin/yakuake
+Exec=yakuake
+OnlyShowIn=KDE;
+X-KDE-autostart-phase=2
+NoDisplay=true
+StartupNotify=false

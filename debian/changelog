@@ -1,8 +1,19 @@
-aptosid-settings-desktop (20260705.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 Jul 2026 23:34:33 +0200
+  [ Kel Modderman ]
+  * Bump the default UI font from Noto Sans 11 to 12 across all flavours
+    (GTK 2/3/4, gsettings overrides, XFCE, LXDE, mako, hyprtoolkit);
+    matching titlebar and monospace fonts move to 12 too.
+  * aptosid-settings-kde: ship a default Konsole profile (Noto Sans Mono
+    12, unlimited scrollback) and select it via konsolerc.
+  * aptosid-settings-kde: autostart Yakuake when it is installed, via an
+    xdg autostart entry; TryExec keeps it inert on builds without
+    Yakuake.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 06 Jul 2026 11:27:20 +1000
 
 aptosid-settings-desktop (20260705.1) unstable; urgency=medium
 
