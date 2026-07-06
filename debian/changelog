@@ -8,7 +8,7 @@ aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
     (GTK 2/3/4, gsettings overrides, XFCE, LXDE, mako, hyprtoolkit);
     matching titlebar and monospace fonts move to 12 too.
   * aptosid-settings-kde: ship a default Konsole profile (Noto Sans Mono
-    12, unlimited scrollback) and select it via konsolerc.
+    12, 100000-line scrollback) and select it via konsolerc.
   * aptosid-settings-kde: autostart Yakuake when it is installed, via an
     xdg autostart entry; TryExec keeps it inert on builds without
     Yakuake.
