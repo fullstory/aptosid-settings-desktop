@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260706.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * Bump the default UI font from Noto Sans 11 to 12 across all flavours
     (GTK 2/3/4, gsettings overrides, XFCE, LXDE, mako, hyprtoolkit);
     matching titlebar and monospace fonts move to 12 too.
