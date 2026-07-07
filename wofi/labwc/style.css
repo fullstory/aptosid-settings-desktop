@@ -1,0 +1,38 @@
+/* aptosid wofi — Mocha (labwc). Matches the Waybar palette. */
+window {
+    margin: 0;
+    border: 2px solid #cba6f7;
+    border-radius: 12px;
+    background-color: rgba(30, 30, 46, 0.94);
+    font-family: "Cantarell", "Noto Sans", sans-serif;
+    font-size: 14px;
+    color: #cdd6f4;
+}
+
+#outer-box { margin: 12px; }
+
+#input {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border: 1px solid #313244;
+    border-radius: 8px;
+    background-color: #313244;
+    color: #cdd6f4;
+}
+
+#scroll { margin: 0; }
+#inner-box { margin: 0; }
+
+#entry {
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+#img { margin-right: 8px; }
+#text { color: #cdd6f4; }
+
+#entry:selected {
+    background: linear-gradient(45deg, #cba6f7, #89b4fa);
+}
+
+#entry:selected #text { color: #1e1e2e; }

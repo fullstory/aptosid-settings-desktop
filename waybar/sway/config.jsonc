@@ -40,7 +40,7 @@
     "custom/appmenu": {
         "format": "",
         "tooltip": false,
-        "on-click": "wofi -I --show drun"
+        "on-click": "/usr/libexec/aptosid-wofi sway --show drun"
     },
     "wlr/taskbar": {
         "format": "{icon}",

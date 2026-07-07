@@ -1,4 +1,5 @@
 labwc etc/xdg
 schemas/*_aptosid-settings-labwc.gschema.override usr/share/glib-2.0/schemas
 waybar/labwc/* usr/share/aptosid-settings-labwc/waybar
+wofi/labwc/* usr/share/aptosid-settings-labwc/wofi
 xdg/labwc-mimeapps.list etc/xdg

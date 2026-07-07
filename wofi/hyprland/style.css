@@ -1,0 +1,38 @@
+/* aptosid wofi — Nightsky (Hyprland). Matches the Waybar palette. */
+window {
+    margin: 0;
+    border: 2px solid #5555ff;
+    border-radius: 12px;
+    background-color: rgba(29, 29, 46, 0.94);
+    font-family: "Cantarell", "Noto Sans", sans-serif;
+    font-size: 14px;
+    color: #d8d8d8;
+}
+
+#outer-box { margin: 12px; }
+
+#input {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border: 1px solid #2e2e46;
+    border-radius: 8px;
+    background-color: #26263a;
+    color: #d8d8d8;
+}
+
+#scroll { margin: 0; }
+#inner-box { margin: 0; }
+
+#entry {
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+#img { margin-right: 8px; }
+#text { color: #d8d8d8; }
+
+#entry:selected {
+    background: linear-gradient(45deg, #5555ff, #ff55ff);
+}
+
+#entry:selected #text { color: #1d1d2e; }

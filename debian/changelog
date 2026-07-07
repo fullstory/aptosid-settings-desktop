@@ -19,6 +19,16 @@ aptosid-settings-desktop (20260707.1) UNRELEASED; urgency=medium
   * aptosid-settings-hyprland, aptosid-settings-sway: add the left-most
     application-menu launcher glyph to the Waybar (as labwc already
     has), and tone down the user module accent colour.
+  * aptosid-settings-hyprland: switch the default application launcher
+    from hyprlauncher to wofi -- hyprlauncher opened to an empty search
+    box, whereas wofi shows the full app list on open. hyprlauncher.conf
+    is retained for future use.
+  * aptosid-settings-common, aptosid-settings-hyprland, aptosid-
+    settings-sway, aptosid-settings-labwc: theme wofi to each session's
+    palette (config + style.css matching the Waybar), launched via a
+    shared aptosid-wofi helper (a user's ~/.config/wofi still wins).
+    Used for the app-menu button, the launcher keybind and clipboard
+    history.
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 07 Jul 2026 19:18:16 +1000
 

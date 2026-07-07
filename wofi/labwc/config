@@ -1,0 +1,9 @@
+width=600
+height=420
+location=center
+prompt=Search
+insensitive=true
+allow_images=true
+image_size=22
+hide_scroll=true
+term=kitty

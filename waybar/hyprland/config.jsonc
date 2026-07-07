@@ -28,7 +28,7 @@
     "custom/appmenu": {
         "format": "",
         "tooltip": false,
-        "on-click": "hyprlauncher"
+        "on-click": "/usr/libexec/aptosid-wofi hyprland --show drun"
     },
     "hyprland/workspaces": {
         "format": "{icon}",

@@ -1,0 +1,17 @@
+#!/bin/sh
+# aptosid-wofi - launch wofi with a session's themed config/style, without
+# touching ~/.config/wofi. Each spin ships its themed files read-only under
+# /usr/share; a user's own ~/.config/wofi still wins if present.
+#
+#   aptosid-wofi <spin> [wofi args...]   e.g. aptosid-wofi hyprland --show drun
+
+spin="$1"; shift
+dir="/usr/share/aptosid-settings-${spin}/wofi"
+usr="${XDG_CONFIG_HOME:-$HOME/.config}/wofi"
+
+# If the user keeps their own config, let wofi find it the usual way.
+if [ -e "$usr/config" ] || [ -e "$usr/style.css" ]; then
+    exec wofi "$@"
+fi
+
+exec wofi --conf "$dir/config" --style "$dir/style.css" "$@"

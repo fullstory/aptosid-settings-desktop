@@ -121,7 +121,6 @@ Recommends: aptosid-settings-qt-style,
  gnome-themes-extra,
  grim,
  hypridle,
- hyprlauncher,
  hyprlock,
  hyprpicker,
  hyprpolkitagent,
@@ -133,6 +132,7 @@ Recommends: aptosid-settings-qt-style,
  swappy,
  waybar,
  wl-clipboard,
+ wofi,
  xdg-browser-launcher
 Architecture: all
 Description: provide default Hyprland settings for aptosid

@@ -30,7 +30,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "pcmanfm-qt"
-local menu        = "hyprlauncher"
+local menu        = "/usr/libexec/aptosid-wofi hyprland --show drun"
 local locker      = "hyprlock"
 
 
@@ -223,7 +223,7 @@ hl.bind(mainMod .. " + M",      hl.dsp.exec_cmd("hyprshutdown"),               {
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout"),                    { description = "power menu" })
 hl.bind(mainMod .. " + E",      hl.dsp.exec_cmd(fileManager),                  { description = "file manager" })
 hl.bind(mainMod .. " + R",      hl.dsp.exec_cmd(menu),                         { description = "application launcher" })
-hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd([[sh -c 'cliphist list | hyprlauncher --dmenu | cliphist decode | wl-copy']]), { description = "clipboard history" })
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd([[sh -c 'cliphist list | /usr/libexec/aptosid-wofi hyprland --dmenu | cliphist decode | wl-copy']]), { description = "clipboard history" })
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a -f hex -n"), { description = "pick a colour (copied to clipboard)" })
 hl.bind(mainMod .. " + P",      hl.dsp.window.pseudo(),                        { description = "toggle pseudo-tile (dwindle)" })
 hl.bind(mainMod .. " + J",      hl.dsp.layout("togglesplit"),                  { description = "toggle split direction (dwindle)" })
