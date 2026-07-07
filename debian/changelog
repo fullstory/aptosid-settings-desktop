@@ -12,6 +12,13 @@ aptosid-settings-desktop (20260707.1) UNRELEASED; urgency=medium
     entry and a Super+e keybind), matching the Qt-leaning Hyprland spin.
   * aptosid-settings-hyprland, aptosid-settings-labwc: switch the
     default archive manager to LXQt Archiver in the mimeapps.
+  * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
+    labwc: harmonise the Waybar bar margins across the flavours (config
+    margin-left/right rather than CSS padding), so the end pills sit
+    clear of the screen edges on all spins.
+  * aptosid-settings-hyprland, aptosid-settings-sway: add the left-most
+    application-menu launcher glyph to the Waybar (as labwc already
+    has), and tone down the user module accent colour.
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 07 Jul 2026 19:18:16 +1000
 

@@ -21,13 +21,14 @@
 }
 
 /* Transparent bar; each module floats as its own rounded island.
-   Horizontal padding keeps the end pills off the screen edges. */
+   The end pills are kept off the screen edges by margin-left/right in
+   config.jsonc (reliable regardless of GTK padding quirks). */
 window#waybar {
     background: transparent;
     color: @fg;
-    padding: 0 6px;
 }
 
+#custom-appmenu,
 #workspaces,
 #mode,
 #scratchpad,
@@ -116,9 +117,20 @@ window#waybar {
     color: @yellow;
 }
 
+/* Application menu launcher (leftmost), the signature cyan. */
+#custom-appmenu {
+    color: @cyan;
+    font-size: 16px;
+    padding: 0 12px;
+}
+
+#custom-appmenu:hover {
+    background-color: @bg-hi;
+}
+
 /* User avatar + name (click opens home). */
 #user {
-    color: @pink;
+    color: @purple;
 }
 
 #wireplumber {

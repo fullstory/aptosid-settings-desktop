@@ -52,7 +52,7 @@ window#waybar {
     transition: background-color 0.2s ease;
 }
 
-/* Application menu launcher (wofi) — the leftmost element, signature mauve. */
+/* Application menu launcher (leftmost), the signature mauve. */
 #custom-appmenu {
     color: @mauve;
     font-size: 16px;

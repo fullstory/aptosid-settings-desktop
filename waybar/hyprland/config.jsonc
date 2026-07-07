@@ -4,8 +4,11 @@
     "position": "top",
     "height": 32,
     "spacing": 6,
+    "margin-left": 6,
+    "margin-right": 6,
 
     "modules-left": [
+        "custom/appmenu",
         "hyprland/workspaces",
         "wlr/taskbar"
     ],
@@ -22,6 +25,11 @@
         "user",
         "clock"
     ],
+    "custom/appmenu": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "hyprlauncher"
+    },
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
