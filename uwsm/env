@@ -13,9 +13,7 @@
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=24
 
-# Toolkit backends / scaling
-export GDK_BACKEND=wayland,x11
-export GDK_SCALE=1
-export QT_SCALE_FACTOR=1
-export QT_AUTO_SCREEN_SCALE_FACTOR=1
+# Run Qt apps natively on Wayland (fall back to xcb/Xwayland) and let the
+# compositor manage their decorations instead of Qt drawing its own.
 export QT_QPA_PLATFORM="wayland;xcb"
+export QT_WAYLAND_DISABLE_WINDOWDECORATION=1

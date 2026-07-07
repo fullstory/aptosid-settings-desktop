@@ -65,6 +65,14 @@ aptosid-settings-desktop (20260706.1) UNRELEASED; urgency=medium
     installed .desktop files (labwc-menu-generator pipemenu) rather than
     a static stub, and add a Tweaks entry (labwc-tweaks) to the root
     menu.
+  * aptosid-settings-labwc: set the Bibata-Modern-Ice cursor theme, and
+    correct the environment file syntax (KEY=value, not comma-separated)
+    so its variables are actually applied.
+  * aptosid-settings-hyprland, aptosid-settings-labwc: trim the session
+    environment down to the Qt Wayland essentials --
+    QT_QPA_PLATFORM=wayland;xcb and QT_WAYLAND_DISABLE_WINDOWDECORATION
+    (native Wayland, compositor-drawn decorations) -- and drop the
+    GDK/Qt scaling and backend variables that were doing nothing useful.
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 06 Jul 2026 11:27:20 +1000
 
