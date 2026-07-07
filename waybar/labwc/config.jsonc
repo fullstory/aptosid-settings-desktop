@@ -21,6 +21,7 @@
         "network",
         "wireplumber",
         "tray",
+        "user",
         "clock"
     ],
     "custom/appmenu": {
@@ -58,6 +59,11 @@
         "dynamic-order": ["title", "artist"],
         "dynamic-len": 30,
         "tooltip-format": "{title}\n{artist}\n{album}"
+    },
+    "user": {
+        "format": "{user}",
+        "icon": true,
+        "open-on-click": true
     },
     "clock": {
         // "timezone": "America/New_York",

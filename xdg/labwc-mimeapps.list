@@ -1,46 +1,46 @@
 [Default Applications]
 
-# Archive Manager (File Roller | Engrampa)
-application/x-ace=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-alz=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-arj=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-ar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-bzip1-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-bzip1=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-bzip-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-bzip=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-cabinet=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-compress=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-cpio=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-deb=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-ear=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-gtar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-gzip=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-java-archive=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lha=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lhz=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lzip-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lzip=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lzma-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lzma=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lzop-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-lzop=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-rar-compressed=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-rar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-rpm=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-rzip=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-stuffit=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-tarz=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-war=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-xz-compressed-tar=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-xz=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-zip-compressed=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-zip=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/x-zoo=org.gnome.FileRoller.desktop;engrampa.desktop;
-application/zip=org.gnome.FileRoller.desktop;engrampa.desktop;
-multipart/x-zip=org.gnome.FileRoller.desktop;engrampa.desktop;
+# Archive Manager (LXQt Archiver)
+application/x-ace=lxqt-archiver.desktop;
+application/x-alz=lxqt-archiver.desktop;
+application/x-arj=lxqt-archiver.desktop;
+application/x-ar=lxqt-archiver.desktop;
+application/x-bzip1-compressed-tar=lxqt-archiver.desktop;
+application/x-bzip1=lxqt-archiver.desktop;
+application/x-bzip-compressed-tar=lxqt-archiver.desktop;
+application/x-bzip=lxqt-archiver.desktop;
+application/x-cabinet=lxqt-archiver.desktop;
+application/x-compressed-tar=lxqt-archiver.desktop;
+application/x-compress=lxqt-archiver.desktop;
+application/x-cpio=lxqt-archiver.desktop;
+application/x-deb=lxqt-archiver.desktop;
+application/x-ear=lxqt-archiver.desktop;
+application/x-gtar=lxqt-archiver.desktop;
+application/x-gzip=lxqt-archiver.desktop;
+application/x-java-archive=lxqt-archiver.desktop;
+application/x-lha=lxqt-archiver.desktop;
+application/x-lhz=lxqt-archiver.desktop;
+application/x-lzip-compressed-tar=lxqt-archiver.desktop;
+application/x-lzip=lxqt-archiver.desktop;
+application/x-lzma-compressed-tar=lxqt-archiver.desktop;
+application/x-lzma=lxqt-archiver.desktop;
+application/x-lzop-compressed-tar=lxqt-archiver.desktop;
+application/x-lzop=lxqt-archiver.desktop;
+application/x-rar-compressed=lxqt-archiver.desktop;
+application/x-rar=lxqt-archiver.desktop;
+application/x-rpm=lxqt-archiver.desktop;
+application/x-rzip=lxqt-archiver.desktop;
+application/x-stuffit=lxqt-archiver.desktop;
+application/x-tar=lxqt-archiver.desktop;
+application/x-tarz=lxqt-archiver.desktop;
+application/x-war=lxqt-archiver.desktop;
+application/x-xz-compressed-tar=lxqt-archiver.desktop;
+application/x-xz=lxqt-archiver.desktop;
+application/x-zip-compressed=lxqt-archiver.desktop;
+application/x-zip=lxqt-archiver.desktop;
+application/x-zoo=lxqt-archiver.desktop;
+application/zip=lxqt-archiver.desktop;
+multipart/x-zip=lxqt-archiver.desktop;
 
 # Browser (XDG Browser)
 x-scheme-handler/ftp=aptosid-xdg-browser-launcher.desktop
@@ -50,10 +50,10 @@ x-scheme-handler/https=aptosid-xdg-browser-launcher.desktop
 # Email (Thunderbird)
 x-scheme-handler/mailto=thunderbird.desktop
 
-# File Manager (PCManFM)
-application/x-gnome-saved-search=pcmanfm.desktop
-inode/directory=pcmanfm.desktop
-x-scheme-handler/trash=pcmanfm.desktop
+# File Manager (PCManFM-Qt)
+application/x-gnome-saved-search=pcmanfm-qt.desktop
+inode/directory=pcmanfm-qt.desktop
+x-scheme-handler/trash=pcmanfm-qt.desktop
 
 # Image Viewer (eom/eog/gthumb)
 image/bmp=eom.desktop;eog.desktop;gthumb.desktop;
@@ -308,38 +308,38 @@ image/x-bzeps=org.pwmt.zathura.desktop
 image/x-eps=org.pwmt.zathura.desktop
 image/x-gzeps=org.pwmt.zathura.desktop
 
-# Text Editor (Pluma)
-application/javascript=pluma.desktop
-application/x-cgi=pluma.desktop
-application/x-javascript=pluma.desktop
-application/xml-dtd=pluma.desktop
-application/xml=pluma.desktop
-application/x-perl=pluma.desktop
-application/x-php=pluma.desktop
-application/x-python=pluma.desktop
-application/x-shellscript=pluma.desktop
-text/css=pluma.desktop
-text/javascript=pluma.desktop
-text/mathml=pluma.desktop
-text/plain=pluma.desktop
-text/x-c++hdr=pluma.desktop
-text/x-chdr=pluma.desktop
-text/x-c++src=pluma.desktop
-text/x-csrc=pluma.desktop
-text/x-dtd=pluma.desktop
-text/x-java=pluma.desktop
-text/x-javascript=pluma.desktop
-text/x-makefile=pluma.desktop
-text/xml=pluma.desktop
-text/x-moc=pluma.desktop
-text/x-pascal=pluma.desktop
-text/x-patch=pluma.desktop
-text/x-perl=pluma.desktop
-text/x-php=pluma.desktop
-text/x-python=pluma.desktop
-text/x-sql=pluma.desktop
-text/x-tcl=pluma.desktop
-text/x-tex=pluma.desktop
+# Text Editor (FeatherPad)
+application/javascript=featherpad.desktop
+application/x-cgi=featherpad.desktop
+application/x-javascript=featherpad.desktop
+application/xml-dtd=featherpad.desktop
+application/xml=featherpad.desktop
+application/x-perl=featherpad.desktop
+application/x-php=featherpad.desktop
+application/x-python=featherpad.desktop
+application/x-shellscript=featherpad.desktop
+text/css=featherpad.desktop
+text/javascript=featherpad.desktop
+text/mathml=featherpad.desktop
+text/plain=featherpad.desktop
+text/x-c++hdr=featherpad.desktop
+text/x-chdr=featherpad.desktop
+text/x-c++src=featherpad.desktop
+text/x-csrc=featherpad.desktop
+text/x-dtd=featherpad.desktop
+text/x-java=featherpad.desktop
+text/x-javascript=featherpad.desktop
+text/x-makefile=featherpad.desktop
+text/xml=featherpad.desktop
+text/x-moc=featherpad.desktop
+text/x-pascal=featherpad.desktop
+text/x-patch=featherpad.desktop
+text/x-perl=featherpad.desktop
+text/x-php=featherpad.desktop
+text/x-python=featherpad.desktop
+text/x-sql=featherpad.desktop
+text/x-tcl=featherpad.desktop
+text/x-tex=featherpad.desktop
 
 # Office Application (Libreoffice)
 application/vnd.ms-word=libreoffice-writer.desktop

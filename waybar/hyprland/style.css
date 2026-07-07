@@ -37,6 +37,7 @@ window#waybar {
 #backlight,
 #wireplumber,
 #tray,
+#user,
 #clock {
     background-color: alpha(@bg, 0.8);
     border: 1px solid @bg-hi;
@@ -95,6 +96,11 @@ window#waybar {
 
 #backlight {
     color: @warning;
+}
+
+/* User avatar + name (click opens home). */
+#user {
+    color: @accent2;
 }
 
 #idle_inhibitor.activated {

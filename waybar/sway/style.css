@@ -40,6 +40,7 @@ window#waybar {
 #backlight,
 #wireplumber,
 #tray,
+#user,
 #clock {
     background-color: alpha(@bg, 0.8);
     border: 1px solid @bg-hi;
@@ -113,6 +114,11 @@ window#waybar {
 
 #backlight {
     color: @yellow;
+}
+
+/* User avatar + name (click opens home). */
+#user {
+    color: @pink;
 }
 
 #wireplumber {
