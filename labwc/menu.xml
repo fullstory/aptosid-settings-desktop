@@ -55,9 +55,9 @@
   <!--
   <menu id="client-list-combined-menu" label="Running..." />
   -->
-  <item label="Applications">
-    <action name="Execute" command="wofi -I --show drun" />
-  </item>
+  <!-- Dynamic, categorised applications menu, generated from installed
+       .desktop files each time it is opened (labwc-menu-generator). -->
+  <menu id="applications" label="Applications" execute="labwc-menu-generator -p -I -t 'x-terminal-emulator -e'" />
   <item label="Terminal">
     <action name="Execute" command="x-terminal-emulator" />
   </item>
@@ -78,6 +78,9 @@
     </item>
   </menu>
   <separator />
+  <item label="Tweaks">
+    <action name="Execute" command="labwc-tweaks" />
+  </item>
   <item label="Lock screen">
     <action name="Execute" command="gtklock -i" />
   </item>
