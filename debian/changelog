@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20260706.2) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 07 Jul 2026 04:36:32 +0200
+
 aptosid-settings-desktop (20260706.1) unstable; urgency=medium
 
   * Bump the default UI font from Noto Sans 11 to 12 across all flavours
