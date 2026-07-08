@@ -81,15 +81,6 @@
     </item>
   </menu>
   <separator />
-  <item label="Tweaks">
-    <action name="Execute" command="labwc-tweaks" />
-  </item>
-  <item label="Lock screen">
-    <action name="Execute" command="gtklock -i" />
-  </item>
-  <item label="Reconfigure">
-    <action name="Reconfigure" />
-  </item>
   <item label="Exit">
     <action name="Execute" command="wlogout" />
   </item>
