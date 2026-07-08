@@ -1,6 +1,14 @@
 #!/bin/sh
 # Creates an "Install System" icon on the live session tested with:
 # Xfce, LXDE, LXQt, Gnome, KDE, Mate, Cinnamon
+
+# Skip compositors whose shell renders no desktop: launchers in ~/Desktop are
+# never shown, and wofi's drun scan surfaces them as duplicate menu entries.
+# Derive the spin like aptosid-waybar (first name, lowercased).
+case "$(printf '%s' "${XDG_CURRENT_DESKTOP%%:*}" | tr '[:upper:]' '[:lower:]')" in
+    hyprland|sway|labwc) exit 0 ;;
+esac
+
 # create aptosid icons
 if [ -s /etc/default/distro ]; then
     . /etc/default/distro
@@ -70,7 +78,7 @@ EOF
 
     # Set desktop launchers as trusted (See: #1037299)
     for launcher in "${DESKTOP}"/*.desktop; do
-        [ -e "$launcher" ] || conitnue
+        [ -e "$launcher" ] || continue
         case "$XDG_CURRENT_DESKTOP" in
             XFCE*)
                 gio set --type=string "$launcher" \

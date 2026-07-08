@@ -70,6 +70,10 @@ aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
     sway: fix unreadable wofi menu text. Desktop action rows (for
     example an app's tray sub-menu) rendered dark on the dark
     background; force the themed colours so every row stays legible.
+  * aptosid-settings-common: add-aptosid-desktop-icons no longer runs on
+    Hyprland, Sway and labwc, whose shells show no desktop icons. There
+    the copied launchers stayed hidden and untrusted, and left a
+    duplicate installer entry in the app launcher (wofi).
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 08 Jul 2026 11:52:08 +1000
 
