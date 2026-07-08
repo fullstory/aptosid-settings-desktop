@@ -50,6 +50,26 @@ aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
   * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
     labwc: provide multiple mimeapps.list alternatives for text editor,
     media player, archiver, image viewer and pdf viewer.
+  * aptosid-settings-hyprland, aptosid-settings-labwc: switch the
+    default file manager from PCManFM-Qt to Thunar, run it in daemon
+    mode (with thunar-volman for removable media) and point the menu
+    entry and Super+e keybind at it. The Sway spin already used Thunar.
+  * aptosid-settings-hyprland, aptosid-settings-labwc, aptosid-settings-
+    sway: rework the mimeapps default handlers to prefer apps that
+    honour the GTK theme. Images now open in pqiv (eog, eom and the Qt
+    viewers kept as fallbacks), archives in File Roller, and VLC is
+    dropped in favour of Celluloid and Parole (VLC failed to start). The
+    file manager order is Thunar, PCManFM, PCManFM-Qt.
+  * aptosid-settings-hyprland, aptosid-settings-labwc: on the Waybar
+    audio module, open the GTK pavucontrol on click rather than the Qt
+    build.
+  * aptosid-settings-hyprland, aptosid-settings-labwc, aptosid-settings-
+    sway: recommend file-roller, thunar and thunar-volman; drop the
+    pcmanfm-qt recommendation from the Hyprland spin.
+  * aptosid-settings-hyprland, aptosid-settings-labwc, aptosid-settings-
+    sway: fix unreadable wofi menu text. Desktop action rows (for
+    example an app's tray sub-menu) rendered dark on the dark
+    background; force the themed colours so every row stays legible.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 08 Jul 2026 11:52:08 +1000
 

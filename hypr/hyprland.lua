@@ -29,7 +29,7 @@ hl.monitor({
 
 -- Set programs that you use
 local terminal    = "kitty"
-local fileManager = "pcmanfm-qt"
+local fileManager = "thunar"
 local menu        = "/usr/libexec/aptosid-wofi hyprland --show drun"
 local locker      = "hyprlock"
 
@@ -47,6 +47,8 @@ hl.on("hyprland.start", function()
     -- Keep clipboard history (cliphist + wl-clipboard), for text and images.
     hl.exec_cmd("wl-paste --type text --watch cliphist store")
     hl.exec_cmd("wl-paste --type image --watch cliphist store")
+    -- Thunar in daemon mode: faster windows and thunar-volman removable media.
+    hl.exec_cmd("thunar --daemon")
 end)
 
 
@@ -292,7 +294,7 @@ hl.window_rule({ match = { title = "(Kvantum Manager)" }, float = true })
 
 hl.window_rule({ match = { class = "^(Alacritty|kitty)$" }, opacity = "0.8 0.7" })
 hl.window_rule({ match = { class = "^([Tt]hunar|org.gnome.Nautilus)$" }, opacity = "0.9 0.8" })
-hl.window_rule({ match = { class = "^(pcmanfm|pcmanfm-qt|dolphin)$" }, opacity = "0.9 0.8" })
+hl.window_rule({ match = { class = "^(pcmanfm|dolphin)$" }, opacity = "0.9 0.8" })
 hl.window_rule({ match = { class = "^(gedit|org.gnome.TextEditor|mousepad|pluma|featherpad|kate)$" }, opacity = "0.8 0.7" })
 hl.window_rule({ match = { class = "^(nwg-look|qt5ct|qt6ct)$" }, opacity = "0.9 0.8" })
 hl.window_rule({ match = { title = "(Kvantum Manager)" }, opacity = "0.9 0.8" })

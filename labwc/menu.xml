@@ -62,7 +62,7 @@
     <action name="Execute" command="x-terminal-emulator" />
   </item>
   <item label="File manager">
-    <action name="Execute" command="pcmanfm-qt" />
+    <action name="Execute" command="thunar" />
   </item>
   <item label="Web browser">
     <action name="Execute" command="x-www-browser" />

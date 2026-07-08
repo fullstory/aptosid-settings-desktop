@@ -95,7 +95,7 @@
     "wireplumber": {
         "format": "{volume}% {icon}",
         "format-muted": "",
-        "on-click": "pavucontrol-qt",
+        "on-click": "pavucontrol",
         "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "format-icons": ["", "", ""]
     },

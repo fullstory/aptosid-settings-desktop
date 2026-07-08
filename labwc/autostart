@@ -15,6 +15,9 @@ esac
 # Set background: https://github.com/swaywm/swaybg
 [ -x /usr/bin/swaybg ] && swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
 
+# Thunar in daemon mode: faster windows and thunar-volman removable media.
+[ -x /usr/bin/thunar ] && thunar --daemon >/dev/null 2>&1 &
+
 # waybar, the polkit agent and mako are not started here: under the uwsm
 # session they come up via their systemd user units (waybar.service,
 # mako.service) or XDG autostart entries (nm-applet, polkit-mate).

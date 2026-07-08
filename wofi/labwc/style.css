@@ -29,10 +29,12 @@ window {
 }
 
 #img { margin-right: 8px; }
-#text { color: #cdd6f4; }
+#text,
+#entry label { color: #cdd6f4 !important; }
 
 #entry:selected {
     background: linear-gradient(45deg, #cba6f7, #89b4fa);
 }
 
-#entry:selected #text { color: #1e1e2e; }
+#entry:selected #text,
+#entry:selected label { color: #1e1e2e !important; }
