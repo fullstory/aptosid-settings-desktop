@@ -47,6 +47,9 @@ aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
     now runs from a single waybar.service drop-in in aptosid-settings-
     common (moved from -hyprland); aptosid-waybar picks the themed
     config from $XDG_CURRENT_DESKTOP.
+  * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
+    labwc: provide multiple mimeapps.list alternatives for text editor,
+    media player, archiver, image viewer and pdf viewer.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 08 Jul 2026 11:52:08 +1000
 
