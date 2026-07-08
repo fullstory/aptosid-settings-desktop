@@ -38,6 +38,15 @@ aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
     variables reach the session -- Qt apps now follow the dark theme, as
     they already did under Hyprland. The shared uwsm/env moves to
     aptosid-settings-common.
+  * aptosid-settings-common, aptosid-settings-sway, aptosid-settings-
+    labwc: stop launching waybar, the network-manager applet, the polkit
+    agent and mako from the Sway and labwc session configs -- under the
+    uwsm session these already start via their systemd user units
+    (waybar.service, mako.service) or XDG autostart entries (nm-applet,
+    polkit-mate), so launching them again just duplicated them. Waybar
+    now runs from a single waybar.service drop-in in aptosid-settings-
+    common (moved from -hyprland); aptosid-waybar picks the themed
+    config from $XDG_CURRENT_DESKTOP.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 08 Jul 2026 11:52:08 +1000
 

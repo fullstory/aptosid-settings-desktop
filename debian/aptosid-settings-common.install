@@ -7,6 +7,7 @@ xdg/mimeapps.list etc/xdg
 gtklock etc/xdg
 kitty etc/xdg
 uwsm/env etc/xdg/uwsm
+systemd/user/waybar.service.d/aptosid.conf etc/systemd/user/waybar.service.d
 mako etc/xdg
 pastebin.d etc/xdg
 pcmanfm-qt etc/xdg

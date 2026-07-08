@@ -4,9 +4,13 @@
 # conffiles). Each spin ships its themed config read-only under /usr/share; a
 # user's own ~/.config/waybar still wins, because waybar prefers it on its own.
 #
-#   aptosid-waybar <spin>     e.g. hyprland | sway | labwc
+#   aptosid-waybar [spin]     e.g. hyprland | sway | labwc
+# With no argument the spin is derived from $XDG_CURRENT_DESKTOP (e.g.
+# Hyprland, sway:wlroots, labwc:wlroots), so a single waybar.service drop-in
+# serves every uwsm session.
 
 spin="$1"
+[ -n "$spin" ] || spin=$(printf '%s' "${XDG_CURRENT_DESKTOP%%:*}" | tr '[:upper:]' '[:lower:]')
 dir="/usr/share/aptosid-settings-${spin}/waybar"
 usr="${XDG_CONFIG_HOME:-$HOME/.config}/waybar"
 

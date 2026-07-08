@@ -5,10 +5,10 @@
 # Read `man 5 sway` for a complete reference.
 
 exec thunar --daemon
-exec mako --config /etc/xdg/mako/config
-exec nm-applet --indicator
-exec mate-polkit
-exec /usr/libexec/aptosid-waybar sway
+
+# waybar, nm-applet, the polkit agent and mako are not exec'd here: under the
+# uwsm session they start via their systemd user units (waybar.service,
+# mako.service) or XDG autostart entries (nm-applet, polkit-mate).
 
 # Keep clipboard history (cliphist + wl-clipboard), for text and images.
 exec wl-paste --type text --watch cliphist store

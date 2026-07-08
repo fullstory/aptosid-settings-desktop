@@ -15,12 +15,9 @@ esac
 # Set background: https://github.com/swaywm/swaybg
 [ -x /usr/bin/swaybg ] && swaybg -m fill -i /usr/share/wallpapers/aptosid-nemesis-wide.png >/dev/null 2>&1 &
 
-# Status bar: https://github.com/Alexays/Waybar
-# aptosid's default config ships under /usr/share; ~/.config/waybar overrides it.
-[ -x /usr/bin/waybar ] && /usr/libexec/aptosid-waybar labwc >/dev/null 2>&1 &
-
-# Notification daemon: https://github.com/emersion/mako
-[ -x /usr/bin/mako ] && mako >/dev/null 2>&1 &
+# waybar, the polkit agent and mako are not started here: under the uwsm
+# session they come up via their systemd user units (waybar.service,
+# mako.service) or XDG autostart entries (nm-applet, polkit-mate).
 
 # Skip idle lock only for the passwordless live user (cannot unlock gtklock);
 # homed and installed users get it.
@@ -32,12 +29,3 @@ if [ ! -e /run/fll/passwordless ]; then
             resume 'wlopm --on \*' \
             before-sleep 'gtklock -i' >/dev/null 2>&1 &
 fi
-
-# start policykit agent
-mate-polkit &
-
-# update XDG user dirs (blueman-applet)
-xdg-user-dirs-update
-
-# update environment for xdg-desktop-portals
-dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
