@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260708.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
     labwc: add a Waybar user module beside the clock -- avatar (from
     ~/.face) and name, left-click opens the home directory.
