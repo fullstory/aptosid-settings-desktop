@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260707.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
@@ -29,8 +29,11 @@ aptosid-settings-desktop (20260707.1) UNRELEASED; urgency=medium
     shared aptosid-wofi helper (a user's ~/.config/wofi still wins).
     Used for the app-menu button, the launcher keybind and clipboard
     history.
+  * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
+    labwc: nudge the Waybar application-menu glyph down two pixels so it
+    sits vertically centred in its pill.
 
- -- Kel Modderman <kelvmod@gmail.com>  Tue, 07 Jul 2026 19:18:16 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 08 Jul 2026 11:52:08 +1000
 
 aptosid-settings-desktop (20260706.1) unstable; urgency=medium
 
