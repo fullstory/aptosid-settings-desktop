@@ -1,4 +1,5 @@
 labwc etc/xdg
+wayland-sessions/labwc-uwsm.desktop usr/share/wayland-sessions
 schemas/*_aptosid-settings-labwc.gschema.override usr/share/glib-2.0/schemas
 waybar/labwc/* usr/share/aptosid-settings-labwc/waybar
 wofi/labwc/* usr/share/aptosid-settings-labwc/wofi

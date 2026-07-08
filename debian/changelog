@@ -32,6 +32,12 @@ aptosid-settings-desktop (20260708.1) UNRELEASED; urgency=medium
   * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
     labwc: nudge the Waybar application-menu glyph down two pixels so it
     sits vertically centred in its pill.
+  * aptosid-settings-sway, aptosid-settings-labwc: launch the Sway and
+    labwc sessions through uwsm via new *-uwsm.desktop session files, so
+    QT_STYLE_OVERRIDE (kvantum) and the other /etc/environment.d
+    variables reach the session -- Qt apps now follow the dark theme, as
+    they already did under Hyprland. The shared uwsm/env moves to
+    aptosid-settings-common.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 08 Jul 2026 11:52:08 +1000
 

@@ -6,6 +6,7 @@ libexec/aptosid-wofi usr/libexec
 xdg/mimeapps.list etc/xdg
 gtklock etc/xdg
 kitty etc/xdg
+uwsm/env etc/xdg/uwsm
 mako etc/xdg
 pastebin.d etc/xdg
 pcmanfm-qt etc/xdg
