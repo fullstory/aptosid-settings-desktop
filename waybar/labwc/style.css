@@ -39,7 +39,6 @@ window#waybar {
 #idle_inhibitor,
 #power-profiles-daemon,
 #backlight,
-#network,
 #wireplumber,
 #tray,
 #user,
@@ -67,15 +66,6 @@ window#waybar {
 #mpris {
     color: @pink;
     font-style: italic;
-}
-
-/* Network: click opens nm-connection-editor (no tray applet on labwc). */
-#network {
-    color: @blue;
-}
-
-#network.disconnected {
-    color: @red;
 }
 
 /* Restrained accents — mauve is the signature. */

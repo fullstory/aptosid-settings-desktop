@@ -18,7 +18,6 @@
         "idle_inhibitor",
         "power-profiles-daemon",
         "backlight",
-        "network",
         "wireplumber",
         "tray",
         "user",
@@ -92,16 +91,6 @@
             "balanced": "",
             "power-saver": ""
         }
-    },
-    "network": {
-        "format-wifi": "{signalStrength}% ",
-        "format-ethernet": "",
-        "format-linked": "",
-        "format-disconnected": "",
-        "tooltip-format-wifi": "{essid}  ({signalStrength}%)\n{ipaddr}/{cidr}\nvia {gwaddr}",
-        "tooltip-format-ethernet": "{ifname}\n{ipaddr}/{cidr}\nvia {gwaddr}",
-        "tooltip-format-disconnected": "Disconnected",
-        "on-click": "nm-connection-editor"
     },
     "wireplumber": {
         "format": "{volume}% {icon}",
