@@ -7,6 +7,14 @@ aptosid-settings-desktop (20260710.1) UNRELEASED; urgency=medium
   * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
     labwc: make mpv the default audio and video player in the mimeapps,
     ahead of Celluloid and Parole.
+  * hypr/hyprland.lua: match Calamares' new Wayland app_id
+    io.calamares.calamares in the float/center window rule (recent
+    builds no longer use the bare "calamares" class), so the installer
+    opens as a centred floating window again. The old class is kept for
+    X11 and older versions.
+  * sway/config: float and centre the Calamares installer (app_id
+    io.calamares.calamares, with the bare "calamares" class kept for
+    X11/older builds), matching the Hyprland behaviour.
 
  -- Kel Modderman <kelvmod@gmail.com>  Fri, 10 Jul 2026 07:04:47 +1000
 

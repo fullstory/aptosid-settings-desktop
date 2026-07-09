@@ -282,7 +282,7 @@ hl.window_rule({ match = { class = "^(hyprpolkitagent)$" }, float = true, center
 hl.window_rule({ match = { class = "^(hyprlauncher)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "(xdg-desktop-portal-hyprland|xdg-desktop-portal-gtk|xdg-desktop-portal-kde)" }, float = true })
 
-hl.window_rule({ match = { class = "^([Cc]alamares)$" }, float = true, center = true })
+hl.window_rule({ match = { class = "^(io.calamares.calamares|[Cc]alamares)$" }, float = true, center = true })
 hl.window_rule({ match = { class = "^(org.gnome.Calculator)$" }, float = true })
 hl.window_rule({ match = { class = "^([Qq]alculate-gtk)$" }, float = true })
 hl.window_rule({ match = { class = "^([Qq]alculate-qt)$" }, float = true })
