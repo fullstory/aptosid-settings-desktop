@@ -1,6 +1,11 @@
 aptosid-settings-desktop (20260710.2) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * aptosid-settings-common: ship zoitechat colors.conf (Adwaita-dark
+    palette) so the aptosid IRC chat matches the dark desktop theme.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 10 Jul 2026 05:13:38 +0200
 
