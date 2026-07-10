@@ -39,6 +39,15 @@ hyprctl binds -j | jq -r '
         else if (key == "mouse_down") key = "scroll down"
         else if (key == "mouse_up")   key = "scroll up"
 
+        # Collapse the 1-10 workspace binds into one line each.
+        if (desc ~ /^switch to workspace [0-9]+$/) {
+            if (seen_switch++) next
+            key = "1…0"; desc = "switch to workspace 1-10"
+        } else if (desc ~ /^move window to workspace [0-9]+$/) {
+            if (seen_move++) next
+            key = "1…0"; desc = "move window to workspace 1-10"
+        }
+
         combo[n] = mods key; label[n] = desc; n++
         if (length(mods key) > w) w = length(mods key)
     }

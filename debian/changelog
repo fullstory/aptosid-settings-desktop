@@ -9,6 +9,10 @@ aptosid-settings-desktop (20260710.2) UNRELEASED; urgency=medium
   * kitty: set font_size to 12.0 so the terminal matches the desktop-
     wide Noto Sans 12 font size (kitty ignores the GTK global and
     otherwise falls back to its own 11pt default).
+  * libexec/aptosid-hypr-hints: collapse the ten per-workspace binds
+    into a single "switch to workspace 1-10" line (and likewise for
+    move), shortening the cheatsheet by 18 lines so it fits better
+    vertically.
 
  -- Kel Modderman <kelvmod@gmail.com>  Fri, 10 Jul 2026 22:12:02 +1000
 
