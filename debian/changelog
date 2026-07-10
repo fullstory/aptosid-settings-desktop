@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260710.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260710.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-hyprland, aptosid-settings-sway, aptosid-settings-
     labwc: make mpv the default audio and video player in the mimeapps,
     ahead of Celluloid and Parole.
