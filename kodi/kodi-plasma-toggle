@@ -7,12 +7,19 @@ set -u
 MIN_RUNTIME=10      # a session exiting faster than this is treated as a crash
 CRASH_THROTTLE=5    # seconds to wait after a fast exit, so a broken session can't tight-loop
 
+# A rogue addon can leave a thread that hangs Kodi's exit forever, so a watchdog
+# unit SIGKILLs Kodi if its shutdown stalls past the grace.
+WATCH_NAME=kodi-plasma-toggle-watchdog.service
+KODI_SHUTDOWN_GRACE=30   # secs before a stuck shutdown is killed
+KODI_LOG="$HOME/.var/app/tv.kodi.Kodi/data/temp/kodi.log"
+[ -s /etc/default/kodi-session-aptosid ] && . /etc/default/kodi-session-aptosid
+
 log() { logger -t kodi-plasma-toggle "$*"; }
 
 # Run a session. fll_desktop sets SDDM Relogin=true, so exiting only re-logs-in the
 # session -- there is no greeter fallback. The toggle therefore never exits: a session
 # that dies faster than MIN_RUNTIME is logged and throttled, then the loop proceeds.
-run_guarded() {  # $1=label  $2..=command
+run_it() {  # $1=label  $2..=command
     label=$1; shift
     start=$(date +%s)
     "$@"
@@ -35,17 +42,31 @@ for w in /usr/lib/*/libexec/plasma-dbus-run-session-if-needed; do
 done
 [ -n "$PLASMA_BUS" ] || log "plasma-dbus-run-session-if-needed not found; launching plasma directly"
 
+# Run Kodi with the watchdog as a transient unit systemd owns. The watchdog
+# kills Kodi if its shutdown overruns the grace; a clean exit returns first, so
+# we stop the watchdog before it would fire.
+watchdog_and_kodi() {
+    systemctl --user reset-failed "$WATCH_NAME" 2>/dev/null
+    systemd-run --user --quiet --unit="$WATCH_NAME" \
+        -E KODI_LOG="$KODI_LOG" \
+        -E KODI_SHUTDOWN_GRACE="$KODI_SHUTDOWN_GRACE" \
+        -- /usr/libexec/kodi-plasma-toggle-watchdog
+    /usr/libexec/kodi-session-aptosid
+    rc=$?
+    systemctl --user stop "$WATCH_NAME" 2>/dev/null
+    return "$rc"
+}
+
 while :; do
     unset WAYLAND_DISPLAY DISPLAY XDG_SESSION_TYPE XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP
 
     # Kodi GBM needs no display vars; --windowing=gbm is explicit. The wrapper
-    # reads /etc/default/kodi-session-aptosid, then execs into the real Kodi
-    # invocation -- one exec hop, so run_guarded still waits on the real process.
-    run_guarded kodi /usr/libexec/kodi-session-aptosid
+    # reads /etc/default/kodi-session-aptosid, then execs into the real Kodi.
+    run_it kodi watchdog_and_kodi
 
     # $PLASMA_BUS is unquoted on purpose: empty -> drops out, set -> prepends the
     # wrapper. The path has no spaces, so word-splitting is safe here.
-    run_guarded plasma \
+    run_it plasma \
         env XDG_SESSION_TYPE=wayland XDG_SESSION_DESKTOP=plasma XDG_CURRENT_DESKTOP=KDE \
             $PLASMA_BUS startplasma-wayland
 done

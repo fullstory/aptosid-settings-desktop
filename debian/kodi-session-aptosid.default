@@ -1,6 +1,15 @@
 # /etc/default/kodi-session-aptosid
 #
-# Override for the Kodi standalone GBM session launch command, read by
-# /usr/libexec/kodi-session-aptosid. This file is a conffile: local edits
-# survive package upgrades.
+# Overrides read by /usr/libexec/kodi-session-aptosid and
+# /usr/libexec/kodi-plasma-toggle. This file is a conffile: local edits
+# survive package upgrades. Uncomment and adjust as needed.
+
+# Kodi standalone GBM session launch command.
 #KODI_GBM_EXEC="flatpak run tv.kodi.Kodi --standalone --windowing=gbm"
+
+# kodi-plasma-toggle only: a watchdog SIGKILLs Kodi if a rogue addon hangs its
+# exit, so it can't wedge the Kodi->Plasma switch or the poweroff path.
+#   KODI_LOG            - Kodi log watched for the shutdown marker
+#   KODI_SHUTDOWN_GRACE - seconds Kodi may take to shut down before it's killed
+#KODI_LOG="$HOME/.var/app/tv.kodi.Kodi/data/temp/kodi.log"
+#KODI_SHUTDOWN_GRACE=30

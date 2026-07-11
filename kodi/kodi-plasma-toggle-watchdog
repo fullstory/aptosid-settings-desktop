@@ -1,0 +1,27 @@
+#!/bin/sh
+# Bound Kodi's shutdown. Run by kodi-plasma-toggle as a transient systemd --user
+# unit: wait for Kodi to start shutting down, then -- if it hasn't exited a grace
+# period later -- SIGKILL the whole cgroup scope it runs in (flatpak gives the
+# app its own scope). A rogue addon thread can otherwise wedge Kodi's exit
+# forever. KODI_LOG and KODI_SHUTDOWN_GRACE come from the environment.
+
+set -u
+
+log() { logger -t kodi-plasma-toggle "$*"; }
+
+# Block until Kodi announces it is shutting down.
+tail -Fn0 "$KODI_LOG" 2>/dev/null | grep -qm1 'Stopping the application'
+
+log "watchdog: Kodi shutting down; ${KODI_SHUTDOWN_GRACE}s grace before forced kill"
+sleep "$KODI_SHUTDOWN_GRACE"
+
+# Still alive after the grace? Kill the scope Kodi runs in, found via its cgroup.
+pid=$(pgrep -nf 'kodi\.bin') || { log "watchdog: Kodi already exited"; exit 0; }
+scope=$(awk -F/ '{print $NF}' "/proc/$pid/cgroup" 2>/dev/null)
+case "$scope" in
+    session-*.scope|"") log "watchdog: refusing to kill '$scope'"; exit 0 ;;
+    *.scope) ;;
+    *) log "watchdog: unexpected cgroup '$scope' for pid $pid; not killing"; exit 0 ;;
+esac
+log "watchdog: forcing '$scope' down after grace"
+systemctl --user kill -s KILL "$scope"

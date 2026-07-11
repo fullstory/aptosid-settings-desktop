@@ -23,6 +23,9 @@ aptosid-settings-desktop (20260711.1) UNRELEASED; urgency=medium
   * aptosid-settings-lxqt: ship miriway-shell.config, giving the Miriway
     compositor an LXQt shell (panel, wallpaper, launcher and
     keybindings).
+  * kodi-plasma-toggle: stop a misbehaving Kodi addon from hanging the
+    box on exit. A watchdog now force-kills Kodi if its shutdown stalls,
+    so the switch back to Plasma (and poweroff) can't wedge.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sat, 11 Jul 2026 10:15:27 +1000
 
