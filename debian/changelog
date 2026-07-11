@@ -20,6 +20,9 @@ aptosid-settings-desktop (20260711.1) UNRELEASED; urgency=medium
   * schemas: use regular-weight monospace (Noto Mono 12, was Noto Mono
     Bold 12) across all desktops, so terminal and document text isn't
     bold.
+  * aptosid-settings-lxqt: ship miriway-shell.config, giving the Miriway
+    compositor an LXQt shell (panel, wallpaper, launcher and
+    keybindings).
 
  -- Kel Modderman <kelvmod@gmail.com>  Sat, 11 Jul 2026 10:15:27 +1000
 
