@@ -6,7 +6,7 @@ titlebar-font='Noto Sans Bold 12'
 titlebar-uses-system-font=false
 
 [org.gnome.desktop.interface:Budgie]
-monospace-font-name='Noto Mono Bold 12'
+monospace-font-name='Noto Mono 12'
 font-name='Noto Sans 12'
 document-font-name='Noto Sans 12'
 cursor-theme='Bibata-Modern-Ice'

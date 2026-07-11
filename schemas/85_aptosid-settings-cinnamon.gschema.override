@@ -17,7 +17,7 @@ gtk-theme='Adwaita-dark'
 cursor-theme='Bibata-Modern-Ice'
 
 [org.gnome.desktop.interface:X-Cinnamon]
-monospace-font-name='Noto Mono Bold 12'
+monospace-font-name='Noto Mono 12'
 font-name='Noto Sans 12'
 document-font-name='Noto Sans 12'
 color-scheme='prefer-dark'

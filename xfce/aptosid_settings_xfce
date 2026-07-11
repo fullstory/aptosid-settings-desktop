@@ -33,10 +33,10 @@ xfconf-query --create --channel xsettings \
 	--property /Gtk/FontName --type string --set 'Noto Sans 12'
 
 xfconf-query --create --channel xsettings \
-	--property /Net/MonospaceFontName --type string --set 'Noto Mono 11'
+	--property /Net/MonospaceFontName --type string --set 'Noto Mono 12'
 
 xfconf-query --create --channel xsettings \
-	--property /Gtk/MonospaceFontName --type string --set 'Noto Mono 11'
+	--property /Gtk/MonospaceFontName --type string --set 'Noto Mono 12'
 
 xfconf-query --create --channel xsettings \
 	--property /Gtk/CursorThemeName --type string --set 'Bibata-Modern-Ice'

@@ -15,6 +15,11 @@ aptosid-settings-desktop (20260711.1) UNRELEASED; urgency=medium
     vertically.
   * labwc: set the theme font size to 12 to match the desktop-wide Noto
     Sans 12 (was 11).
+  * xfce: bump monospace font to Noto Mono 12 (was 11), matching the
+    desktop-wide size.
+  * schemas: use regular-weight monospace (Noto Mono 12, was Noto Mono
+    Bold 12) across all desktops, so terminal and document text isn't
+    bold.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sat, 11 Jul 2026 10:15:27 +1000
 
