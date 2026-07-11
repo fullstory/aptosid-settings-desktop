@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260711.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260711.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-common: ship zoitechat colors.conf (Adwaita-dark
     palette) so the aptosid IRC chat matches the dark desktop theme.
   * kitty: set font_size to 12.0 so the terminal matches the desktop-
