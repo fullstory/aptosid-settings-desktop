@@ -31,7 +31,7 @@ hl.monitor({
 local terminal    = "kitty"
 local fileManager = "thunar"
 local menu        = "/usr/libexec/aptosid-wofi hyprland --show drun"
-local locker      = "hyprlock"
+local locker      = "loginctl lock-session"  -- hypridle draws hyprlock
 
 
 -------------------

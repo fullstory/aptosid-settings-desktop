@@ -51,12 +51,15 @@ output * bg /usr/share/wallpapers/aptosid-nemesis-wide.png fill
 ### Idle configuration
 #
 # Lock after 300s of inactivity, power the displays off after another 300s
-# (back on when resumed), and lock before sleep. Skipped for the passwordless
-# live user, who cannot unlock gtklock (matches labwc autostart / hypridle).
-exec [ -e /run/fll/passwordless ] || swayidle -w \
-         timeout 300 'gtklock -i' \
+# (back on when resumed), and lock before sleep. Every trigger goes through
+# loginctl lock-session; swayidle's lock handler is the single locker and is
+# skipped for the passwordless live user, who cannot unlock gtklock (matches
+# labwc autostart / hypridle).
+exec swayidle -w \
+         lock '[ -e /run/fll/passwordless ] || gtklock -i' \
+         timeout 300 'loginctl lock-session' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-         before-sleep 'gtklock -i'
+         before-sleep 'loginctl lock-session'
 
 ### Input configuration
 #
@@ -252,7 +255,7 @@ bindsym $mod+r mode "resize"
     # Screenshot a region and annotate it (swappy)
     bindsym $mod+Shift+Print exec grim -g "$(slurp)" - | swappy -f -
     # Lock the screen ($mod+l is focus-right, so lock is Ctrl+l)
-    bindsym $mod+Ctrl+l exec gtklock -i
+    bindsym $mod+Ctrl+l exec loginctl lock-session
     # Clipboard history (cliphist + wofi)
     bindsym $mod+Shift+v exec cliphist list | /usr/libexec/aptosid-wofi sway --dmenu | cliphist decode | wl-copy
     # Pick a colour (copied to clipboard)
