@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260712.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260713.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
@@ -22,8 +22,13 @@ aptosid-settings-desktop (20260712.1) UNRELEASED; urgency=medium
   * miriway: the LXQt/miriway session now paints the aptosid desktop
     wallpaper, by running pcmanfm-qt with the lxqt profile (as the X11
     session already does).
+  * aptosid-settings-common: depend on gvfs-daemons. add-aptosid-
+    desktop-icons marks the desktop launchers trusted via gio metadata
+    (metadata::trust on LXQt), which needs the gvfs metadata daemon. It
+    was absent on LXQt --no-install-recommends builds, so the launchers
+    were never trusted.
 
- -- Kel Modderman <kelvmod@gmail.com>  Sun, 12 Jul 2026 12:19:31 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Mon, 13 Jul 2026 07:44:39 +1000
 
 aptosid-settings-desktop (20260711.1) unstable; urgency=medium
 

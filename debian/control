@@ -10,7 +10,8 @@ Vcs-Git: https://github.com/fullstory/aptosid-settings-desktop.git
 Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 
 Package: aptosid-settings-common
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
+ gvfs-daemons
 Recommends: mint-y-icons,
  pastebinit,
  uwsm
