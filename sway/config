@@ -91,6 +91,8 @@ input "type:touchpad" {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
+    bindsym $mod+t exec $term
+    bindsym $mod+grave exec $term
 
     # Start file manager
     bindsym $mod+Shift+Return exec $fm

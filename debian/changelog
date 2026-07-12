@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260711.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260712.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
@@ -7,8 +7,11 @@ aptosid-settings-desktop (20260711.2) UNRELEASED; urgency=medium
   * kodi-plasma-toggle: let the shutdown watchdog also guard a native
     (non-flatpak) Kodi. Set KODI_OWN_SCOPE=1 in /etc/default/kodi-
     session-aptosid for a native build; flatpak is unchanged.
+  * hyprland, sway, labwc, miriway: add Meta+T and Meta+` as terminal
+    shortcuts alongside Meta+Return, so all four Wayland spins open a
+    terminal with the same keys.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Jul 2026 23:21:01 +0200
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 12 Jul 2026 12:19:31 +1000
 
 aptosid-settings-desktop (20260711.1) unstable; urgency=medium
 

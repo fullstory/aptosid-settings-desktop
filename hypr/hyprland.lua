@@ -218,6 +218,7 @@ hl.bind(mainMod .. " + SHIFT + Print", hl.dsp.exec_cmd([[sh -c 'grim -g "$(slurp
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal),                     { description = "terminal" })
 hl.bind(mainMod .. " + T",      hl.dsp.exec_cmd(terminal),                     { description = "terminal" })
+hl.bind(mainMod .. " + grave",  hl.dsp.exec_cmd(terminal),                     { description = "terminal" })
 hl.bind(mainMod .. " + L",      hl.dsp.exec_cmd(locker),                       { description = "lock screen" })
 hl.bind(mainMod .. " + W",      hl.dsp.exec_cmd("x-www-browser"),              { description = "web browser" })
 hl.bind(mainMod .. " + C",      hl.dsp.window.close(),                         { description = "close window" })
