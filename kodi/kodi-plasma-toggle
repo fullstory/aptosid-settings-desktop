@@ -10,7 +10,10 @@ CRASH_THROTTLE=5    # seconds to wait after a fast exit, so a broken session can
 # A rogue addon can leave a thread that hangs Kodi's exit forever, so a watchdog
 # unit SIGKILLs Kodi if its shutdown stalls past the grace.
 WATCH_NAME=kodi-plasma-toggle-watchdog.service
+SCOPE_NAME=kodi-plasma-toggle-kodi.scope
 KODI_SHUTDOWN_GRACE=30   # secs before a stuck shutdown is killed
+KODI_OWN_SCOPE=          # set for a native (non-flatpak) Kodi that won't self-scope
+KODI_BIN_MATCH='kodi\.bin'   # pgrep -f pattern the watchdog uses to find Kodi
 KODI_LOG="$HOME/.var/app/tv.kodi.Kodi/data/temp/kodi.log"
 [ -s /etc/default/kodi-session-aptosid ] && . /etc/default/kodi-session-aptosid
 
@@ -50,8 +53,17 @@ watchdog_and_kodi() {
     systemd-run --user --quiet --unit="$WATCH_NAME" \
         -E KODI_LOG="$KODI_LOG" \
         -E KODI_SHUTDOWN_GRACE="$KODI_SHUTDOWN_GRACE" \
+        -E KODI_BIN_MATCH="$KODI_BIN_MATCH" \
         -- /usr/libexec/kodi-plasma-toggle-watchdog
-    /usr/libexec/kodi-session-aptosid
+    if [ -n "$KODI_OWN_SCOPE" ]; then
+        # Native Kodi doesn't self-scope -- give it one the watchdog can target.
+        systemctl --user reset-failed "$SCOPE_NAME" 2>/dev/null
+        systemd-run --user --scope --unit="$SCOPE_NAME" --quiet \
+            -- /usr/libexec/kodi-session-aptosid
+    else
+        # Flatpak self-scopes into its own app-flatpak-*.scope.
+        /usr/libexec/kodi-session-aptosid
+    fi
     rc=$?
     systemctl --user stop "$WATCH_NAME" 2>/dev/null
     return "$rc"

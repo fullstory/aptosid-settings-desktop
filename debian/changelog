@@ -1,6 +1,12 @@
 aptosid-settings-desktop (20260711.2) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * kodi-plasma-toggle: let the shutdown watchdog also guard a native
+    (non-flatpak) Kodi. Set KODI_OWN_SCOPE=1 in /etc/default/kodi-
+    session-aptosid for a native build; flatpak is unchanged.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 11 Jul 2026 23:21:01 +0200
 
