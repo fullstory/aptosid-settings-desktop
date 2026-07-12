@@ -27,6 +27,8 @@ aptosid-settings-desktop (20260713.1) UNRELEASED; urgency=medium
     (metadata::trust on LXQt), which needs the gvfs metadata daemon. It
     was absent on LXQt --no-install-recommends builds, so the launchers
     were never trusted.
+  * aptosid-settings-common: ship /etc/greetd/gtkgreet.css to style the
+    gtkgreet greeter (shared, not spin specific).
 
  -- Kel Modderman <kelvmod@gmail.com>  Mon, 13 Jul 2026 07:44:39 +1000
 

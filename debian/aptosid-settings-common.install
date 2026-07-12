@@ -1,6 +1,7 @@
 *.svg usr/share/icons/hicolor/scalable/emblems
 add-aptosid-desktop-icons.desktop etc/xdg/autostart
 add-aptosid-desktop-icons usr/bin
+greetd/gtkgreet.css etc/greetd
 libexec/aptosid-waybar usr/libexec
 libexec/aptosid-wofi usr/libexec
 xdg/mimeapps.list etc/xdg
