@@ -1,0 +1,10 @@
+#!/bin/sh
+# cage-kiosk: run as cage's client. Publish the Wayland session environment to
+# the systemd user manager and D-Bus (uwsm finalize) so graphical-session.target
+# and the xdg-desktop-portal services activate, then exec the kiosk application.
+#
+# Shipped by cage-kiosk-aptosid.
+if command -v uwsm >/dev/null 2>&1; then
+	uwsm finalize 2>/dev/null || true
+fi
+exec "$@"

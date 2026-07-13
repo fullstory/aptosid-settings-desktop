@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Firefox Kiosk
+Comment=Full-screen Firefox appliance in the cage kiosk compositor
+Exec=cage -s -- /usr/libexec/cage-kiosk firefox-esr --kiosk
+DesktopNames=firefox-kiosk;wlroots
+Type=Application

@@ -177,6 +177,44 @@ Description: provide desktop session for Kodi
  Also provides a "Kodi/Plasma Appliance" session that boots into Kodi and,
  on exit, alternates with a Plasma (Wayland) session and back again.
 
+Package: cage-kiosk-aptosid
+Depends: ${misc:Depends},
+ cage,
+ uwsm
+Architecture: all
+Description: cage kiosk session launcher for aptosid
+ Ships /usr/libexec/cage-kiosk, the client wrapper that cage-based kiosk
+ sessions run inside cage: it calls "uwsm finalize" to publish the Wayland
+ session environment to the systemd user manager and D-Bus -- so
+ graphical-session.target and the xdg-desktop-portal services activate
+ (pipewire and friends) -- and then execs the kiosk application.
+ .
+ Shared by the per-application cage kiosk session packages.
+
+Package: firefox-kiosk-aptosid
+Depends: ${misc:Depends},
+ cage-kiosk-aptosid,
+ firefox-esr
+Architecture: all
+Description: Firefox kiosk (cage) Wayland session for aptosid
+ A full-screen "appliance" Wayland session that runs Firefox in --kiosk mode
+ inside the cage kiosk compositor, launched through uwsm so it runs as a proper
+ systemd/XDG session (environment.d, graphical-session.target and the socket-
+ activated pipewire and xdg-desktop-portal services).
+
+Package: waydroid-kiosk-aptosid
+Depends: ${misc:Depends},
+ cage-kiosk-aptosid,
+ waydroid
+Architecture: all
+Description: Waydroid kiosk (cage) Wayland session for aptosid
+ A full-screen "appliance" Wayland session that runs Waydroid (Android in a
+ container) inside the cage kiosk compositor, launched through uwsm so it runs
+ as a proper systemd/XDG session.
+ .
+ Waydroid additionally needs a one-time "waydroid init" and the binder kernel
+ modules present at runtime.
+
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,

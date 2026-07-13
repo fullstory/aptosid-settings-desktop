@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Waydroid Kiosk
+Comment=Full-screen Waydroid (Android) appliance in the cage kiosk compositor
+Exec=cage -s -- /usr/libexec/cage-kiosk waydroid show-full-ui
+DesktopNames=waydroid-kiosk;wlroots
+Type=Application

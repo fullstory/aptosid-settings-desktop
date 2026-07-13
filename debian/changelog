@@ -1,6 +1,15 @@
 aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
+
+  [ Kel Modderman ]
+  * add cage kiosk appliance sessions (proof of concept): cage-kiosk-
+    aptosid ships the /usr/libexec/cage-kiosk launcher (uwsm finalize);
+    firefox-kiosk-aptosid and waydroid-kiosk-aptosid ship the single-app
+    cage/uwsm sessions. waydroid-kiosk-aptosid also ships waydroid-
+    init.service, which runs 'waydroid init' from the preinstalled
+    images at boot (offline, no download).
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 

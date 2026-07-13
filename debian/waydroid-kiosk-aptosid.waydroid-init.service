@@ -1,0 +1,14 @@
+[Unit]
+Description=Initialise Waydroid from preinstalled images
+ConditionPathExists=/etc/waydroid-extra/images/system.img
+ConditionPathExists=!/var/lib/waydroid/waydroid.cfg
+Before=waydroid-container.service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/waydroid init
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
