@@ -2,6 +2,7 @@
 Exec=/usr/share/aptosid-settings-xfce/aptosid_settings_xfce
 Name=Configure aptosid settings for XFCE
 NoDisplay=true
+OnlyShowIn=XFCE;
 StartupNotify=false
 Terminal=false
 Type=Application
