@@ -26,6 +26,9 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     default browser via x-www-browser (Depends firefox-esr | firefox |
     chromium) in a fullscreen but user-managed cage session, dropping
     the locked --kiosk mode. A fully locked spin can come later.
+  * add-aptosid-desktop-icons: guard against a missing/empty xdg-user-
+    dir and quote the Desktop path, so a spaced folder name or a failed
+    lookup can't misbehave
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 

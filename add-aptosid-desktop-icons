@@ -15,11 +15,12 @@ if [ -s /etc/default/distro ]; then
 
     # We query xdg-user-dir because the Desktop directory has different
     # names for different languages
-    DESKTOP=$(xdg-user-dir DESKTOP)
+    DESKTOP=$(xdg-user-dir DESKTOP) || exit 0
+    [ -n "${DESKTOP}" ] || exit 0
 
     # Create ~/Desktop just in case this runs before the xdg folder
     # creation script.
-    mkdir -p ${DESKTOP}
+    mkdir -p "${DESKTOP}"
 
     if [ ! -f "${DESKTOP}/calamares.desktop" ] && \
         [ -f /usr/share/applications/calamares-install-aptosid.desktop ]; then
