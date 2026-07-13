@@ -34,6 +34,8 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
   * add missing Recommends: flatpak for kodi-session-aptosid,
     brightnessctl/playerctl/kitty/wlogout/hyprpaper where hardcoded in
     configs, and bring labwc up to parity with what it actually uses
+  * add the mod+t and mod+grave terminal binds to the sway hints
+    cheatsheet, missing since sway/config added them
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 

@@ -19,6 +19,8 @@ cat <<'EOF'
 
   Windows
    Super + Return           terminal
+   Super + t                terminal
+   Super + grave            terminal
    Super + Shift + Return   file manager
    Super + d                launcher
    Super + c                close window
