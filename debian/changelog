@@ -10,6 +10,10 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     cage/uwsm sessions. waydroid-kiosk-aptosid also ships waydroid-
     init.service, which runs 'waydroid init' from the preinstalled
     images at boot (offline, no download).
+  * cage-kiosk: mark the bare cage session desktops NoDisplay. They
+    exist only to be read by 'uwsm start' (the fll_desktop autologin
+    path); run standalone, cage lacks the uwsm session environment, so
+    they should not appear as selectable sessions.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 

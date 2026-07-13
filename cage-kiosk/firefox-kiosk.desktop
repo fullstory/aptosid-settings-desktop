@@ -4,3 +4,5 @@ Comment=Full-screen Firefox appliance in the cage kiosk compositor
 Exec=cage -s -- /usr/libexec/cage-kiosk firefox-esr --kiosk
 DesktopNames=firefox-kiosk;wlroots
 Type=Application
+# consumed by "uwsm start ...", not a standalone session; -uwsm is the real one
+NoDisplay=true
