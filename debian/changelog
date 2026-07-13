@@ -18,6 +18,10 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     an explicit dh_installsystemd --no-start override (mirrors fll-live-
     boot), so the unit is shipped and enabled for boot but not started
     at package-install time.
+  * waydroid-kiosk-aptosid: drop the trailing bare dh_installsystemd
+    from the override; it re-processed waydroid-init.service and re-
+    added a start snippet (and duplicate enable/stop scripts), defeating
+    --no-start.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 
