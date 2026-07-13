@@ -14,6 +14,10 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     exist only to be read by 'uwsm start' (the fll_desktop autologin
     path); run standalone, cage lacks the uwsm session environment, so
     they should not appear as selectable sessions.
+  * waydroid-kiosk-aptosid: install and enable waydroid-init.service via
+    an explicit dh_installsystemd --no-start override (mirrors fll-live-
+    boot), so the unit is shipped and enabled for boot but not started
+    at package-install time.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 

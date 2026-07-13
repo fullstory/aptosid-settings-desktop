@@ -3,6 +3,10 @@
 %:
 	dh $@
 
+override_dh_installsystemd:
+	dh_installsystemd --package=waydroid-kiosk-aptosid --no-start --name=waydroid-init
+	dh_installsystemd
+
 create-watermark:
 	# requires inkscape and imagemagick to be installed
 	@if [ ! -x /usr/bin/inkscape ]; then \
