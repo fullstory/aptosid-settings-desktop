@@ -191,16 +191,20 @@ Description: cage kiosk session launcher for aptosid
  .
  Shared by the per-application cage kiosk session packages.
 
-Package: firefox-kiosk-aptosid
+Package: browser-kiosk-aptosid
 Depends: ${misc:Depends},
  cage-kiosk-aptosid,
- firefox-esr
+ firefox-esr | firefox | chromium
 Architecture: all
-Description: Firefox kiosk (cage) Wayland session for aptosid
- A full-screen "appliance" Wayland session that runs Firefox in --kiosk mode
- inside the cage kiosk compositor, launched through uwsm so it runs as a proper
- systemd/XDG session (environment.d, graphical-session.target and the socket-
- activated pipewire and xdg-desktop-portal services).
+Description: web browser (cage) Wayland session for aptosid
+ A full-screen Wayland session that runs the default web browser
+ (x-www-browser) in the cage compositor, launched through uwsm so it runs as a
+ proper systemd/XDG session (environment.d, graphical-session.target and the
+ socket-activated pipewire and xdg-desktop-portal services).
+ .
+ The browser keeps its normal interface (not --kiosk), so the user can manage
+ it. Pick the browser by installing firefox-esr, firefox or chromium; the
+ session follows the x-www-browser alternative.
 
 Package: waydroid-kiosk-aptosid
 Depends: ${misc:Depends},

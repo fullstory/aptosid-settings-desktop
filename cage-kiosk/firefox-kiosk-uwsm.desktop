@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Firefox Kiosk (uwsm-managed)
-Comment=Full-screen Firefox appliance in the cage kiosk compositor
-Exec=uwsm start -e -D firefox-kiosk:wlroots firefox-kiosk.desktop
-TryExec=uwsm
-DesktopNames=firefox-kiosk;wlroots
-Type=Application

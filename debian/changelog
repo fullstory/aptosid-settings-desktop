@@ -22,6 +22,10 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     from the override; it re-processed waydroid-init.service and re-
     added a start snippet (and duplicate enable/stop scripts), defeating
     --no-start.
+  * rename firefox-kiosk-aptosid to browser-kiosk-aptosid: run the
+    default browser via x-www-browser (Depends firefox-esr | firefox |
+    chromium) in a fullscreen but user-managed cage session, dropping
+    the locked --kiosk mode. A fully locked spin can come later.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 
