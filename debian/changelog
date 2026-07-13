@@ -31,6 +31,9 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     lookup can't misbehave
   * xfce: restrict the settings autostart to XFCE, use command -v, and
     fix xrandr connected match so it stops also matching disconnected
+  * add missing Recommends: flatpak for kodi-session-aptosid,
+    brightnessctl/playerctl/kitty/wlogout/hyprpaper where hardcoded in
+    configs, and bring labwc up to parity with what it actually uses
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 
