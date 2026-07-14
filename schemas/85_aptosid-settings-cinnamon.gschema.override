@@ -22,7 +22,7 @@ font-name='Noto Sans 12'
 document-font-name='Noto Sans 12'
 color-scheme='prefer-dark'
 icon-theme='Mint-Y-Yaru'
-gtk-theme='Yaru-dark'
+gtk-theme='Adwaita-dark'
 accent-color='orange'
 
 [org.cinnamon.desktop.peripherals.touchpad]

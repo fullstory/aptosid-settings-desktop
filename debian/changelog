@@ -51,6 +51,9 @@ aptosid-settings-desktop (20260714.1) UNRELEASED; urgency=medium
     hyprland/labwc, which lacked a mic-mute bind entirely; fix
     hyprland's own +33%/33%+ mismatch and a trailing space in labwc's
     mute bind
+  * cinnamon: fix internal gtk-theme drift, Yaru-dark -> Adwaita-dark
+    (nothing installs Yaru); mate: keep BlackMATE but depend on mate-
+    themes, which actually ships it
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 14 Jul 2026 18:51:20 +1000
 

@@ -316,6 +316,7 @@ Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-noto,
  gnome-themes-extra,
+ mate-themes,
  mint-y-icons,
  xdg-browser-launcher
 Architecture: all
