@@ -47,6 +47,10 @@ aptosid-settings-desktop (20260714.1) UNRELEASED; urgency=medium
   * aptosid-wofi: guard shift against zero args and add the
     XDG_CURRENT_DESKTOP fallback used by aptosid-waybar, disambiguating
     a leading wofi flag from a spin name
+  * unify mic-mute on wpctl (sway used a stray pactl call) and add it to
+    hyprland/labwc, which lacked a mic-mute bind entirely; fix
+    hyprland's own +33%/33%+ mismatch and a trailing space in labwc's
+    mute bind
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 14 Jul 2026 18:51:20 +1000
 

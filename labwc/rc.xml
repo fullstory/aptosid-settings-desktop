@@ -57,7 +57,8 @@
 
     <keybind key="XF86AudioLowerVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%-" /></keybind>
     <keybind key="XF86AudioRaiseVolume"><action name="Execute" command="wpctl set-volume  @DEFAULT_AUDIO_SINK@ 5%+" /></keybind>
-    <keybind key="XF86AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle " /></keybind>
+    <keybind key="XF86AudioMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle" /></keybind>
+    <keybind key="XF86AudioMicMute"><action name="Execute" command="wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle" /></keybind>
 
     <keybind key="XF86AudioPlay"><action name="Execute" command="playerctl play-pause" /></keybind>
     <keybind key="XF86AudioNext"><action name="Execute" command="playerctl next" /></keybind>
