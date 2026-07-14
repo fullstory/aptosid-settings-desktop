@@ -1,0 +1,1 @@
+rm_conffile /etc/xdg/gtk-2.0/gtkrc
