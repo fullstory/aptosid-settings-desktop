@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260714.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
@@ -45,7 +45,7 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
   * drop gtk-2.0/gtkrc, a path GTK2 never reads and so has never
     applied; rm_conffile the orphaned install
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
+ -- Kel Modderman <kelvmod@gmail.com>  Tue, 14 Jul 2026 18:51:20 +1000
 
 aptosid-settings-desktop (20260713.1) unstable; urgency=medium
 
