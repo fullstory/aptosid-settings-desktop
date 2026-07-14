@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260714.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260714.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * add cage kiosk appliance sessions (proof of concept): cage-kiosk-
     aptosid ships the /usr/libexec/cage-kiosk launcher (uwsm finalize);
     firefox-kiosk-aptosid and waydroid-kiosk-aptosid ship the single-app
