@@ -3,9 +3,21 @@
 # touching ~/.config/wofi. Each spin ships its themed files read-only under
 # /usr/share; a user's own ~/.config/wofi still wins if present.
 #
-#   aptosid-wofi <spin> [wofi args...]   e.g. aptosid-wofi hyprland --show drun
+#   aptosid-wofi [spin] [wofi args...]   e.g. aptosid-wofi hyprland --show drun
+# With no spin the spin is derived from $XDG_CURRENT_DESKTOP (e.g. Hyprland,
+# sway:wlroots, labwc:wlroots), matching aptosid-waybar.
 
-spin="$1"; shift
+# A leading wofi flag (e.g. --show drun with no spin) must not be mistaken
+# for the spin name; only a bare, non-empty first argument is a spin.
+case "$1" in
+    ""|-*)
+        spin=$(printf '%s' "${XDG_CURRENT_DESKTOP%%:*}" | tr '[:upper:]' '[:lower:]')
+        ;;
+    *)
+        spin="$1"
+        shift
+        ;;
+esac
 dir="/usr/share/aptosid-settings-${spin}/wofi"
 usr="${XDG_CONFIG_HOME:-$HOME/.config}/wofi"
 

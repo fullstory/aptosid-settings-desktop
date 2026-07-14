@@ -44,6 +44,9 @@ aptosid-settings-desktop (20260714.1) UNRELEASED; urgency=medium
     and every other spin
   * drop gtk-2.0/gtkrc, a path GTK2 never reads and so has never
     applied; rm_conffile the orphaned install
+  * aptosid-wofi: guard shift against zero args and add the
+    XDG_CURRENT_DESKTOP fallback used by aptosid-waybar, disambiguating
+    a leading wofi flag from a spin name
 
  -- Kel Modderman <kelvmod@gmail.com>  Tue, 14 Jul 2026 18:51:20 +1000
 
