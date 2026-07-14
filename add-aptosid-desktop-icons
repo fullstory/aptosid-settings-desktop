@@ -65,7 +65,6 @@ if [ -s /etc/default/distro ]; then
     <<EOF
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Encoding=UTF-8
 Type=Application
 Exec=x-www-browser file://${INDEXFILE}
 Icon=${INDEXICON}
@@ -74,6 +73,8 @@ Terminal=false
 Name=${FLL_CDROM_INDEX}
 GenericName=${FLL_CDROM_INDEX}
 EOF
+        # No icon found: drop the key rather than emit an invalid empty Icon=
+        [ -n "${INDEXICON}" ] || sed -i '/^Icon=$/d' "${DESKTOP}/${FLL_DISTRO_NAME}.desktop"
         chmod u+x "${DESKTOP}/${FLL_DISTRO_NAME}.desktop"
     fi
 
