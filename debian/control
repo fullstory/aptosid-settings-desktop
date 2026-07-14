@@ -10,8 +10,7 @@ Vcs-Git: https://github.com/fullstory/aptosid-settings-desktop.git
 Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 
 Package: aptosid-settings-common
-Depends: ${misc:Depends},
- gvfs-daemons
+Depends: ${misc:Depends}
 Recommends: mint-y-icons,
  pastebinit,
  uwsm
@@ -291,7 +290,8 @@ Description: provide default LXDE settings for aptosid
 Package: aptosid-settings-lxqt
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-settings-common
+ aptosid-settings-common,
+ gvfs
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  mint-y-icons,
@@ -371,7 +371,8 @@ Description: provide default Sway settings for aptosid
 Package: aptosid-settings-xfce
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-settings-common
+ aptosid-settings-common,
+ gvfs
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  fonts-noto,

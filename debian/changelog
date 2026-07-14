@@ -10,6 +10,12 @@ aptosid-settings-desktop (20260715.1) UNRELEASED; urgency=medium
     /etc copy on upgrade.
   * aptosid-openbox-theme-kaunas: ship the Kaunas theme LICENSE as
     package documentation.
+  * gvfs dependency: drop gvfs-daemons from aptosid-settings-common (it
+    pulled gvfs onto every spin, KDE/Plasma included, and lacked the
+    client GIO module anyway) and instead depend on gvfs in aptosid-
+    settings-lxqt and aptosid-settings-xfce, where the desktop-launcher
+    trust needs libgvfsdbus.so for gio metadata::trust to actually
+    persist.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 15 Jul 2026 08:45:41 +1000
 
