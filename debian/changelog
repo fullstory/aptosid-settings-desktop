@@ -1,8 +1,17 @@
-aptosid-settings-desktop (20260714.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260715.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 15 Jul 2026 00:09:42 +0200
+  [ Kel Modderman ]
+  * aptosid-settings-common: install the waybar user-unit drop-in to
+    /usr/lib/systemd/user instead of /etc/systemd/user, so a package
+    default is no longer a dpkg conffile; an rm_conffile removes the old
+    /etc copy on upgrade.
+  * aptosid-openbox-theme-kaunas: ship the Kaunas theme LICENSE as
+    package documentation.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Wed, 15 Jul 2026 08:45:41 +1000
 
 aptosid-settings-desktop (20260714.1) unstable; urgency=medium
 

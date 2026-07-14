@@ -1,0 +1,1 @@
+rm_conffile /etc/systemd/user/waybar.service.d/aptosid.conf 20260715.1~
