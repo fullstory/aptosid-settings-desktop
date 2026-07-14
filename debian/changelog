@@ -36,6 +36,14 @@ aptosid-settings-desktop (20260713.2) UNRELEASED; urgency=medium
     configs, and bring labwc up to parity with what it actually uses
   * add the mod+t and mod+grave terminal binds to the sway hints
     cheatsheet, missing since sway/config added them
+  * unify stray DMZ-White cursor theme (labwc gschema override, lxde) to
+    Bibata-Modern-Ice, used everywhere else
+  * set cursor size to 24 in gtk-3.0, gtk-4.0 and lxde, matching the
+    rest of the session
+  * lxqt: unify icon theme to Mint-Y-Yaru, matching the gschema override
+    and every other spin
+  * drop gtk-2.0/gtkrc, a path GTK2 never reads and so has never
+    applied; rm_conffile the orphaned install
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 13 Jul 2026 00:21:39 +0200
 
