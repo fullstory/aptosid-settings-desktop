@@ -225,8 +225,8 @@ Description: Waydroid kiosk (cage) Wayland session for aptosid
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-openbox-theme-kaunas,
- aptosid-settings-common
+ aptosid-settings-common,
+ arc-theme
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  brightnessctl,
