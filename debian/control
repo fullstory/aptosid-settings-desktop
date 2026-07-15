@@ -75,9 +75,9 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-style,
- arc-theme,
  bibata-cursor-theme,
  fonts-noto,
+ gnome-themes-extra,
  mint-y-icons,
  xdg-browser-launcher
 Architecture: all
@@ -225,8 +225,8 @@ Description: Waydroid kiosk (cage) Wayland session for aptosid
 Package: aptosid-settings-labwc
 Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
- aptosid-settings-common,
- arc-theme
+ aptosid-openbox-theme-kaunas,
+ aptosid-settings-common
 Recommends: aptosid-settings-qt-style,
  bibata-cursor-theme,
  brightnessctl,
