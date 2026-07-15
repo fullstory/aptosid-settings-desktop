@@ -20,6 +20,10 @@ aptosid-settings-desktop (20260715.1) UNRELEASED; urgency=medium
     from the generated index.html launcher.
   * add-aptosid-desktop-icons: omit the Icon= line when no index icon is
     found, rather than writing an invalid empty Icon=.
+  * aptosid-settings-mate: set the mouse cursor theme to Bibata-Modern-
+    Ice (size 24) via org.mate.peripherals-mouse; the override set every
+    other appearance axis but never the cursor, so MATE alone fell back
+    to the default cursor.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 15 Jul 2026 08:45:41 +1000
 

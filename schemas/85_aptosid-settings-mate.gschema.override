@@ -18,6 +18,10 @@ icon-theme='Mint-Y-Yaru'
 gtk-theme='BlackMATE'
 accent-color='orange'
 
+[org.mate.peripherals-mouse]
+cursor-theme='Bibata-Modern-Ice'
+cursor-size=24
+
 [org.mate.media-handling]
 automount=false
 automount-open=false
