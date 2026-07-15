@@ -24,6 +24,9 @@ aptosid-settings-desktop (20260715.1) UNRELEASED; urgency=medium
     Ice (size 24) via org.mate.peripherals-mouse; the override set every
     other appearance axis but never the cursor, so MATE alone fell back
     to the default cursor.
+  * aptosid-settings-mate: drop the dead accent-color override;
+    org.mate.interface has no such key in this MATE version, so glib-
+    compile-schemas was ignoring it anyway.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 15 Jul 2026 08:45:41 +1000
 

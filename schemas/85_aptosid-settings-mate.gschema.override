@@ -16,7 +16,6 @@ font-name='Noto Sans 12'
 document-font-name='Noto Sans 12'
 icon-theme='Mint-Y-Yaru'
 gtk-theme='BlackMATE'
-accent-color='orange'
 
 [org.mate.peripherals-mouse]
 cursor-theme='Bibata-Modern-Ice'
