@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260715.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260715.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-common: install the waybar user-unit drop-in to
     /usr/lib/systemd/user instead of /etc/systemd/user, so a package
     default is no longer a dpkg conffile; an rm_conffile removes the old
