@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20260715.2) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 15 Jul 2026 23:17:29 +0200
+
 aptosid-settings-desktop (20260715.1) unstable; urgency=medium
 
   * aptosid-settings-common: install the waybar user-unit drop-in to
