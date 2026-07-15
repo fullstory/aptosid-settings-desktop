@@ -75,9 +75,9 @@ Depends: ${misc:Depends},
  aptosid-art-wallpaper-nemesis,
  aptosid-settings-common
 Recommends: aptosid-settings-qt-style,
+ arc-theme,
  bibata-cursor-theme,
  fonts-noto,
- gnome-themes-extra,
  mint-y-icons,
  xdg-browser-launcher
 Architecture: all

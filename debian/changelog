@@ -27,6 +27,11 @@ aptosid-settings-desktop (20260715.1) UNRELEASED; urgency=medium
   * aptosid-settings-mate: drop the dead accent-color override;
     org.mate.interface has no such key in this MATE version, so glib-
     compile-schemas was ignoring it anyway.
+  * aptosid-settings-cinnamon: adopt Arc-Dark as a coherent dark theme
+    (cinnamon shell + metacity titlebars + GTK), replacing Adwaita-dark
+    which only themed GTK content and left titlebars and panel light
+    (the 'Mixed' two-tone); Recommends arc-theme rather than gnome-
+    themes-extra.
 
  -- Kel Modderman <kelvmod@gmail.com>  Wed, 15 Jul 2026 08:45:41 +1000
 
