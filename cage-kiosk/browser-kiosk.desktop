@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Web Browser
 Comment=Full-screen web browser in the cage compositor
-Exec=cage -s -- /usr/libexec/cage-kiosk x-www-browser
+Exec=cage -- /usr/libexec/cage-kiosk /usr/libexec/cage-kiosk-loop x-www-browser
 DesktopNames=browser-kiosk;wlroots
 Type=Application
 NoDisplay=true

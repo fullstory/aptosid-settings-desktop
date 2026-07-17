@@ -1,0 +1,27 @@
+#!/bin/sh
+# cage-kiosk-loop: cage's client for a single-app kiosk session. cage exits when
+# its client exits, which would tear the session down and drop the passwordless
+# live user at greetd's text greeter (the default_session). This loop is that
+# client instead: it runs the kiosk application and, when the application exits
+# -- because the user quit it, or pressed the cage-kiosk-hotkeys "return to menu"
+# -- shows the chooser and acts on the choice, then loops. So the graphical
+# session never collapses to a console.
+#
+# Runs as the live user inside the uwsm/cage session, so the power actions go
+# through logind (systemctl) for the active seat -- no password, no root.
+#
+# Usage: cage-kiosk-loop <application> [args...]
+# Shipped by cage-kiosk-aptosid.
+set -u
+
+while : ; do
+	# Run the app in a named transient scope so cage-kiosk-hotkeys can return
+	# to the menu with "systemctl --user stop cage-kiosk-app.scope".
+	systemd-run --user --scope --collect --quiet --unit=cage-kiosk-app -- "$@" || true
+
+	case "$(/usr/libexec/cage-kiosk-chooser 2>/dev/null)" in
+		reboot)   systemctl reboot;   exit 0 ;;
+		poweroff) systemctl poweroff; exit 0 ;;
+		*)        : ;;   # relaunch (default; also chooser Esc / close)
+	esac
+done

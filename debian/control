@@ -182,8 +182,14 @@ Description: provide desktop session for Kodi
 
 Package: cage-kiosk-aptosid
 Depends: ${misc:Depends},
+ brightnessctl,
  cage,
- uwsm
+ fonts-noto-core,
+ gir1.2-gtk-3.0,
+ python3-evdev,
+ python3-gi,
+ uwsm,
+ wireplumber
 Architecture: all
 Description: cage kiosk session launcher for aptosid
  Ships /usr/libexec/cage-kiosk, the client wrapper that cage-based kiosk

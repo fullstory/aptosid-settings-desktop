@@ -1,0 +1,110 @@
+#!/usr/bin/python3
+# cage-kiosk-hotkeys: session-scoped hotkey handler for cage kiosks. cage has no
+# keybindings of its own and forwards every key to the focused application, so
+# this reads the keys straight from evdev (passively -- no grab, so the app
+# still sees them) and acts on them. Runs as the live user via systemd --user
+# (PartOf=graphical-session.target), so wpctl talks to the running PipeWire and
+# no root / uid guessing is needed; it only needs read access to the input
+# devices, i.e. the live user must be in the "input" group.
+#
+# Bindings:
+#   XF86Audio{Raise,Lower}Volume / Mute   volume up / down / mute
+#   XF86MonBrightness{Up,Down}            brightness up / down
+#   Super + '=' / '-' / 'm'               volume, for keyboards without media keys
+#   Super + ']' / '['                     brightness, ditto
+#   Super + 'q'                           quit the kiosk app -> back to the menu
+#
+# KIOSK_KEYS_DEBUG=1 logs every key-down. Shipped by cage-kiosk-aptosid.
+import evdev, selectors, subprocess, os, sys
+from evdev import ecodes as e, categorize
+
+DEBUG = os.environ.get("KIOSK_KEYS_DEBUG") == "1"
+
+def log(*a): print(*a, file=sys.stderr, flush=True)
+
+SUPER    = {e.KEY_LEFTMETA, e.KEY_RIGHTMETA}
+VOL_UP   = {e.KEY_VOLUMEUP,   e.KEY_EQUAL, e.KEY_KPPLUS}
+VOL_DOWN = {e.KEY_VOLUMEDOWN, e.KEY_MINUS, e.KEY_KPMINUS}
+VOL_MUTE = {e.KEY_MUTE, e.KEY_M}
+BRIGHT_UP   = {e.KEY_BRIGHTNESSUP,   e.KEY_RIGHTBRACE}
+BRIGHT_DOWN = {e.KEY_BRIGHTNESSDOWN, e.KEY_LEFTBRACE}
+QUIT     = {e.KEY_Q}
+# Media keys fire with no modifier; the letter/symbol fallbacks need Super.
+BARE     = {e.KEY_VOLUMEUP, e.KEY_VOLUMEDOWN, e.KEY_MUTE,
+            e.KEY_BRIGHTNESSUP, e.KEY_BRIGHTNESSDOWN}
+
+def wpctl(*args):
+    subprocess.run(["wpctl", *args], check=False,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def vol_up():
+    wpctl("set-mute", "@DEFAULT_AUDIO_SINK@", "0")           # adjusting unmutes
+    wpctl("set-volume", "-l", "1.5", "@DEFAULT_AUDIO_SINK@", "5%+")
+def vol_down():
+    wpctl("set-mute", "@DEFAULT_AUDIO_SINK@", "0")
+    wpctl("set-volume", "@DEFAULT_AUDIO_SINK@", "5%-")
+def mute():
+    wpctl("set-mute", "@DEFAULT_AUDIO_SINK@", "toggle")
+
+def brightnessctl(*args):
+    subprocess.run(["brightnessctl", "-c", "backlight", *args], check=False,
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def bright_up():   brightnessctl("set", "+5%")
+def bright_down(): brightnessctl("set", "5%-")
+
+def return_to_menu():
+    # Stop the transient scope cage-kiosk-loop runs the app in; the loop then
+    # shows the chooser as cage's sole client.
+    subprocess.run(["systemctl", "--user", "stop", "cage-kiosk-app.scope"],
+                   check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def open_keyboards():
+    devs = []
+    for path in evdev.list_devices():
+        try:
+            d = evdev.InputDevice(path)
+        except OSError:
+            continue
+        keys = d.capabilities().get(e.EV_KEY, [])
+        if e.KEY_A in keys and e.KEY_ENTER in keys:      # a real keyboard
+            devs.append(d); log("listening on", d.path, "-", d.name)
+    return devs
+
+def main():
+    devs = open_keyboards()
+    if not devs:
+        log("no readable keyboard devices (is the user in the input group?)"); return 1
+    sel = selectors.DefaultSelector()
+    for d in devs:
+        sel.register(d, selectors.EVENT_READ)
+    super_held = False
+    while True:
+        for key, _ in sel.select():
+            try:
+                events = list(key.fileobj.read())
+            except OSError:
+                continue
+            for ev in events:
+                if ev.type != e.EV_KEY:
+                    continue
+                if ev.code in SUPER:
+                    super_held = ev.value != 0
+                    continue
+                if ev.value != 1:            # key-down only
+                    continue
+                if DEBUG:
+                    log("KEY code=%d name=%s super=%s"
+                        % (ev.code, categorize(ev).keycode, super_held))
+                bare = ev.code in BARE
+                if not (bare or super_held):
+                    continue
+                if ev.code in VOL_UP:     vol_up()
+                elif ev.code in VOL_DOWN: vol_down()
+                elif ev.code in VOL_MUTE: mute()
+                elif ev.code in BRIGHT_UP:   bright_up()
+                elif ev.code in BRIGHT_DOWN: bright_down()
+                elif super_held and ev.code in QUIT: return_to_menu()
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,8 +1,21 @@
-aptosid-settings-desktop (20260715.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260718.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 15 Jul 2026 23:17:29 +0200
+  [ Kel Modderman ]
+  * cage-kiosk-aptosid: keep the kiosk session alive when the
+    application is closed, instead of dropping the live user to a text
+    login. A relaunch loop now runs the application and, on exit, shows
+    a small on-screen menu to relaunch, reboot or shut down. A session
+    hotkey handler adds volume and brightness control (media keys, or a
+    Super-key fallback) and Super+Q to return to that menu, because cage
+    has no keybindings of its own.
+  * browser-kiosk-aptosid, waydroid-kiosk-aptosid: drop cage's -s (VT
+    switching) so the passwordless live user cannot switch to another VT
+    and escape the kiosk to a root shell.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 18 Jul 2026 07:22:20 +1000
 
 aptosid-settings-desktop (20260715.1) unstable; urgency=medium
 

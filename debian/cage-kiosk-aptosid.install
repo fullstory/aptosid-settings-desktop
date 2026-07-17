@@ -1,1 +1,5 @@
 cage-kiosk/cage-kiosk usr/libexec
+cage-kiosk/cage-kiosk-loop usr/libexec
+cage-kiosk/cage-kiosk-chooser usr/libexec
+cage-kiosk/cage-kiosk-hotkeys usr/libexec
+cage-kiosk/cage-kiosk-hotkeys.service usr/lib/systemd/user

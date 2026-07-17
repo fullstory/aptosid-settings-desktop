@@ -1,0 +1,10 @@
+[Unit]
+Description=Kiosk hotkey handler (volume / return to menu) for cage sessions
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/libexec/cage-kiosk-hotkeys
+Restart=on-failure
+RestartSec=2

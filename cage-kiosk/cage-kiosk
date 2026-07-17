@@ -4,7 +4,6 @@
 # and the xdg-desktop-portal services activate, then exec the kiosk application.
 #
 # Shipped by cage-kiosk-aptosid.
-if command -v uwsm >/dev/null 2>&1; then
-	uwsm finalize 2>/dev/null || true
-fi
+uwsm finalize 2>/dev/null || true
+systemctl --user start --no-block cage-kiosk-hotkeys.service 2>/dev/null || true
 exec "$@"
