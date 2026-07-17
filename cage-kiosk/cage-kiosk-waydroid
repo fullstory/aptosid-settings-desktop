@@ -1,0 +1,26 @@
+#!/bin/sh
+# cage-kiosk-waydroid: waydroid's launcher for the cage kiosk loop. Runs the
+# full Android UI, but returns when Android goes away -- its own power menu
+# "Shut down" stops the container yet leaves "waydroid show-full-ui" running,
+# which would otherwise wedge the kiosk on a black screen instead of dropping
+# back to the cage-kiosk-loop menu.
+#
+# Shipped by waydroid-kiosk-aptosid.
+set -u
+
+waydroid show-full-ui &
+pid=$!
+
+seen=0
+while kill -0 "$pid" 2>/dev/null; do
+	sleep 2
+	if waydroid status 2>/dev/null | grep -q "Container:[[:space:]]*RUNNING"; then
+		seen=1
+	elif [ "$seen" = 1 ]; then
+		break            # container came up then went away: Android shut down
+	fi
+done
+
+kill "$pid" 2>/dev/null
+waydroid session stop 2>/dev/null || true
+wait "$pid" 2>/dev/null || true

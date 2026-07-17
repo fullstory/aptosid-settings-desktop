@@ -16,6 +16,10 @@ aptosid-settings-desktop (20260718.1) UNRELEASED; urgency=medium
     and escape the kiosk to a root shell.
   * cage-kiosk-aptosid: add explicit python3 dependency for the shipped
     python3 scripts (lintian python3-script-but-no-python3-dep).
+  * waydroid-kiosk-aptosid: return to the kiosk menu when Android is
+    shut down from its own power menu, instead of wedging on a black
+    screen (Android shutdown stops the container but leaves show-full-ui
+    running).
 
  -- Kel Modderman <kelvmod@gmail.com>  Sat, 18 Jul 2026 07:22:20 +1000
 
