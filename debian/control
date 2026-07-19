@@ -21,6 +21,16 @@ Description: provide common default desktop settings for aptosid
  .
  Provides the aptosid logo and icons for use in desktop settings.
 
+Package: aptosid-settings-conky
+Depends: ${misc:Depends},
+ conky-all,
+ inxi
+Architecture: all
+Description: aptosid desktop system-information panel
+ Displays a system-information panel in the top-right of the desktop using
+ conky. It shows an inxi summary: kernel and distribution, machine, CPU, GPU,
+ network, drives and a memory/uptime line.
+
 Package: aptosid-settings-qt-style
 Breaks: aptosid-settings-qt-gtk (<< 20250301.2)
 Replaces: aptosid-settings-qt-gtk (<< 20250301.2)

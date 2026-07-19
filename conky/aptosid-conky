@@ -1,0 +1,21 @@
+#!/bin/sh
+# Launch the aptosid conky system-information panel from XDG autostart.
+#
+# Prefers a user's own ~/.config/conky/conky.conf when present, otherwise uses
+# the shipped default. Only one panel is wanted, so bail out if conky is already
+# running.
+#
+# Wayland note: the panel currently renders through the X11 backend (Xwayland),
+# because conky's native Wayland backend needs wlr-layer-shell and the rounded
+# panel is drawn with a Cairo Xlib surface. This launcher is the seam where a
+# native-Wayland path can be selected once upstream support lands, without
+# changing the autostart entry.
+
+command -v conky >/dev/null 2>&1 || exit 0
+pgrep -x conky >/dev/null 2>&1 && exit 0
+
+user_conf="${XDG_CONFIG_HOME:-$HOME/.config}/conky/conky.conf"
+if [ -r "$user_conf" ]; then
+    exec conky
+fi
+exec conky -c /usr/share/aptosid-settings-conky/conky.conf

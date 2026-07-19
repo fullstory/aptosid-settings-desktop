@@ -1,4 +1,4 @@
-aptosid-settings-desktop (20260718.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260719.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
@@ -20,8 +20,11 @@ aptosid-settings-desktop (20260718.1) UNRELEASED; urgency=medium
     shut down from its own power menu, instead of wedging on a black
     screen (Android shutdown stops the container but leaves show-full-ui
     running).
+  * aptosid-settings-conky: new package; an inxi system summary shown on
+    the desktop via conky, started from an XDG autostart entry so it
+    works across desktops.
 
- -- Kel Modderman <kelvmod@gmail.com>  Sat, 18 Jul 2026 07:22:20 +1000
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 19 Jul 2026 14:24:55 +1000
 
 aptosid-settings-desktop (20260715.1) unstable; urgency=medium
 

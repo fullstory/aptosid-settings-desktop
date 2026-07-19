@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=aptosid system-information panel
+Comment=Show an inxi system summary on the desktop via conky
+TryExec=/usr/libexec/aptosid-conky
+Exec=/usr/libexec/aptosid-conky
+Icon=conky
+Terminal=false
+StartupNotify=false
+X-KDE-autostart-after=panel
+X-GNOME-Autostart-Delay=5
