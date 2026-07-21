@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20260719.2) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 21 Jul 2026 21:32:26 +0200
+
 aptosid-settings-desktop (20260719.1) unstable; urgency=medium
 
   * cage-kiosk-aptosid: keep the kiosk session alive when the
