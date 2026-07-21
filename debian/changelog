@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20260719.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20260719.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * cage-kiosk-aptosid: keep the kiosk session alive when the
     application is closed, instead of dropping the live user to a text
     login. A relaunch loop now runs the application and, on exit, shows
