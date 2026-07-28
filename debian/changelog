@@ -1,9 +1,5 @@
-aptosid-settings-desktop (20270729.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (20270729.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * aptosid-settings-common: Provide desktop-base in an attempt to
     avoid dragging that in, leaving us to provide the desktop defaults.
 
