@@ -11,6 +11,7 @@ Vcs-Browser: https://github.com/fullstory/aptosid-settings-desktop
 
 Package: aptosid-settings-common
 Depends: ${misc:Depends}
+Provides: desktop-base
 Recommends: mint-y-icons,
  pastebinit,
  uwsm
