@@ -1,3 +1,9 @@
+aptosid-settings-desktop (20270729.2) UNRELEASED; urgency=medium
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 29 Jul 2026 00:51:35 +0200
+
 aptosid-settings-desktop (20270729.1) unstable; urgency=medium
 
   * aptosid-settings-common: Provide desktop-base in an attempt to
