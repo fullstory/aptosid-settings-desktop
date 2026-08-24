@@ -4,6 +4,8 @@ aptosid-settings-desktop (1:20260824.1) UNRELEASED; urgency=medium
   * NOT RELEASED YET
 
   [ Kel Modderman ]
+  * Add epoch to deal with mistaken version bump using the year 2027,
+    I was getting ahead of myself...
   * conky: adapt to conky 1.24: window transparency is now set via
     own_window_colour alpha. Keep the deprecated cairo_xlib_surface_create()
     for the panel background, as the new conky_surface() API draws to the
