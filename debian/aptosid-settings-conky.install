@@ -1,4 +1,5 @@
-conky/conky.conf usr/share/aptosid-settings-conky
+conky/conky-x11.conf usr/share/aptosid-settings-conky
+conky/conky-wayland.conf usr/share/aptosid-settings-conky
 conky/conky-bg.lua usr/share/aptosid-settings-conky
 conky/aptosid-conky usr/libexec
 conky/aptosid-conky.desktop etc/xdg/autostart
