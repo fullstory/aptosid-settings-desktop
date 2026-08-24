@@ -1,9 +1,5 @@
-aptosid-settings-desktop (1:20260824.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (1:20260824.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * Add epoch to deal with mistaken version bump using the year 2027,
     I was getting ahead of myself...
   * conky: adapt to conky 1.24: window transparency is now set via
