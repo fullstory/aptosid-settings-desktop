@@ -1,4 +1,4 @@
-aptosid-settings-desktop (1:20260824.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (1:20260912.1) UNRELEASED; urgency=medium
 
   [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
@@ -9,7 +9,7 @@ aptosid-settings-desktop (1:20260824.2) UNRELEASED; urgency=medium
     transparency, which pcmanfm-qt never provides and so rendered black
     on the LXQt X11 session. Composited sessions are unchanged.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 Aug 2026 01:55:08 +0200
+ -- Kel Modderman <kelvmod@gmail.com>  Sat, 12 Sep 2026 06:35:02 +1000
 
 aptosid-settings-desktop (1:20260824.1) unstable; urgency=medium
 
