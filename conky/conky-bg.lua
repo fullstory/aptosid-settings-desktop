@@ -16,6 +16,11 @@ function conky_draw_bg()
         cs = conky_surface()
     end
     if not cs then return end
+    -- no alpha channel (uncomposited X11): own_window_colour is the panel
+    if cairo_surface_get_content(cs) ~= CAIRO_CONTENT_COLOR_ALPHA then
+        if conky_window.display then cairo_surface_destroy(cs) end
+        return
+    end
     local cr = cairo_create(cs)
 
     local r = 14                 -- corner radius
