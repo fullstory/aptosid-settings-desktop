@@ -1,9 +1,5 @@
-aptosid-settings-desktop (1:20260912.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (1:20260912.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * conky: on X11 without a compositor, draw the panel as a solid dark
     rectangle instead of falling through to conky's root-pixmap pseudo-
     transparency, which pcmanfm-qt never provides and so rendered black
