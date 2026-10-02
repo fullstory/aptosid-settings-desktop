@@ -4,6 +4,7 @@
 
 command -v conky >/dev/null 2>&1 || exit 0
 pgrep -x conky >/dev/null 2>&1 && exit 0
+[ "$PLASMA_DEFAULT_SHELL" = org.kde.plasma.bigscreen ] && exit 0
 
 user_conf="${XDG_CONFIG_HOME:-$HOME/.config}/conky/conky.conf"
 if [ -r "$user_conf" ]; then
