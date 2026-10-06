@@ -1,9 +1,5 @@
-aptosid-settings-desktop (1:20261002.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (1:20261002.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * conky: do not start the panel in the Plasma Bigscreen session.
 
  -- Kel Modderman <kelvmod@gmail.com>  Fri, 02 Oct 2026 20:40:36 +1000
