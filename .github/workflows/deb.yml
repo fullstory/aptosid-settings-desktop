@@ -21,6 +21,8 @@ jobs:
       artifact-metadata: write
     with:
       ref: refs/tags/${{ inputs.tag || github.ref_name }}
+      # depends on aptosid-art packages, which are not in Debian
+      piuparts: false
 
   release:
     needs: build
