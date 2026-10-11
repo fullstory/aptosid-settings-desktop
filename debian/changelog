@@ -1,8 +1,17 @@
-aptosid-settings-desktop (1:20261002.2) UNRELEASED; urgency=medium
+aptosid-settings-desktop (1:20261011.1) UNRELEASED; urgency=medium
 
+  [ Stefan Lippers-Hollmann ]
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 06 Oct 2026 05:27:39 +0200
+  [ Kel Modderman ]
+  * kodi-session-aptosid: let /etc/default/kodi-session-aptosid override
+    the Plasma session command (PLASMA_SESSION_EXEC), e.g. plasma-
+    bigscreen-wayland for a TV launcher.
+  * kodi-session-aptosid: default the Plasma half to plasma-bigscreen-
+    wayland when plasma-bigscreen is installed; Suggests: plasma-
+    bigscreen, plasma-keyboard.
+
+ -- Kel Modderman <kelvmod@gmail.com>  Sun, 11 Oct 2026 08:46:49 +1000
 
 aptosid-settings-desktop (1:20261002.1) unstable; urgency=medium
 

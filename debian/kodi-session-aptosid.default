@@ -20,3 +20,8 @@
 #KODI_SHUTDOWN_GRACE=30
 #KODI_OWN_SCOPE=1
 #KODI_BIN_MATCH=kodi.bin
+
+# kodi-plasma-toggle only: command for the Plasma half of the toggle. Unset,
+# it is plasma-bigscreen-wayland (TV launcher, plasma-bigscreen package) when
+# installed and startplasma-wayland (desktop) otherwise. Set it to force one.
+#PLASMA_SESSION_EXEC=startplasma-wayland

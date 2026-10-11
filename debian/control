@@ -181,6 +181,7 @@ Description: provide default KDE settings for aptosid
 Package: kodi-session-aptosid
 Depends: ${misc:Depends}
 Recommends: flatpak, sddm, plasma-workspace
+Suggests: plasma-bigscreen, plasma-keyboard
 Replaces: aptosid-settings-kodi-flatpak (<< 20260702.1~)
 Breaks: aptosid-settings-kodi-flatpak (<< 20260702.1~)
 Architecture: all
@@ -189,7 +190,9 @@ Description: provide desktop session for Kodi
  window management mode via a desktop display manager.
  .
  Also provides a "Kodi/Plasma Appliance" session that boots into Kodi and,
- on exit, alternates with a Plasma (Wayland) session and back again.
+ on exit, alternates with a Plasma (Wayland) session and back again. The
+ Plasma half is the Plasma Bigscreen TV launcher when plasma-bigscreen is
+ installed, otherwise the regular desktop.
 
 Package: cage-kiosk-aptosid
 Depends: ${misc:Depends},

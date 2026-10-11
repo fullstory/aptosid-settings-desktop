@@ -15,7 +15,15 @@ KODI_SHUTDOWN_GRACE=30   # secs before a stuck shutdown is killed
 KODI_OWN_SCOPE=          # set for a native (non-flatpak) Kodi that won't self-scope
 KODI_BIN_MATCH='kodi\.bin'   # pgrep -f pattern the watchdog uses to find Kodi
 KODI_LOG="$HOME/.var/app/tv.kodi.Kodi/data/temp/kodi.log"
+PLASMA_SESSION_EXEC=     # Plasma half; empty = Bigscreen if installed, else the desktop
 [ -s /etc/default/kodi-session-aptosid ] && . /etc/default/kodi-session-aptosid
+if [ -z "$PLASMA_SESSION_EXEC" ]; then
+    if command -v plasma-bigscreen-wayland >/dev/null 2>&1; then
+        PLASMA_SESSION_EXEC=plasma-bigscreen-wayland
+    else
+        PLASMA_SESSION_EXEC=startplasma-wayland
+    fi
+fi
 
 log() { logger -t kodi-plasma-toggle "$*"; }
 
@@ -76,9 +84,9 @@ while :; do
     # reads /etc/default/kodi-session-aptosid, then execs into the real Kodi.
     run_it kodi watchdog_and_kodi
 
-    # $PLASMA_BUS is unquoted on purpose: empty -> drops out, set -> prepends the
-    # wrapper. The path has no spaces, so word-splitting is safe here.
+    # $PLASMA_BUS and $PLASMA_SESSION_EXEC are unquoted on purpose: empty ->
+    # drops out, set -> word-split so the override may carry arguments.
     run_it plasma \
         env XDG_SESSION_TYPE=wayland XDG_SESSION_DESKTOP=plasma XDG_CURRENT_DESKTOP=KDE \
-            $PLASMA_BUS startplasma-wayland
+            $PLASMA_BUS $PLASMA_SESSION_EXEC
 done
