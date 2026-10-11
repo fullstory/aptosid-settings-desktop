@@ -10,6 +10,8 @@ aptosid-settings-desktop (1:20261011.1) UNRELEASED; urgency=medium
   * kodi-session-aptosid: default the Plasma half to plasma-bigscreen-
     wayland when plasma-bigscreen is installed; Suggests: plasma-
     bigscreen, plasma-keyboard.
+  * kodi-session-aptosid: recommend plasma-login-manager, with sddm as
+    the alternative.
 
  -- Kel Modderman <kelvmod@gmail.com>  Sun, 11 Oct 2026 08:46:49 +1000
 

@@ -180,7 +180,7 @@ Description: provide default KDE settings for aptosid
 
 Package: kodi-session-aptosid
 Depends: ${misc:Depends}
-Recommends: flatpak, sddm, plasma-workspace
+Recommends: flatpak, plasma-login-manager | sddm, plasma-workspace
 Suggests: plasma-bigscreen, plasma-keyboard
 Replaces: aptosid-settings-kodi-flatpak (<< 20260702.1~)
 Breaks: aptosid-settings-kodi-flatpak (<< 20260702.1~)
