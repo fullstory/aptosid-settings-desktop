@@ -1,9 +1,5 @@
-aptosid-settings-desktop (1:20261011.1) UNRELEASED; urgency=medium
+aptosid-settings-desktop (1:20261011.1) unstable; urgency=medium
 
-  [ Stefan Lippers-Hollmann ]
-  * NOT RELEASED YET
-
-  [ Kel Modderman ]
   * kodi-session-aptosid: let /etc/default/kodi-session-aptosid override
     the Plasma session command (PLASMA_SESSION_EXEC), e.g. plasma-
     bigscreen-wayland for a TV launcher.
